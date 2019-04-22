@@ -44,7 +44,9 @@ _expl2 attachTo [_suicider, [0, 0.15, 0.15], "Pelvis"];
 private _expl3 = "DemoCharge_Remote_Ammo" createVehicle (position _suicider);
 _expl3 attachTo [_suicider, [0.1, 0.1, 0.15], "Pelvis"];
 
-[_expl1, _expl2, _expl3] remoteExec ["btc_fnc_ied_belt", 0];
+_expl1 setVectorDirAndUp [[0.5, 0.5, 0], [-0.5, 0.5, 0]];
+_expl2 setVectorDirAndUp [[1, 0, 0], [0, 1, 0]];
+_expl3 setVectorDirAndUp [[0.5, -0.5, 0], [0.5, 0.5, 0]];
 
 _suicider addEventHandler ["Killed", {
     params ["_unit", "_killer"];
@@ -65,7 +67,7 @@ if (btc_debug_log) then {
     params ["_args, _handle"];
     private _suicider = _args # 0;
 
-    if (!alive _suicider) exitWith {
+    if (isNull _suicider || {!alive _suicider}) exitWith {
         [_handle] call CBA_fnc_removePerFrameHandler;
 
         group _suicider setVariable ["suicider", false];
