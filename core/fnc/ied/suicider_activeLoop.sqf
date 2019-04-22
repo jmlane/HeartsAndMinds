@@ -7,22 +7,21 @@ Description:
 
 Parameters:
     _suicider - Suicider. [Object]
-    _trigger - Trigger triggring the suicider explosion. [Object]
 
 Returns:
 
 Examples:
     (begin example)
-        [_suicider, _trigger] call btc_fnc_ied_suicider_activeLoop;
+        [_suicider] call btc_fnc_ied_suicider_activeLoop;
     (end)
 
 Author:
-    Giallustio
+    Giallustio, jmlane
 
 ---------------------------------------------------------------------------- */
 
 [{
-    params ["_suicider", "_trigger"];
+    params ["_suicider"];
 
     if (alive _suicider) then {
         private _array = _suicider nearEntities ["SoldierWB", 30];
@@ -31,7 +30,6 @@ Author:
         };
         _this call btc_fnc_ied_suicider_activeLoop;
     } else {
-        deleteVehicle _trigger;
         group _suicider setVariable ["suicider", false];
 
         if (btc_debug_log) then {

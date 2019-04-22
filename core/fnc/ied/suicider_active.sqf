@@ -16,7 +16,7 @@ Examples:
     (end)
 
 Author:
-    Giallustio
+    Giallustio, jmlane
 
 ---------------------------------------------------------------------------- */
 
@@ -24,19 +24,14 @@ params [
     ["_suicider", objNull, [objNull]]
 ];
 
-[_suicider] joinSilent createGroup [btc_enemy_side, true];
+private _group = createGroup [btc_enemy_side, true];
+[_suicider] joinSilent _group;
 
 _suicider call btc_fnc_rep_remove_eh;
 
-[group _suicider] call CBA_fnc_clearWaypoints;
+[_group] call CBA_fnc_clearWaypoints;
 
-private _trigger = createTrigger ["EmptyDetector", getPos _suicider];
-_trigger setTriggerArea [5, 5, 0, false];
-_trigger setTriggerActivation [str btc_player_side, "PRESENT", false];
-_trigger setTriggerStatements ["this", "thisTrigger call btc_fnc_ied_allahu_akbar;", ""];
-_trigger setVariable ["suicider", _suicider];
-
-_trigger attachTo [_suicider, [0, 0, 0]];
+[_suicider, btc_player_side, 10, selectRandom [0, 1, 2], false] call ace_zeus_fnc_moduleSuicideBomber;
 
 private _array = getPos _suicider nearEntities ["SoldierWB", 30];
 
@@ -59,11 +54,11 @@ _suicider addEventHandler ["Killed", {
     };
 }];
 
-(group _suicider) setBehaviour "CARELESS";
-(group _suicider) setSpeedMode "FULL";
+_group setBehaviour "CARELESS";
+_group setSpeedMode "FULL";
 
 if (btc_debug_log) then {
     [format ["_suicider = %1 POS %2 START LOOP", _suicider, getPos _suicider], __FILE__, [false]] call btc_fnc_debug_message;
 };
 
-[_suicider, _trigger] call btc_fnc_ied_suicider_activeLoop;
+[_suicider] call btc_fnc_ied_suicider_activeLoop;
