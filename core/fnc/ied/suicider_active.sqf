@@ -61,4 +61,22 @@ if (btc_debug_log) then {
     [format ["_suicider = %1 POS %2 START LOOP", _suicider, getPos _suicider], __FILE__, [false]] call btc_fnc_debug_message;
 };
 
-[_suicider] call btc_fnc_ied_suicider_activeLoop;
+[{
+    params ["_args, _handle"];
+    private _suicider = _args # 0;
+
+    if (!alive _suicider) exitWith {
+        [_handle] call CBA_fnc_removePerFrameHandler;
+
+        group _suicider setVariable ["suicider", false];
+
+        if (btc_debug_log) then {
+            [format ["_suicider = %1 POS %2 END LOOP", _suicider, getPos _suicider], __FILE__, [false]] call btc_fnc_debug_message;
+        };
+    };
+
+    private _array = _suicider nearEntities ["SoldierWB", 30];
+    if !(_array isEqualTo []) then {
+        _suicider doMove (position (_array select 0));
+    };
+}, 0.5, [_suicider]] call CBA_fnc_addPerFrameHandler;
