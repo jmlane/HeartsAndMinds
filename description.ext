@@ -1,5 +1,3 @@
-
-loadScreen = "core\img\btc.paa";
 author = $STR_BTC_HAM_DESCR_AUTHOR;
 onLoadName = $STR_BTC_HAM_DESCR_NAME;
 onLoadMission = $STR_BTC_HAM_DESCR_MISSION;

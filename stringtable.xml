@@ -3,25 +3,25 @@
     <Package name="Description">
         <Container name="Description: Main">
             <Key ID="STR_BTC_HAM_DESCR_NAME">
-                <Original>Hearts and Minds</Original>
-                <Spanish>Hearts and Minds</Spanish>
-                <German>Hearts and Minds</German>
-                <Portuguese>Corações e Mentes</Portuguese>
+                <Original>ASG + Hearts and Minds</Original>
+                <Spanish>ASG + Hearts and Minds</Spanish>
+                <German>ASG + Hearts and Minds</German>
+                <Portuguese>ASG + Corações e Mentes</Portuguese>
                 <Chinesesimp>心灵与智慧</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_DESCR_AUTHOR">
-                <Original>Giallustio</Original>
-                <Spanish>Giallustio</Spanish>
-                <German>Giallustio</German>
-                <Portuguese>Giallustio</Portuguese>
-                <Chinesesimp>Giallustio</Chinesesimp>
+                <Original>jmlane, DEL-J, Vdauphin, Giallustio</Original>
+                <Spanish>jmlane, DEL-J, Vdauphin, Giallustio</Spanish>
+                <German>jmlane, DEL-J, Vdauphin, Giallustio</German>
+                <Portuguese>jmlane, DEL-J, Vdauphin, Giallustio</Portuguese>
+                <Chinesesimp>jmlane, DEL-J, Vdauphin, Giallustio</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_DESCR_MISSION">
-                <Original>www.blacktemplars.altervista.org</Original>
-                <Spanish>www.blacktemplars.altervista.org</Spanish>
-                <German>www.blacktemplars.altervista.org</German>
-                <Portuguese>www.blacktemplars.altervista.org</Portuguese>
-                <Chinesesimp>www.blacktemplars.altervista.org</Chinesesimp>
+                <Original>Counter-Insurgency and Stability Operations Sandbox</Original>
+                <Spanish>Counter-Insurgency and Stability Operations Sandbox</Spanish>
+                <German>Counter-Insurgency and Stability Operations Sandbox</German>
+                <Portuguese>Counter-Insurgency and Stability Operations Sandbox</Portuguese>
+                <Chinesesimp>Counter-Insurgency and Stability Operations Sandbox</Chinesesimp>
             </Key>
         </Container>
     </Package>
