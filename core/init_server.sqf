@@ -23,8 +23,6 @@ if (btc_db_load && {profileNamespace getVariable [format ["btc_hm_%1_db", worldN
 
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
-setTimeMultiplier btc_p_acctime;
-
 {[_x, 30, false] call btc_fnc_eh_veh_add_respawn;} forEach btc_helo;
 
 if (btc_p_side_mission_cycle) then {
