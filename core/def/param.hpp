@@ -5,12 +5,6 @@ class Params {
         texts[]={""};
         default = 0;
     };
-    class btc_p_time { // Set the start time:
-        title = __EVAL(format ["      %1", localize "STR_A3_CFGVEHICLES_MODULEDATE_F_ARGUMENTS_HOUR_0"]);
-        values[]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
-        texts[]={"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"};
-        default = 12;
-    };
     class btc_p_acctime { // Acceleration time multiplier:
         title = __EVAL(format ["      %1", localize "STR_USRACT_TIME_INC"]);
         values[]={1,2,3,4,5,6,7,8,9,10,11,12};

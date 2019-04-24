@@ -3,7 +3,6 @@ diag_log format ["=BTC= HEARTS AND MINDS VERSION %1.3", btc_version];
 
 //Param
 //<< Time options >>
-btc_p_time = "btc_p_time" call BIS_fnc_getParamValue;
 btc_p_acctime = "btc_p_acctime" call BIS_fnc_getParamValue;
 private _p_db = ("btc_p_load" call BIS_fnc_getParamValue) isEqualTo 1;
 btc_p_auto_db = "btc_p_auto_db" call BIS_fnc_getParamValue;
