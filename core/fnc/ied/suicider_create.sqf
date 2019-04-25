@@ -18,7 +18,7 @@ Examples:
     (end)
 
 Author:
-    Giallustio
+    Giallustio, jmlane
 
 ---------------------------------------------------------------------------- */
 
@@ -31,9 +31,7 @@ if (btc_debug_log) then {
     [format ["_name = %1 _area %2", _city getVariable ["name", "name"], _area], __FILE__, [false]] call btc_fnc_debug_message;
 };
 
-_pos = position _city;
-
-private _rpos = [_pos, _area] call btc_fnc_randomize_pos;
+private _rpos = [position _city, _area] call btc_fnc_randomize_pos;
 
 private _group = createGroup civilian;
 private _suicider = _group createUnit [selectRandom btc_civ_type_units, _rpos, [], 0, "CAN_COLLIDE"];
@@ -43,6 +41,6 @@ _group setVariable ["suicider", true];
 
 _suicider call btc_fnc_civ_unit_create;
 
-[_suicider] call btc_fnc_ied_suiciderLoop;
+[_suicider] call btc_fnc_ied_suicider_active;
 
 _suicider
