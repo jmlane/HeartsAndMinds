@@ -33,6 +33,25 @@ params [
     ["_p_patrol_max", btc_p_patrol_max, [0]],
     ["_wp_ratios", btc_p_mil_wp_ratios, [[]]]
 ];
+
+private _fn_eh_suicider = {
+    params ["_unit"];
+
+    _thisArgs params [
+        ["_city", objNull, [objNull]],
+        ["_id", 0, [0]]
+    ];
+
+    if (btc_debug || btc_debug_log) then {
+        [format ["Suicider killed in city %1", _id], __FILE__, [btc_debug, btc_debug_log]] call btc_fnc_debug_message;
+    };
+
+    // EH local to `_unit`, `setVariable` is local only by default.
+    // TODO: Check that `owner` returns server clientOwner id as intended in all environments.
+    _city setVariable ["has_suicider", false, owner _city];
+    _unit removeEventHandler [_thisType, _thisId];
+};
+
 _wp_ratios params ["_wp_house", "_wp_sentry"];
 
 if (btc_debug) then {
@@ -98,7 +117,7 @@ if !(_data_units isEqualTo []) then {
     {
         (_x call btc_fnc_data_spawn_group) params ["_leader", "_type"];
         if (_type in [5, 7]) then {
-            _leader addEventHandler ["killed", format ["[%1] call btc_fnc_eh_suicider", _id]];
+            [_leader, "Killed", _fn_eh_suicider, [_city, _id]] call CBA_fnc_addBISEventHandler;
         };
     } forEach _data_units;
 } else {
@@ -204,7 +223,7 @@ if !(_city getVariable ["has_suicider", false]) then {
         } else {
             [_city, _radius] call btc_fnc_ied_suicider_create;
         };
-        _suicider addEventHandler ["killed", format ["[%1] call btc_fnc_eh_suicider", _id]];
+        [_suicider, "Killed", _fn_eh_suicider, [_city, _id]] call CBA_fnc_addBISEventHandler;
     };
 };
 
