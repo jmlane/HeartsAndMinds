@@ -24,6 +24,8 @@ params [
     ["_suicider", objNull, [objNull]]
 ];
 
+group _suicider setVariable ["suicider", true];
+
 private _fn_active = {
     params [
         ["_suicider", objNull, [objNull]]

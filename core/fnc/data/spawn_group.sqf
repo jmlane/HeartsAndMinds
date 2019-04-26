@@ -107,7 +107,6 @@ if (_type isEqualTo 3) then {
 };
 if (_type isEqualTo 4) then {[[0, 0, 0], 0, units _group] call btc_fnc_civ_get_weapons;};
 if (_type isEqualTo 5) then {
-    _group setVariable ["suicider", true];
     [leader _group] call btc_fnc_ied_suicider_active;
 };
 if (_type isEqualTo 6) then {
