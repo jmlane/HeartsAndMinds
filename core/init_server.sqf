@@ -15,10 +15,6 @@ if (btc_db_load && {profileNamespace getVariable [format ["btc_hm_%1_db", worldN
     private _date = date;
     _date set [3, btc_p_time];
     setDate _date;
-
-    {
-        [{!isNull _this}, {_this call btc_fnc_db_add_veh;}, _x] call CBA_fnc_waitUntilAndExecute;
-    } forEach btc_vehicles;
 };
 
 [] call btc_fnc_db_autosave;
@@ -28,8 +24,6 @@ if (btc_db_load && {profileNamespace getVariable [format ["btc_hm_%1_db", worldN
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
 setTimeMultiplier btc_p_acctime;
-
-{[_x, 30, false] call btc_fnc_eh_veh_add_respawn;} forEach btc_helo;
 
 if (btc_p_side_mission_cycle) then {
     [true] spawn btc_fnc_side_create;

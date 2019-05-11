@@ -190,10 +190,6 @@ if (isServer) then {
     btc_type_bloods = _allclass select {_x isKindOf "Blood_01_Base_F"};
     btc_type_medicals = _allclass select {_x isKindOf "MedicalGarbage_01_Base_F"};
 
-    //BTC Vehicles in missions.sqm
-    btc_vehicles = [btc_veh_1, btc_veh_2, btc_veh_3, btc_veh_4, btc_veh_5, btc_veh_6, btc_veh_7, btc_veh_8, btc_veh_9, btc_veh_10, btc_veh_11, btc_veh_12, btc_veh_13, btc_veh_14, btc_veh_15];
-    btc_helo = [btc_helo_1];
-
     // The two arrays below are prefixes of buildings and their multiplier.
     // They will multiply the values of btc_rep_malus_building_destroyed and btc_rep_malus_building_damaged,
     // if a building is not present here it will be multiplied by 1.0.
@@ -297,8 +293,6 @@ if (isServer) then {
     });
     ([_rearming_static] call btc_fnc_find_veh_with_turret) params ["_rearming_static", "_magazines_static"];
 
-    ([btc_vehicles + btc_helo] call btc_fnc_log_getRearmMagazines) params ["_rearming_vehicles", "_rearming_magazines"];
-
     btc_construction_array =
     [
         [
@@ -309,7 +303,7 @@ if (isServer) then {
             "Supplies",
             "FOB",
             "Vehicle Logistic"
-        ] + (_rearming_vehicles apply {getText (configFile >> "cfgVehicles" >> _x >> "displayName")}),
+        ],
         [
             [
                 //"Fortifications"
@@ -359,7 +353,7 @@ if (isServer) then {
                 "ACE_Wheel",
                 "ACE_Track"
             ]
-        ] + _rearming_magazines
+        ]
     ];
     publicVariable "btc_construction_array";
 };
