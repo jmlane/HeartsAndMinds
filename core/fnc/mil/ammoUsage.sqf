@@ -38,7 +38,7 @@ private _cfgWeapons = configFile >> "CfgWeapons";
 private _cfgMagazines = configFile >> "CfgMagazines";
 private _cfgAmmo = configFile >> "CfgAmmo";
 
-_weapons select {
+private _weapons_ammoUsage = _weapons select {
     private _weapon = _x;
     private _magazines = getArray (_cfgWeapons >> _weapon >> "magazines");
 
@@ -76,7 +76,7 @@ _weapons select {
         };
     };
 
-    private _weapons_ammoUsage = (_itemType in (_weapon call BIS_fnc_itemType)) && {_isAllowed} && {_isParent};
+    (_itemType in (_weapon call BIS_fnc_itemType)) && {_isAllowed} && {_isParent};
 };
 
 if (btc_debug_log) then {
