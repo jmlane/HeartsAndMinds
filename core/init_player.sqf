@@ -34,8 +34,6 @@
 }] call CBA_fnc_waitUntilAndExecute;
 
 if (btc_debug) then {
-
-    onMapSingleClick "vehicle player setPos _pos";
     player allowDamage false;
 
     waitUntil {!isNull (findDisplay 12)};
