@@ -1305,22 +1305,6 @@
                 <Chinesesimp>&lt;t color='#ff1111'&gt;军火库(ACE)&lt;/t&gt;</Chinesesimp>
             </Key>
         </Container>
-        <Container name="Action(ACE): Copy Paste">
-            <Key ID="STR_BTC_HAM_ACTION_COPYPASTE_COPY">
-                <Original>Copy container</Original>
-                <Spanish>Copiar container</Spanish>
-                <German>Container kopieren</German>
-                <Portuguese>Copiar Contêiner</Portuguese>
-                <Chinesesimp>记录集装箱内容</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_ACTION_COPYPASTE_PASTE">
-                <Original>Paste container</Original>
-                <Spanish>Pegar container</Spanish>
-                <German>Container einfügen</German>
-                <Portuguese>Colar Contâiner</Portuguese>
-                <Chinesesimp>生成已记录的集装箱</Chinesesimp>
-            </Key>
-        </Container>
     </Package>
     <Package name="Conversations">
         <Container name="Conversations: Info">
@@ -1751,29 +1735,6 @@
                 <German>Befiehlt den Zivilisten in der Umgebung wegzugehen</German>
                 <Portuguese>Ordem para o civil ir embora</Portuguese>
                 <Chinesesimp>命令平民走开</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Other: Copy Paste">
-            <Key ID="STR_BTC_HAM_O_PASTE_NOCOPIED">
-                <Original>No copied container!</Original>
-                <Spanish>Ningún contenedor copiado!</Spanish>
-                <German>Kein kopierter Container gefunden!</German>
-                <Portuguese>O contêiner não foi copiado!</Portuguese>
-                <Chinesesimp>未记录集装箱内容!</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_COPY_NOCONTAINER">
-                <Original>No container around!</Original>
-                <Spanish>No hay contenedores alrededor!</Spanish>
-                <German>Kein Container gefunden!</German>
-                <Portuguese>Não há contêiner em volta!</Portuguese>
-                <Chinesesimp>附近没有集装箱!</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_COPY_SUCCSESS">
-                <Original>Container and cargo copied! Clear the area to paste.</Original>
-                <Spanish>¡Contenedor y carga copiados! Despejar el área para pegar.</Spanish>
-                <German>Container und Inhalt kopiert! Bereich freimachen, um neuen einzufügen.</German>
-                <Portuguese>Contêiner e carga copiados! Limpe a área para colar.</Portuguese>
-                <Chinesesimp>集装箱及其货物已记录! 清空该区域以创建一个复制品。</Chinesesimp>
             </Key>
         </Container>
         <Container name="Other: Endmission ">
