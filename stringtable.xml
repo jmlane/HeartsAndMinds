@@ -92,15 +92,6 @@
                 <Chinesesimp>&lt;img image='\z\ace\addons\hearing\UI\Icon_Module_Hearing_ca.paa' width='20' height='20'/&gt; 在战斗中, 使用耳塞保护自己免受听力损失。&lt;br/&gt; 你可以使用自我互动菜单佩戴耳塞(前提是你在随身装备中携带了耳塞)。&lt;br/&gt;&lt;br/&gt;</Chinesesimp>
             </Key>
         </Container>
-        <Container name="Documentation: Vehicles">
-            <Key ID="STR_BTC_HAM_DOC_VEHICLES_TEXT">
-                <Original>&lt;marker name='blufor_base'&gt;&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\destroy_ca.paa' width='20' height='20' color='#FFBF00'/&gt; Respawn:&lt;/marker&gt;&lt;br/&gt; When a vehicle is destroyed it will not respawn in base, you need to tow or lift it back to base and repair it near the logistic point (Interact with the red box). Helicopter wrecks can only be lifted. &lt;br/&gt; The Chinook is the only exception, it will respawn after 30 seconds. &lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20' color='#FFBF00'/&gt; Rearm:&lt;/marker&gt;&lt;br/&gt; You can also rearm them by spawning the corresponding caliber at logistic point (Interact with the red box, select the vehicle type and caliber). Carry the ammo created and interact with the vehicle to rearm. This only works if rearming is setting on entire magazine or amount based on caliber (not for entire vehicle setting).</Original>
-                <Spanish>&lt;marker name='blufor_base'&gt;&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\destroy_ca.paa' width='20' height='20' color='#FFBF00'/&gt; Respawn:&lt;/marker&gt;&lt;br/&gt; Cuando un vehículo es destruido no va a reaparecer en la base, es necesario remolcarlo o transportarlo de vuelta a la base y repararlo cerca del punto logístico (Interactuar con la caja roja). Los destrozos de helicópteros sólo pueden ser transportados por vía aérea.. &lt;br/&gt; El Chinook es la única excepción, reaparecerá después de 30 segundos.. &lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20' color='#FFBF00'/&gt; Rearm:&lt;/marker&gt;&lt;br/&gt; También puede rearmarlos generando el calibre correspondiente en el punto logístico (Interactuar con la caja roja, seleccionar el tipo y calibre del vehículo). Lleva la munición creada e interactúa con el vehículo para rearmarlo. Esto sólo funciona si el rearme se está ajustando en todo el cargador o en una cantidad basada en el calibre (no para el ajuste de todo el vehículo).</Spanish>
-                <German>&lt;marker name='blufor_base'&gt;&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\destroy_ca.paa' width='20' height='20' color='#FFBF00'/&gt; Respawn:&lt;/marker&gt;&lt;br/&gt; Wenn ein Fahrzeug zersört wurde, wird dies nicht Respawnen. Es muss durch Abschleppen oder Anheben(Sling-Load) zum Logisik-Punkt gebracht und dort repariert werden (mit der roten Box interagieren). Wracks von Hubschraubern können nur angehoben werden (Sling-Load). &lt;br/&gt; Die einzigste Ausnahme hierbei ist der Chinook. Er respawnt nach 30 Sekunden. &lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20' color='#FFBF00'/&gt; Aufmunitionieren:&lt;/marker&gt;&lt;br/&gt; Fahrzeuge können Aufmunitioniert werden, in dem man das entsprechende Kaliber am Logisik-Punk anfordert (mit der Roten Box interagieren: Fahzeug und Kaliber auswählen). Nun muss man nur noch die erstellte Munition zum Fahrzeug bringen und mit diesem interagieren um das aufmunitionieren zu beginnen.&lt;br/&gt;ANMERKUNG: Das funktioiert nur wenn die Aufmunitionierungseinstellung auf 'Gesamtes Magazin' oder 'Kalieberbasierte Anzahl' gestellt ist (get nicht für 'Gesamtes Fahrzeug').</German>
-                <Portuguese>&lt;marker name='blufor_base'&gt;&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\destroy_ca.paa' width='20' height='20' color='#FFBF00'/&gt; Respawn:&lt;/marker&gt;&lt;br/&gt; Quando um veículo é destruído ele não reaparecerá na base, você precisa rebocá-lo/levá-lo de volta à base e repará-lo perto do ponto logístico (Interagir com a caixa vermelha). Os destroços de helicóptero só podem ser levantados. &lt;br/&gt; O Chinook é a única exceção, ele reaparecerá depois de 30 segundos. &lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20' color='#FFBF00'/&gt; Rearm:&lt;/marker&gt;&lt;br/&gt; Você também pode rearmar-los, gerando o calibre correspondente no ponto logístico (Interaja com a caixa vermelha, selecione o tipo de veículo e calibre). Leve a munição criada e interaja com o veículo para rearmar. Isso só funciona se o rearme estiver configurado em um depósito inteiro ou em um valor baseado em calibre (não para toda a configuração do veículo).</Portuguese>
-                <Chinesesimp>&lt;marker name='blufor_base'&gt;&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\destroy_ca.paa' width='20' height='20' color='#FFBF00'/&gt; 载具重生:&lt;/marker&gt;&lt;br/&gt; 当载具损毁时, 它不会自行在基地重生。你需要采用车辆牵引或直升机吊挂的方式将其残骸运回基地, 并在补给点对其进行维修(与补给点的红色箱子进行互动)。直升机的残骸只能使用吊挂的方式运输。 &lt;br/&gt; 支奴干(Chinook)是唯一的例外, 它会在损毁后30秒于基地重生。 &lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20' color='#FFBF00'/&gt; 弹药补给:&lt;/marker&gt;&lt;br/&gt; 你可以在补给点生成对应口径的弹药, 对载具进行弹药补给。与红色箱子互动, 选择对应的载具类型及口径, 弹药箱将会生成。将生成的弹药箱搬到载具附近, 与载具互动, 即可执行补给。注意: 如需启用此功能, 需要将任务参数中的弹药补给选项设置为 "Total Magazine" 或 "Calibre Based Number" (而非 "Entire Vehicle")。</Chinesesimp>
-            </Key>
-        </Container>
         <Container name="Documentation: Side Mission">
             <Key ID="STR_BTC_HAM_DOC_SIDEMISSION_TITLE">
                 <Original>Side Mission</Original>
@@ -1221,13 +1212,6 @@
                 <Portuguese>Solicitar reabastecimento</Portuguese>
                 <Chinesesimp>申请补给</Chinesesimp>
             </Key>
-            <Key ID="STR_BTC_HAM_ACTION_LOGPOINT_REPWRECK">
-                <Original>Repair wreck</Original>
-                <Spanish>Reparar chatarra</Spanish>
-                <German>Wrack reparieren</German>
-                <Portuguese>Reparação de destroços</Portuguese>
-                <Chinesesimp>修理残骸</Chinesesimp>
-            </Key>
             <Key ID="STR_BTC_HAM_ACTION_LOGPOINT_REQVEH">
                 <Original>Require vehicle</Original>
                 <Spanish>Solicitar vehiculo</Spanish>
@@ -2006,22 +1990,6 @@
                 <German>Loslassen</German>
                 <Portuguese>Soltar</Portuguese>
                 <Chinesesimp>释放</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Logistic: Repair wreck ">
-            <Key ID="STR_BTC_HAM_LOG_RWRECK_NOWRECK">
-                <Original>No wreck found</Original>
-                <Spanish>No se ha encontrado chatarra</Spanish>
-                <German>Kein Wrack gefunden</German>
-                <Portuguese>Nenhum carcaça encontrada</Portuguese>
-                <Chinesesimp>附近没有残骸</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_LOG_RWRECK_NOTWRECK">
-                <Original>It is not a wreck!</Original>
-                <Spanish>¡No es chatarra!</Spanish>
-                <German>Das ist kein Wrack!</German>
-                <Portuguese>Isso não é um carcaça!</Portuguese>
-                <Chinesesimp>这不是残骸!</Chinesesimp>
             </Key>
         </Container>
         <Container name="Logistic: Tow ">

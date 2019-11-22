@@ -10,9 +10,6 @@ player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_WOUNDS_TITLE
 //Deafness
 player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_DEAFNESS_TITLE", localize "STR_BTC_HAM_DOC_DEAFNESS_TEXT"]];
 
-//Vehicles
-player createDiaryRecord [_MainCategory, [localize "str_a3_cfghints_command_vehicles1", localize "STR_BTC_HAM_DOC_VEHICLES_TEXT"]];
-
 //Side Mission
 player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_SIDEMISSION_TITLE", localize "STR_BTC_HAM_DOC_SIDEMISSION_TEXT"]];
 
