@@ -7,7 +7,6 @@ enabledebugconsole = 1;
 
 #include "core\fnc\common\dlg.hpp"
 #include "core\fnc\fob\dlg.hpp"
-#include "core\fnc\log\dlg.hpp"
 #include "core\fnc\debug\defines.hpp"
 
 class RscTitles {

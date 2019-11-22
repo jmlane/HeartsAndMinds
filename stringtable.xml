@@ -1182,13 +1182,6 @@
                 <Portuguese>Logística</Portuguese>
                 <Chinesesimp>后勤</Chinesesimp>
             </Key>
-            <Key ID="STR_BTC_HAM_ACTION_LOGPOINT_REQOBJ">
-                <Original>Require object</Original>
-                <Spanish>Solicitar Objeto</Spanish>
-                <German>Nachschub anfordern</German>
-                <Portuguese>Solicitar reabastecimento</Portuguese>
-                <Chinesesimp>申请补给</Chinesesimp>
-            </Key>
         </Container>
         <Container name="Action(ACE): FOB">
             <Key ID="STR_BTC_HAM_ACTION_FOB_MOUNT">
@@ -1764,15 +1757,6 @@
         </Container>
     </Package>
     <Package name="Logistic">
-        <Container name="Logistic: Basics ">
-            <Key ID="STR_BTC_HAM_LOG_BASICS_CLEARAREA">
-                <Original>Clear the area before creating another object!</Original>
-                <Spanish>Despeje el área antes de crear otro objeto!</Spanish>
-                <German>Der Bereich muss sauber sein, bevor Sie etwas neues anfordern!</German>
-                <Portuguese>Limpe a área antes de criar outro objeto!</Portuguese>
-                <Chinesesimp>在创建新的物件前, 该区域必须清空!</Chinesesimp>
-            </Key>
-        </Container>
         <Container name="Logistic: Load ">
             <Key ID="STR_BTC_HAM_LOG_LOAD_TOOFAR">
                 <Original>%1 is too far from %2!</Original>
