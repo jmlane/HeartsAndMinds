@@ -1840,13 +1840,6 @@
             </Key>
         </Container>
         <Container name="Other: Markers ">
-            <Key ID="STR_BTC_HAM_O_EH_VEHKILLED_MRK">
-                <Original>%1 wreck</Original>
-                <Spanish>%1 chatarra</Spanish>
-                <German>%1 Wrack</German>
-                <Portuguese>%1 (carcaça)</Portuguese>
-                <Chinesesimp>%1 残骸</Chinesesimp>
-            </Key>
             <Key ID="STR_BTC_HAM_O_EH_HDHIDEOUT_MRK">
                 <Original>Hideout %1 destroyed</Original>
                 <Spanish>Escondite %1 destruído</Spanish>

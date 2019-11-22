@@ -56,7 +56,6 @@ if (isServer) then {
     btc_fnc_db_loadCargo = compile preprocessFileLineNumbers "core\fnc\db\loadcargo.sqf";
 
     //EH
-    btc_fnc_eh_veh_killed = compile preprocessFileLineNumbers "core\fnc\eh\veh_killed.sqf";
     btc_fnc_eh_explosives_defuse = compile preprocessFileLineNumbers "core\fnc\eh\explosives_defuse.sqf";
     btc_fnc_eh_handledisconnect = compile preprocessFileLineNumbers "core\fnc\eh\handledisconnect.sqf";
     btc_fnc_eh_buildingchanged = compile preprocessFileLineNumbers "core\fnc\eh\buildingchanged.sqf";
@@ -147,7 +146,6 @@ if (isServer) then {
 
     //LOG
     btc_fnc_log_CuratorObjectPlaced_s = compile preprocessFileLineNumbers "core\fnc\log\CuratorObjectPlaced_s.sqf";
-    btc_fnc_log_createVehicle = compile preprocessFileLineNumbers "core\fnc\log\createVehicle.sqf";
     btc_fnc_log_init = compile preprocessFileLineNumbers "core\fnc\log\init.sqf";
 
     //DEAF
@@ -173,8 +171,6 @@ btc_fnc_house_addWP_loop = compile preprocessFileLineNumbers "core\fnc\common\ho
 //DEBUG
 btc_fnc_debug_message = compile preprocessFileLineNumbers "core\fnc\debug\message.sqf";
 
-//DB
-btc_fnc_db_add_veh = compile preprocessFileLineNumbers "core\fnc\db\add_veh.sqf";
 
 //CIV
 btc_fnc_civ_class = compile preprocessFileLineNumbers "core\fnc\civ\class.sqf";
