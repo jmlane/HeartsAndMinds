@@ -58,7 +58,6 @@ btc_p_sea  = ("btc_p_sea" call BIS_fnc_getParamValue) isEqualTo 1;
 btc_p_side_mission_cycle = ("btc_p_side_mission_cycle" call BIS_fnc_getParamValue) isEqualTo 1;
 
 //<< Arsenal options >>
-btc_p_arsenal_Type = "btc_p_arsenal_Type" call BIS_fnc_getParamValue;
 btc_p_garage = ("btc_p_garage" call BIS_fnc_getParamValue) isEqualTo 1;
 
 //<< Other options >>
