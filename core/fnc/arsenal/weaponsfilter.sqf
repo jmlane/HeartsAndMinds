@@ -27,7 +27,7 @@ Author:
 params [
     ["_itemType_ammo_usageAllowed", [["AssaultRifle", ""], ["RocketLauncher", ""]], [[]]],
     ["_custom_arsenal", btc_custom_arsenal, [[]]],
-    ["_arsenalRestrict", btc_p_arsenal_Restrict, [0]],
+    ["_arsenalRestrict", 3, [0]],
     ["_type_units", btc_type_units, [[]]]
 ];
 
