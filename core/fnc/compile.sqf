@@ -296,7 +296,6 @@ if (!isDedicated) then {
     btc_fnc_log_get_corner_points = compile preprocessFileLineNumbers "core\fnc\log\get_corner_points.sqf";
 
     //ARSENAL
-    btc_fnc_arsenal_data = compile preprocessFileLineNumbers "core\fnc\arsenal\data.sqf";
     btc_fnc_arsenal_garage = compile preprocessFileLineNumbers "core\fnc\arsenal\garage.sqf";
     btc_fnc_arsenal_ammoUsage = compile preprocessFileLineNumbers "core\fnc\arsenal\ammoUsage.sqf";
     btc_fnc_arsenal_weaponsFilter = compile preprocessFileLineNumbers "core\fnc\arsenal\weaponsfilter.sqf";

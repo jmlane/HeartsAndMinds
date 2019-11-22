@@ -119,4 +119,3 @@ _action = ["fob_redeploy", localize "STR_BTC_HAM_ACTION_REDEPLOY_MAIN", "\A3\ui_
 
 //Arsenal
 [btc_gear_object, true, false] call ace_arsenal_fnc_initBox;
-[btc_gear_object, 4, 3, btc_custom_arsenal] call btc_fnc_arsenal_data;
