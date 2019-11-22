@@ -14,11 +14,7 @@
         player createDiarySubject [localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG", localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG"];
     };
 
-    if (btc_p_autoloadout) then {
-        player setUnitLoadout ([_arsenal_trait select 0] call btc_fnc_arsenal_loadout);
-    } else {
-        removeAllWeapons player;
-    };
+    player setUnitLoadout ([_arsenal_trait select 0] call btc_fnc_arsenal_loadout);
 
     private _standard_tasks = (player call BIS_fnc_tasksUnit) select {
         [_x] call BIS_fnc_taskState isEqualTo "ASSIGNED" &&
