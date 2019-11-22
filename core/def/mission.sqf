@@ -363,7 +363,6 @@ btc_log_def_can_load = (_c_array select 3);
 btc_log_def_placeable = (_c_array select 0) + (_c_array select 3) + (_c_array select 4) + (_c_array select 5);
 btc_log_max_distance_load = 15;
 btc_log_object_selected = objNull;
-btc_log_vehicle_selected = objNull;
 btc_log_placing_max_h = 12;
 btc_log_placing = false;
 btc_log_obj_created = [];
@@ -413,61 +412,6 @@ btc_log_def_rc = [
     "B_Slingload_01_Fuel_F", 20,
     "Land_Pod_Heli_Transport_04_medevac_black_F", 8
 ];
-
-btc_fnc_log_get_nottowable = {
-    params ["_tower"];
-
-    switch (true) do {
-        //The tower is a tank so it can't tow: plane and helicopter
-        case (_tower isKindOf "Tank") : {["Plane", "Helicopter"];};
-        case (_tower isKindOf "Truck_F") : {["Plane", "Helicopter"];};
-        case (_tower isKindOf "Truck") : {["Plane", "Helicopter"];};
-        case (_tower isKindOf "Ship") : {["Car", "Truck", "Truck_F", "Tank", "Plane", "Helicopter"];};
-        //The tower is a car so it can't tow: truck, tank, plane and helicopter
-        case (_tower isKindOf "Car") : {["Truck", "Truck_F", "Tank", "Plane", "Helicopter"];};
-        default {["Car", "Truck", "Truck_F", "Tank", "Plane", "Helicopter", "Ship"];};
-    };
-};
-
-//Lift
-btc_fnc_log_get_liftable = {
-    params ["_chopper"];
-
-    private _array   = [];
-    switch (typeOf _chopper) do    {
-        case "B_SDV_01_F" : {
-            _array = ["Motorcycle", "ReammoBox", "ReammoBox_F", "StaticWeapon", "Car", "Truck", "Wheeled_APC_F", "Tracked_APC", "APC_Tracked_01_base_F", "APC_Tracked_02_base_F", "Air", "Ship", "Tank"] + ((btc_construction_array select 1) select 3) + ((btc_construction_array select 1) select 4) + ((btc_construction_array select 1) select 5);
-        };
-        default {
-            private _MaxCargoMass = getNumber (configFile >> "CfgVehicles" >> typeOf _chopper >> "slingLoadMaxCargoMass");
-            switch (true) do {
-                case (_MaxCargoMass  <= 510) : {
-                    _array = ["Motorcycle", "ReammoBox", "ReammoBox_F", "Quadbike_01_base_F", "Strategic"];
-                };
-                case (_MaxCargoMass  <= 2100) : {
-                    _array = ["Motorcycle", "ReammoBox", "ReammoBox_F", "StaticWeapon", "Car"];
-                };
-                case (_MaxCargoMass  <= 4100) : {
-                    _array = ["Motorcycle", "ReammoBox", "ReammoBox_F", "StaticWeapon", "Car", "Truck_F", "Truck", "Wheeled_APC_F", "Air", "Ship"] + ((btc_construction_array select 1) select 3) + ((btc_construction_array select 1) select 4) + ((btc_construction_array select 1) select 5);
-                };
-                case (_MaxCargoMass  <= 14000) : {
-                    _array = ["Motorcycle", "ReammoBox", "ReammoBox_F", "StaticWeapon", "Car", "Truck_F", "Truck", "Wheeled_APC_F", "Tracked_APC", "APC_Tracked_01_base_F", "APC_Tracked_02_base_F", "Air", "Ship", "Tank"] + ((btc_construction_array select 1) select 3) + ((btc_construction_array select 1) select 4) + ((btc_construction_array select 1) select 5);
-                };
-                default {
-                    _array = ["Motorcycle", "ReammoBox", "ReammoBox_F", "StaticWeapon", "Car", "Truck_F", "Truck", "Wheeled_APC_F", "Tracked_APC", "APC_Tracked_01_base_F", "APC_Tracked_02_base_F", "Air", "Ship", "Tank"] + ((btc_construction_array select 1) select 3) + ((btc_construction_array select 1) select 4) + ((btc_construction_array select 1) select 5);
-                };
-            };
-        };
-    };
-    _array
-};
-
-btc_ropes_deployed = false;
-btc_lift_min_h  = 7;
-btc_lift_max_h  = 12;
-btc_lift_radius = 3;
-btc_lift_HUD_x  = 0.874;
-btc_lift_HUD_y  = 0.848;
 
 //Mil
 btc_hq = objNull;

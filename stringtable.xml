@@ -117,15 +117,6 @@
                 <Chinesesimp>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\move1_ca.paa' width='20' height='20' /&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\run_ca.paa' width='20' height='20' /&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\move2_ca.paa' width='20' height='20' /&gt; &lt;marker name='blufor_base'&gt;FOB:&lt;/marker&gt;&lt;br/&gt; FOB 可作为前线复活点使用。要创建FOB, 请在补给点申请蓝色货运集装箱。&lt;br/&gt;&lt;br/&gt; - &lt;img image='\A3\Ui_f\data\Map\Markers\NATO\b_hq.paa' width='20' height='20'/&gt;  &lt;marker name='blufor_base'&gt;部署:&lt;/marker&gt; &lt;br/&gt; 将FOB集装箱移动至部署位置并与其互动即可建造FOB。请谨记: 只有在主基地2500米范围外的地形平坦区域才能建立FOB。&lt;br/&gt;&lt;br/&gt; - &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;拆除:&lt;/marker&gt; &lt;br/&gt; 你可以与指挥部(HQ)屋顶的旗杆互动, 以拆除FOB。</Chinesesimp>
             </Key>
         </Container>
-        <Container name="Documentation: Sling loading">
-            <Key ID="STR_BTC_HAM_DOC_SLING_TEXT">
-                <Original>=BTC= Lift will not replace the A3 sling loading, you can use both.&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\container_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\air_f_beta\Heli_Transport_01\Data\UI\Map_Heli_Transport_01_base_CA.paa' width='20' height='20'/&gt; Lifting an object is pretty simple. Get in a chopper as pilot, hover above the object and interact with the chopper to deploy ropes.&lt;br/&gt; When you are in the right position a new scroll wheel action will appear ('HOOK'). If you want you can open the HUD to facilitate the operation.&lt;br/&gt; &lt;img image='\z\ace\addons\logistics_wirecutter\ui\wirecutter_ca.paa' width='20' height='20'/&gt; To release an object open you self interaction menu and select 'CUT ROPES'.</Original>
-                <Spanish>=BTC= Lift will not replace the A3 sling loading, you can use both.&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\container_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\air_f_beta\Heli_Transport_01\Data\UI\Map_Heli_Transport_01_base_CA.paa' width='20' height='20'/&gt; Levantar un objeto es muy sencillo. Métete en un helicóptero como piloto, sobrevuela el objeto e interactúa con el helicóptero para desplegar las cuerdas.&lt;br/&gt; Cuando esté en la posición correcta, aparecerá una nueva acción de la rueda de desplazamiento ('HOOK'). Si lo desea puede abrir el HUD para facilitar la operación.&lt;br/&gt; &lt;img image='\z\ace\addons\logistics_wirecutter\ui\wirecutter_ca.paa' width='20' height='20'/&gt; Para liberar un objeto, abra el menú de autointeracción y seleccione 'CORTAR CUERDAS'.</Spanish>
-                <German>=BTC= Lift ersetzt nicht das A3 Sling-Load-System, du kannst beide nutzen.&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\container_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\air_f_beta\Heli_Transport_01\Data\UI\Map_Heli_Transport_01_base_CA.paa' width='20' height='20'/&gt; Das heben von Lasten ist recht einfach. Nimm dir einen Hubschrauber, schwebe über dem Objekt und lass die Seile ab indem du mit dem Hubschrauber interagierst.&lt;br/&gt; Wenn du in der richtigen Postion bist, erscheint im Maus-Rad-Menü die Option 'EINHACKEN' mit der du die Fracht einhacken kannst. Wenn du willst kannst du auch ein HUD öffnen, welches dir deine Arbeit erleichtert.&lt;br/&gt; &lt;img image='\z\ace\addons\logistics_wirecutter\ui\wirecutter_ca.paa' width='20' height='20'/&gt; Um ein eingehacktes Objekt abzulassen, wähle im Maus-Rad-Menü die Option 'SEILE TRENNEN' aus.</German>
-                <Portuguese>=BTC= O elevador não substituirá o carregamento do A3 Sling, você pode usar ambos.&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\container_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\air_f_beta\Heli_Transport_01\Data\UI\Map_Heli_Transport_01_base_CA.paa' width='20' height='20'/&gt; Levantar um objeto é bem simples. Entre em um helicóptero como piloto, passe o mouse sobre o objeto e interaja com o helicóptero para posicionar as cordas.&lt;br/&gt; Quando você estiver na posição correta e rolar a roda do mouse, aparecerá a ação "GANCHO". Se você quiser, pode abrir o HUD para facilitar a operação.&lt;br/&gt; &lt;img image='\z\ace\addons\logistics_wirecutter\ui\wirecutter_ca.paa' width='20' height='20'/&gt; Para liberar um objeto, abra o menu de interação deste objeto e selecione "CORTAR CORDAS".</Portuguese>
-                <Chinesesimp>=BTC=吊挂功能不会覆盖原版吊挂功能, 二者都可以使用。&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\container_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\air_f_beta\Heli_Transport_01\Data\UI\Map_Heli_Transport_01_base_CA.paa' width='20' height='20'/&gt; 吊挂货物相当简单: 进入直升机飞行员座位, 于货物上方悬停, 与直升机互动并部署绳索。&lt;br/&gt; 当你处于正确位置时, 一个新的选项"安装挂钩"将会出现在鼠标滚轮的动作菜单中。你可也以打开HUD以方便操作。&lt;br/&gt; &lt;img image='\z\ace\addons\logistics_wirecutter\ui\wirecutter_ca.paa' width='20' height='20'/&gt; 要释放一个货物, 使用自我互动菜单并选择"断开绳索"即可。</Chinesesimp>
-            </Key>
-        </Container>
         <Container name="Documentation: Logistic point">
             <Key ID="STR_BTC_HAM_DOC_LOGISTICP_TEXT">
                 <Original>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\repair_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20'/&gt; At the logistic point you can require new objects (like ammo, fortifications, supplies for the side missions...) and repair destroyed vehicles.</Original>
@@ -133,14 +124,6 @@
                 <German>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\repair_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20'/&gt; Am Logistikpunkt kann man neue Objekte (wie zB. Munition, Baumaterial, Nachschubgüter für Nebenaufgaben...) anfordern und zerstörte Fahrzeuge reparieren.</German>
                 <Portuguese>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\repair_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20'/&gt; No ponto logístico, você pode solicitar novos objetos (como munição, fortificações, suprimentos para as missões secundárias ...) e reparar veículos destruídos.</Portuguese>
                 <Chinesesimp>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\repair_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20'/&gt; 补给点可以生成新的物件(如弹药、防御工事、用于支线任务的救援物资等), 也可以维修受损载具。</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Documentation: Logistic">
-            <Key ID="STR_BTC_HAM_DOC_LOGISTIC_TEXT">
-                <Original>&lt;marker name='blufor_base'&gt;Cargo System:&lt;/marker&gt;&lt;br/&gt; Use ACE 3 Cargo system. &lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt;Towing system:&lt;/marker&gt;&lt;br/&gt; To tow a vehicle interact with it and select the option 'HOOK'.&lt;br/&gt;After that place the tow vehicle in front of it and select 'TOW' in the interaction menu.&lt;br/&gt; If the two vehicles are too far away or the vehicle can't tow that load (Car can't tow truck or tank), the option will be disabled.&lt;br/&gt; To unhook interact with one of the two vehicles and select the option 'UNHOOK'.&lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt;Place option:&lt;/marker&gt;&lt;br/&gt; With this option you can move heavy objects to build small outpost or base.&lt;br/&gt; When you select the option an hint will show all the keys required to move the object.</Original>
-                <German>&lt;marker name='blufor_base'&gt;Fracht-System:&lt;/marker&gt;&lt;br/&gt;Siehe ACE3 Dokumentation. &lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt;Abschleppsystem:&lt;/marker&gt;&lt;br/&gt; Um ein Fahrzeug abzuschleppen muss man mit diesem interagieren und 'EINHACKEN' auswählen.&lt;br/&gt;Als nächstes muss man das Zugfahrzeug vor das abzuschleppende Fahrzeug stellen und über das Interagtionsmenü die Option 'ABSCHLEPPEN' aktivieren.&lt;br/&gt; Zu beachten ist dabei, dass die beiden Fahrzeuge nicht zu weit von einander entfernt sein dürfen. Ebenso ist daruf zu achten, dass das Zugfahrzeug auch das andere Fahrzeug abschleppen kann (zB. Autos können keine Lkw/Panzer abschleppen).&lt;br/&gt; Um das Abschleppseil wieder zu entfernen muss man einen bei einem der beiden Fahrzeuge die Option 'AUSHACKEN' auswählen.&lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt;Platzierung von Objekten:&lt;/marker&gt;&lt;br/&gt; Mit dieser Option können Sie schwere Objekte bewegen, um einen kleinen Außenposten oder eine Basis zu bauen.&lt;br/&gt; Wenn Sie die Option auswählen, zeigt ein Hinweis alle Tasten an, die zum Verschieben des Objekts erforderlich sind.</German>
-                <Portuguese>&lt;marker name='blufor_base'&gt;Cargo System:&lt;/marker&gt;&lt;br/&gt; Use ACE 3 Cargo system. &lt;br/&gt;&lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt;Towing system:&lt;/marker&gt;&lt;br/&gt; Para rebocar um veículo, interaja com ele e selecione a opção "GANCHO".&lt;br/&gt; Depois disso, coloque o veículo de reboque na frente dele e selecione "REBOCAR" no menu de interação.&lt;br/&gt; Se os dois veículos estiverem muito distantes ou o veículo não puder rebocar essa carga (o carro não poderá rebocar o caminhão ou o tanque), a opção será desativada.&lt;br/&gt; Para desengatar, interaja com um dos dois veículos e selecione a opção "DESENGANCHAR".&lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt;Place option:&lt;/marker&gt;&lt;br/&gt; Com esta opção, você pode mover objetos pesados para construir um posto avançado ou uma base pequena.&lt;br/&gt; Quando você selecionar a opção, uma dica mostrará todas as ações necessárias para mover o objeto.</Portuguese>
-                <Chinesesimp>&lt;marker name='blufor_base'&gt;货运系统:&lt;/marker&gt;&lt;br/&gt; 使用ACE3货运系统。 &lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt;牵引系统:&lt;/marker&gt;&lt;br/&gt; 如需牵引一辆载具, 与其互动并选择"启用牵引"。&lt;br/&gt;然后, 将牵引车辆(前车)置于被牵引车辆(后车)前方, 并在互动菜单中选择"牵引"。&lt;br/&gt; 如果两辆车的距离过远, 或前车无法牵引这一载荷(比如汽车(Car)无法牵引卡车(Truck)或坦克(Tank)), 则该选项不可用。&lt;br/&gt; 如需取消牵引, 与两车之一互动并选择"取消牵引"。&lt;br/&gt;&lt;br/&gt; &lt;marker name='blufor_base'&gt;对象放置:&lt;/marker&gt;&lt;br/&gt; 此选项允许您移动重物以建造一个小的前哨基地。&lt;br/&gt; 选择该选项后, 将会出现移动对象所需的键位提示。</Chinesesimp>
             </Key>
         </Container>
         <Container name="Documentation: Hideout">
@@ -1322,43 +1305,6 @@
                 <Chinesesimp>&lt;t color='#ff1111'&gt;军火库(ACE)&lt;/t&gt;</Chinesesimp>
             </Key>
         </Container>
-        <Container name="Action(ACE): Veh. Init">
-            <Key ID="STR_BTC_HAM_ACTION_VEHINIT_TOW">
-                <Original>Tow</Original>
-                <Spanish>Remolcar</Spanish>
-                <German>Abschleppen</German>
-                <Portuguese>Reboque</Portuguese>
-                <Chinesesimp>牵引</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_ACTION_VEHINIT_HOOK">
-                <Original>Hook</Original>
-                <Spanish>Enganchar</Spanish>
-                <German>Einhacken</German>
-                <Portuguese>Enganchar</Portuguese>
-                <Chinesesimp>启用牵引</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_ACTION_VEHINIT_UHOOK">
-                <Original>Unhook</Original>
-                <Spanish>Desenganchar</Spanish>
-                <German>Aushaken</German>
-                <Portuguese>Desenganchar</Portuguese>
-                <Chinesesimp>取消牵引</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_ACTION_VEHINIT_DEPLOYROPES">
-                <Original>Deploy ropes</Original>
-                <Spanish>Desplegar cuerdas</Spanish>
-                <German>Seile auswerfen</German>
-                <Portuguese>Colocar cordas</Portuguese>
-                <Chinesesimp>部署绳索</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_ACTION_VEHINIT_CUTROPES">
-                <Original>Cut ropes</Original>
-                <Spanish>Cortar cuerdas</Spanish>
-                <German>Seile trennen</German>
-                <Portuguese>Cortar cordas</Portuguese>
-                <Chinesesimp>断开绳索</Chinesesimp>
-            </Key>
-        </Container>
         <Container name="Action(ACE): Copy Paste">
             <Key ID="STR_BTC_HAM_ACTION_COPYPASTE_COPY">
                 <Original>Copy container</Original>
@@ -1866,24 +1812,6 @@
                 <Chinesesimp>在创建新的物件前, 该区域必须清空!</Chinesesimp>
             </Key>
         </Container>
-        <Container name="Logistic: Hook ">
-            <Key ID="STR_BTC_HAM_LOG_HOOK_HINFO">
-                <Original>Interact with a vehicle to tow it! (This vehicle can't tow %1)</Original>
-                <Spanish>Interactúe con un vehículo para remolcarlo! (Este vehículo no puede remolcar %1)</Spanish>
-                <German>Interagieren Sie mit dem Zug-Fahrzeug, um es abzuschleppen! (Folgende Fahrzeuge können nicht gezogen werden: %1)</German>
-                <Portuguese>Interaja com o veículo para rebocá-lo! (Este veículo não pode rebocar %1)</Portuguese>
-                <Chinesesimp>与牵引车(前车)互动以牵引它! (当前载具(后车)无法牵引如下类型的载具: %1)</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Logistic: Lift deploy ropes ">
-            <Key ID="STR_BTC_HAM_LOG_LDR_ACTIONHUD">
-                <Original>Hud On\Off</Original>
-                <Spanish>Hud Encendido\Apagado</Spanish>
-                <German>Hud An\Aus</German>
-                <Portuguese>Hud Ligado\Desligado</Portuguese>
-                <Chinesesimp>启用/关闭抬头显示器(HUD)</Chinesesimp>
-            </Key>
-        </Container>
         <Container name="Logistic: Load ">
             <Key ID="STR_BTC_HAM_LOG_LOAD_TOOFAR">
                 <Original>%1 is too far from %2!</Original>
@@ -1970,24 +1898,6 @@
                 <German>Loslassen</German>
                 <Portuguese>Soltar</Portuguese>
                 <Chinesesimp>释放</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Logistic: Tow ">
-            <Key ID="STR_BTC_HAM_LOG_TOW_ALREADYTOWED">
-                <Original>This vehicle is already attached to another!</Original>
-                <Spanish>Este vehículo ya está unido a otro!</Spanish>
-                <German>Dieses Fahrzeug zieht bereits ein anderes Fahrzeug!</German>
-                <Portuguese>Este veículo já está atracado a outro!</Portuguese>
-                <Chinesesimp>这辆载具已经连接一辆载具了!</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Logistic: Unhook ">
-            <Key ID="STR_BTC_HAM_LOG_UNHOOK_NOROPE">
-                <Original>This vehicle is not attached to another!</Original>
-                <Spanish>Este vehículo no está unido a otro!</Spanish>
-                <German>Das Fahrzeug schleppt kein anderes Fahrzeug ab!</German>
-                <Portuguese>Este veículo não está atracado a outro!</Portuguese>
-                <Chinesesimp>该载具没有连接其他载具!</Chinesesimp>
             </Key>
         </Container>
     </Package>
