@@ -566,12 +566,6 @@
                 <German>Nach der Rolle des Spielers beschränken (geht nur mit dem ACE3-Arsenal)</German>
                 <Chinesesimp>根据玩家角色限制 (仅对ACE3军火库生效)</Chinesesimp>
             </Key>
-            <Key ID="STR_BTC_HAM_PARAM_ARSENAL_GARAGEADMIN">
-                <Original>Activate garage for admin:</Original>
-                <German>Virtuelle Garage für den Admin:</German>
-                <Portuguese>Garagem virtual para o administrador:</Portuguese>
-                <Chinesesimp>为管理员启用虚拟车库</Chinesesimp>
-            </Key>
         </Container>
         <Container name="Parameters: Other">
             <Key ID="STR_BTC_HAM_PARAM_OTHER_TITLE">
@@ -1211,13 +1205,6 @@
                 <German>Nachschub anfordern</German>
                 <Portuguese>Solicitar reabastecimento</Portuguese>
                 <Chinesesimp>申请补给</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_ACTION_LOGPOINT_REQVEH">
-                <Original>Require vehicle</Original>
-                <Spanish>Solicitar vehiculo</Spanish>
-                <German>Fahrzeug anfordern</German>
-                <Portuguese>Solicitar veículo</Portuguese>
-                <Chinesesimp>申请载具</Chinesesimp>
             </Key>
         </Container>
         <Container name="Action(ACE): FOB">

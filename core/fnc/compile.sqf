@@ -292,7 +292,6 @@ if (!isDedicated) then {
 
     //ARSENAL
     btc_fnc_arsenal_data = compile preprocessFileLineNumbers "core\fnc\arsenal\data.sqf";
-    btc_fnc_arsenal_garage = compile preprocessFileLineNumbers "core\fnc\arsenal\garage.sqf";
     btc_fnc_arsenal_loadout = compile preprocessFileLineNumbers "core\fnc\arsenal\loadout.sqf";
     btc_fnc_arsenal_trait = compile preprocessFileLineNumbers "core\fnc\arsenal\trait.sqf";
     btc_fnc_arsenal_ammoUsage = compile preprocessFileLineNumbers "core\fnc\arsenal\ammoUsage.sqf";
