@@ -289,12 +289,6 @@
                 <Portuguese>Tipos de Inimigos:</Portuguese>
                 <Chinesesimp>敌方类型:</Chinesesimp>
             </Key>
-            <Key ID="STR_BTC_HAM_PARAM_FAC_EAA">
-                <Original>Anti-Air infantry:</Original>
-                <German>feindl. Fliegerabwehrtruppen:</German>
-                <Portuguese>Forças de defesa aérea inimigas:</Portuguese>
-                <Chinesesimp>敌方防空部队:</Chinesesimp>
-            </Key>
             <Key ID="STR_BTC_HAM_PARAM_FAC_ETANK">
                 <Original>Enemy uses Tank:</Original>
                 <German>feindl. Panzer:</German>

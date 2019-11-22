@@ -7,7 +7,6 @@ Description:
 
 Parameters:
     _factions - [Array]
-    _en_AA - [Boolean]
     _en_tank - [Boolean]
 
 Returns:
@@ -18,13 +17,12 @@ Examples:
     (end)
 
 Author:
-    Vdauphin
+    Vdauphin and jmlane
 
 ---------------------------------------------------------------------------- */
 
 params [
     ["_factions", [], [[]]],
-    ["_en_AA", false, [false]],
     ["_en_tank", false, [false]]
 ];
 
@@ -58,7 +56,7 @@ _enemy_side = [east, west, independent, civilian] select getNumber (_cfgFactionC
 
 //Prevent selecting same side as player side
 if (_enemy_side isEqualTo btc_player_side) exitWith {
-    [["IND_G_F"], _en_AA, _en_tank] call btc_fnc_mil_class;
+    [["IND_G_F"], _en_tank] call btc_fnc_mil_class;
 };
 
 {
@@ -104,11 +102,6 @@ if (_enemy_side isEqualTo btc_player_side) exitWith {
     };
 } forEach _factions;
 
-//Final filter unwanted units type
-if !(_en_AA) then {
-    //Remove Anti-Air Units
-    _type_units = _type_units select {!([_x, ["MissileLauncher", "256"]] call btc_fnc_mil_ammoUsage)};
-};
 _type_units = _type_units select {
     !(getText (_cfgVehicles >> _x >> "role") isEqualTo "Crewman") &&
     ((_x find "_Survivor_") isEqualTo -1) &&
