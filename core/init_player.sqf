@@ -7,21 +7,11 @@
 
     [player] call btc_fnc_eh_player;
 
-    private _arsenal_trait = player call btc_fnc_arsenal_trait;
-    if (btc_p_arsenal_Restrict isEqualTo 3) then {
-        [_arsenal_trait select 1] call btc_fnc_arsenal_weaponsFilter;
-    };
     [] call btc_fnc_int_add_actions;
     [] call btc_fnc_int_shortcuts;
 
     if (player getVariable ["interpreter", false]) then {
         player createDiarySubject [localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG", localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG"];
-    };
-
-    if (btc_p_autoloadout) then {
-        player setUnitLoadout ([_arsenal_trait select 0] call btc_fnc_arsenal_loadout);
-    } else {
-        removeAllWeapons player;
     };
 
     private _standard_tasks = (player call BIS_fnc_tasksUnit) select {

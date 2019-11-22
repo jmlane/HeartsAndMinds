@@ -289,12 +289,6 @@
                 <Portuguese>Tipos de Inimigos:</Portuguese>
                 <Chinesesimp>敌方类型:</Chinesesimp>
             </Key>
-            <Key ID="STR_BTC_HAM_PARAM_FAC_EAA">
-                <Original>Anti-Air infantry:</Original>
-                <German>feindl. Fliegerabwehrtruppen:</German>
-                <Portuguese>Forças de defesa aérea inimigas:</Portuguese>
-                <Chinesesimp>敌方防空部队:</Chinesesimp>
-            </Key>
             <Key ID="STR_BTC_HAM_PARAM_FAC_ETANK">
                 <Original>Enemy uses Tank:</Original>
                 <German>feindl. Panzer:</German>
@@ -518,62 +512,6 @@
                 <Original>&lt;&lt; Arsenal options &gt;&gt;</Original>
                 <German>&lt;&lt; Arsenal Einstellungen &gt;&gt;</German>
                 <Chinesesimp>&lt;&lt; 军火库设置 &gt;&gt;</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_ARSENAL_ARSENALTYPE">
-                <Original>Type of the arsenal:</Original>
-                <German>Art des Arsenals:</German>
-                <Portuguese>Tipo de Arsenal:</Portuguese>
-                <Chinesesimp>军火库类型:</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_ARSENAL_ARSENALTYPE_BIS">
-                <Original>BIS - Vanilla</Original>
-                <German>BIS - Vanilla</German>
-                <Portuguese>BIS - Vanilla</Portuguese>
-                <Chinesesimp>BIS - 原版</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_ARSENAL_ARSENALTYPE_ACE">
-                <Original>ACE 3</Original>
-                <German>ACE 3</German>
-                <Portuguese>ACE 3</Portuguese>
-                <Chinesesimp>ACE 3</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_ARSENAL_ARSENALTYPE_BA">
-                <Original>BIS - Vanilla and ACE 3</Original>
-                <German>BIS - Vanilla und ACE 3</German>
-                <Portuguese>BIS - Vanilla e ACE 3</Portuguese>
-                <Chinesesimp>BIS - 原版 和 ACE 3</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_ARSENAL_ARSENALTYPE_ACE_PLUS">
-                <Original>ACE 3 (scroll wheel action)</Original>
-                <German>ACE 3 (Maus-Rad-Menü)</German>
-                <Portuguese>ACE 3 (rolando botão do meio do mouse)</Portuguese>
-                <Chinesesimp>ACE 3 (鼠标滚轮动作菜单)</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_ARSENAL_ARSENALTYPE_BA_PLUS">
-                <Original>BIS - Vanilla and ACE 3 (scroll wheel action)</Original>
-                <German>BIS - Vanilla und ACE 3 (Maus-Rad-Menü)</German>
-                <Portuguese>BIS - Vanilla e ACE 3 (rolando botão do meio do mouse)</Portuguese>
-                <Chinesesimp>BIS - 原版 和 ACE 3 (鼠标滚轮动作菜单)</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_ARSENAL_ARSENALRESTR">
-                <Original>Restrict arsenal (See /define_mod.sqf):</Original>
-                <German>Arsenal beschränken (Siehe /define_mod.sqf):</German>
-                <Chinesesimp>军火库限制 (见 /define_mod.sqf):</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_ARSENAL_ARSENALRESTR_REMOVEONLY">
-                <Original>Remove only (works only with ACE3-Arsenal)</Original>
-                <German>Nur entfernen (funktioniert nur beim ACE3-Arsenal)</German>
-                <Chinesesimp>仅移除 (仅对ACE3军火库生效)</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_ARSENAL_AUTOLOADOUT">
-                <Original>Predefined loadouts (See /define_mod.sqf)</Original>
-                <German>Vorgefertigte Loadouts (Siehe /define_mod.sqf)</German>
-                <Chinesesimp>预设装备 (见 /define_mod.sqf)</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_ARSENAL_ARSENALRESTR_FILTER">
-                <Original>Filter on player role (works only with ACE3-Arsenal)</Original>
-                <German>Nach der Rolle des Spielers beschränken (geht nur mit dem ACE3-Arsenal)</German>
-                <Chinesesimp>根据玩家角色限制 (仅对ACE3军火库生效)</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_ARSENAL_GARAGEADMIN">
                 <Original>Activate garage for admin:</Original>
@@ -1333,22 +1271,6 @@
                 <German>Verlegen</German>
                 <Portuguese>Recolocar</Portuguese>
                 <Chinesesimp>重新部署</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Action : Arsenal (BIS)">
-            <Key ID="STR_BTC_HAM_ACTION_ARSENAL_OPEN_BIS">
-                <Original>&lt;t color='#ff1111'&gt;Arsenal (BIS)&lt;/t&gt;</Original>
-                <German>&lt;t color='#ff1111'&gt;Arsenal (BIS)&lt;/t&gt;</German>
-                <Portuguese>&lt;t color='#ff1111'&gt;Arsenal (BIS)&lt;/t&gt;</Portuguese>
-                <Chinesesimp>&lt;t color='#ff1111'&gt;军火库(BIS)&lt;/t&gt;</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Action : Arsenal (ACE)">
-            <Key ID="STR_BTC_HAM_ACTION_ARSENAL_OPEN_ACE">
-                <Original>&lt;t color='#ff1111'&gt;Arsenal (ACE)&lt;/t&gt;</Original>
-                <German>&lt;t color='#ff1111'&gt;Arsenal (ACE)&lt;/t&gt;</German>
-                <Portuguese>&lt;t color='#ff1111'&gt;Arsenal (ACE)&lt;/t&gt;</Portuguese>
-                <Chinesesimp>&lt;t color='#ff1111'&gt;军火库(ACE)&lt;/t&gt;</Chinesesimp>
             </Key>
         </Container>
         <Container name="Action(ACE): Veh. Init">
