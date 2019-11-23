@@ -93,7 +93,7 @@ if (isServer) then {
 
     //City
     btc_city_radius = _p_city_radius;
-    btc_city_blacklist = [];//NAME FROM CFG
+    btc_city_blacklist = ["military02"];//NAME FROM CFG
 
     //Civ
     btc_civ_veh_active = [];
