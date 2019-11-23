@@ -11,10 +11,6 @@ if (btc_db_load && {profileNamespace getVariable [format ["btc_hm_%1_db", worldN
 } else {
     for "_i" from 1 to btc_hideout_n do {[] call btc_fnc_mil_create_hideout;};
     [] call compile preprocessFileLineNumbers "core\fnc\cache\init.sqf";
-
-    private _date = date;
-    _date set [3, btc_p_time];
-    setDate _date;
 };
 
 [] call btc_fnc_db_autosave;
@@ -22,8 +18,6 @@ if (btc_db_load && {profileNamespace getVariable [format ["btc_hm_%1_db", worldN
 [btc_ied_list] call btc_fnc_ied_fired_near;
 
 ["Initialize"] call BIS_fnc_dynamicGroups;
-
-setTimeMultiplier btc_p_acctime;
 
 if (btc_p_side_mission_cycle) then {
     [true] spawn btc_fnc_side_create;

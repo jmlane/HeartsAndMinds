@@ -107,23 +107,7 @@ if (_type isEqualTo 3) then {
 };
 if (_type isEqualTo 4) then {[[0, 0, 0], 0, units _group] call btc_fnc_civ_get_weapons;};
 if (_type isEqualTo 5) then {
-    _group spawn {
-        _this setVariable ["suicider", true];
-
-        private _suicider = leader _this;
-
-        //Main check
-
-        private _cond = false;
-
-        while {Alive _suicider && !isNull _suicider && !_cond} do {
-            sleep 5;
-            if !((getPos _suicider nearEntities ["SoldierWB", 25]) isEqualTo []) then {
-                _cond = true;
-                _suicider spawn btc_fnc_ied_suicider_active
-            };
-        };
-    };
+    [leader _group] call btc_fnc_ied_suicider_active;
 };
 if (_type isEqualTo 6) then {
     [_group] call CBA_fnc_clearWaypoints;
