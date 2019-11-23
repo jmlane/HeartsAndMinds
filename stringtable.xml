@@ -456,13 +456,6 @@
                 <Chinesesimp>自动开始下一个支线任务:</Chinesesimp>
             </Key>
         </Container>
-        <Container name="Parameters: Arsenal">
-            <Key ID="STR_BTC_HAM_PARAM_ARSENAL_TITLE">
-                <Original>&lt;&lt; Arsenal options &gt;&gt;</Original>
-                <German>&lt;&lt; Arsenal Einstellungen &gt;&gt;</German>
-                <Chinesesimp>&lt;&lt; 军火库设置 &gt;&gt;</Chinesesimp>
-            </Key>
-        </Container>
         <Container name="Parameters: Other">
             <Key ID="STR_BTC_HAM_PARAM_OTHER_TITLE">
                 <Original>&lt;&lt; Other options &gt;&gt;</Original>
