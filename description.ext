@@ -6,8 +6,6 @@ onLoadMission = $STR_BTC_HAM_DESCR_MISSION;
 enabledebugconsole = 1;
 
 #include "core\fnc\common\dlg.hpp"
-#include "core\fnc\fob\dlg.hpp"
-#include "core\fnc\log\dlg.hpp"
 #include "core\fnc\debug\defines.hpp"
 
 class RscTitles {
@@ -35,16 +33,4 @@ class CfgFunctions {
 // CBA XEH
 class Extended_PreInit_EventHandlers {
     #include "core\fnc\eh\xeh_PreInit_EH.hpp"
-};
-
-class Extended_InitPost_EventHandlers {
-    class LandVehicle {
-        #include "core\fnc\eh\xeh_InitPost_EH_Vehicle.hpp"
-    };
-    class Air {
-        #include "core\fnc\eh\xeh_InitPost_EH_Vehicle.hpp"
-    };
-    class Ship {
-        #include "core\fnc\eh\xeh_InitPost_EH_Vehicle.hpp"
-    };
 };

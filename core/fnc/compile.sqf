@@ -56,9 +56,6 @@ if (isServer) then {
     btc_fnc_db_loadCargo = compile preprocessFileLineNumbers "core\fnc\db\loadcargo.sqf";
 
     //EH
-    btc_fnc_eh_veh_add_respawn = compile preprocessFileLineNumbers "core\fnc\eh\veh_add_respawn.sqf";
-    btc_fnc_eh_veh_killed = compile preprocessFileLineNumbers "core\fnc\eh\veh_killed.sqf";
-    btc_fnc_eh_veh_respawn = compile preprocessFileLineNumbers "core\fnc\eh\veh_respawn.sqf";
     btc_fnc_eh_explosives_defuse = compile preprocessFileLineNumbers "core\fnc\eh\explosives_defuse.sqf";
     btc_fnc_eh_handledisconnect = compile preprocessFileLineNumbers "core\fnc\eh\handledisconnect.sqf";
     btc_fnc_eh_buildingchanged = compile preprocessFileLineNumbers "core\fnc\eh\buildingchanged.sqf";
@@ -83,10 +80,6 @@ if (isServer) then {
     btc_fnc_info_give_intel = compile preprocessFileLineNumbers "core\fnc\info\give_intel.sqf";
     btc_fnc_info_has_intel = compile preprocessFileLineNumbers "core\fnc\info\has_intel.sqf";
     btc_fnc_info_hideout = compile preprocessFileLineNumbers "core\fnc\info\hideout.sqf";
-
-    //FOB
-    btc_fnc_fob_create_s = compile preprocessFileLineNumbers "core\fnc\fob\create_s.sqf";
-    btc_fnc_fob_dismantle_s = compile preprocessFileLineNumbers "core\fnc\fob\dismantle_s.sqf";
 
     //MIL
     btc_fnc_mil_addWP = compile preprocessFileLineNumbers "core\fnc\mil\addWP.sqf";
@@ -146,8 +139,6 @@ if (isServer) then {
 
     //LOG
     btc_fnc_log_CuratorObjectPlaced_s = compile preprocessFileLineNumbers "core\fnc\log\CuratorObjectPlaced_s.sqf";
-    btc_fnc_log_createVehicle = compile preprocessFileLineNumbers "core\fnc\log\createVehicle.sqf";
-    btc_fnc_log_getRearmMagazines = compile preprocessFileLineNumbers "core\fnc\log\getRearmMagazines.sqf";
     btc_fnc_log_init = compile preprocessFileLineNumbers "core\fnc\log\init.sqf";
 
     //DEAF
@@ -173,8 +164,6 @@ btc_fnc_house_addWP_loop = compile preprocessFileLineNumbers "core\fnc\common\ho
 //DEBUG
 btc_fnc_debug_message = compile preprocessFileLineNumbers "core\fnc\debug\message.sqf";
 
-//DB
-btc_fnc_db_add_veh = compile preprocessFileLineNumbers "core\fnc\db\add_veh.sqf";
 
 //CIV
 btc_fnc_civ_class = compile preprocessFileLineNumbers "core\fnc\civ\class.sqf";
@@ -186,32 +175,8 @@ btc_fnc_int_orders_behaviour = compile preprocessFileLineNumbers "core\fnc\int\o
 btc_fnc_int_ask_var = compile preprocessFileLineNumbers "core\fnc\int\ask_var.sqf";
 
 //LOG
-btc_fnc_log_can_tow = compile preprocessFileLineNumbers "core\fnc\log\can_tow.sqf";
-btc_fnc_log_create = compile preprocessFileLineNumbers "core\fnc\log\create.sqf";
-btc_fnc_log_create_apply = compile preprocessFileLineNumbers "core\fnc\log\create_apply.sqf";
-btc_fnc_log_create_load = compile preprocessFileLineNumbers "core\fnc\log\create_load.sqf";
-btc_fnc_log_create_change_target = compile preprocessFileLineNumbers "core\fnc\log\create_change_target.sqf";
-btc_fnc_log_create_s = compile preprocessFileLineNumbers "core\fnc\log\create_s.sqf";
-btc_fnc_log_hook = compile preprocessFileLineNumbers "core\fnc\log\hook.sqf";
-btc_fnc_log_lift_check = compile preprocessFileLineNumbers "core\fnc\log\lift_check.sqf";
-btc_fnc_log_lift_deploy_ropes = compile preprocessFileLineNumbers "core\fnc\log\lift_deploy_ropes.sqf";
-btc_fnc_log_lift_destroy_ropes = compile preprocessFileLineNumbers "core\fnc\log\lift_destroy_ropes.sqf";
-btc_fnc_log_lift_hook = compile preprocessFileLineNumbers "core\fnc\log\lift_hook.sqf";
-btc_fnc_log_lift_hook_fake = compile preprocessFileLineNumbers "core\fnc\log\lift_hook_fake.sqf";
-btc_fnc_log_lift_hud = compile preprocessFileLineNumbers "core\fnc\log\lift_hud.sqf";
-btc_fnc_log_lift_hud_loop = compile preprocessFileLineNumbers "core\fnc\log\lift_hud_loop.sqf";
-btc_fnc_log_get_cc = compile preprocessFileLineNumbers "core\fnc\log\get_cc.sqf";
-btc_fnc_log_get_rc = compile preprocessFileLineNumbers "core\fnc\log\get_rc.sqf";
-btc_fnc_log_place = compile preprocessFileLineNumbers "core\fnc\log\place.sqf";
 btc_fnc_log_place_create_camera = compile preprocessFileLineNumbers "core\fnc\log\place_create_camera.sqf";
 btc_fnc_log_place_destroy_camera = compile preprocessFileLineNumbers "core\fnc\log\place_destroy_camera.sqf";
-btc_fnc_log_place_key_down = compile preprocessFileLineNumbers "core\fnc\log\place_key_down.sqf";
-btc_fnc_log_repair_wreck = compile preprocessFileLineNumbers "core\fnc\log\repair_wreck.sqf";
-btc_fnc_log_server_repair_wreck = compile preprocessFileLineNumbers "core\fnc\log\server_repair_wreck.sqf";
-btc_fnc_log_tow = compile preprocessFileLineNumbers "core\fnc\log\tow.sqf";
-btc_fnc_log_unhook = compile preprocessFileLineNumbers "core\fnc\log\unhook.sqf";
-btc_fnc_log_copy = compile preprocessFileLineNumbers "core\fnc\log\copy.sqf";
-btc_fnc_log_paste = compile preprocessFileLineNumbers "core\fnc\log\paste.sqf";
 
 //MIL
 btc_fnc_mil_class = compile preprocessFileLineNumbers "core\fnc\mil\class.sqf";
@@ -263,11 +228,6 @@ if (!isDedicated) then {
     btc_fnc_eh_leaflets = compile preprocessFileLineNumbers "core\fnc\eh\leaflets.sqf";
     btc_fnc_eh_player = compile preprocessFileLineNumbers "core\fnc\eh\player.sqf";
 
-    //FOB
-    btc_fnc_fob_create = compile preprocessFileLineNumbers "core\fnc\fob\create.sqf";
-    btc_fnc_fob_redeploy = compile preprocessFileLineNumbers "core\fnc\fob\redeploy.sqf";
-    btc_fnc_fob_dismantle = compile preprocessFileLineNumbers "core\fnc\fob\dismantle.sqf";
-
     //INT
     btc_fnc_int_add_actions = compile preprocessFileLineNumbers "core\fnc\int\add_actions.sqf";
     btc_fnc_int_action_result = compile preprocessFileLineNumbers "core\fnc\int\action_result.sqf";
@@ -281,13 +241,6 @@ if (!isDedicated) then {
     btc_fnc_info_search_for_intel = compile preprocessFileLineNumbers "core\fnc\info\search_for_intel.sqf";
     btc_fnc_info_troops = compile preprocessFileLineNumbers "core\fnc\info\troops.sqf";
     btc_fnc_info_ask_reputation = compile preprocessFileLineNumbers "core\fnc\info\ask_reputation.sqf";
-
-    //LOG
-    btc_fnc_log_hitch_points = compile preprocessFileLineNumbers "core\fnc\log\hitch_points.sqf";
-    btc_fnc_log_get_corner_points = compile preprocessFileLineNumbers "core\fnc\log\get_corner_points.sqf";
-
-    //ARSENAL
-    btc_fnc_arsenal_garage = compile preprocessFileLineNumbers "core\fnc\arsenal\garage.sqf";
 
     //TASK
     btc_fnc_task_create = compile preprocessFileLineNumbers "core\fnc\task\create.sqf";

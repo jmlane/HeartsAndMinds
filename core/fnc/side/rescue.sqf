@@ -41,7 +41,7 @@ btc_side_jip_data remoteExec ["btc_fnc_task_create", 0];
 
 _city setVariable ["spawn_more", true];
 
-private _heli_type = typeOf selectRandom ((btc_vehicles + btc_helo) select {_x isKindOf "air"});
+private _heli_type = selectRandom ("getText (_x >> 'vehicleClass') in ['Air'] && {getNumber (_x >> 'side') == 1} && {getNumber (_x >> 'scope') >= 2}" configClasses (configFile >> "CfgVehicles") apply { configName _x });
 private _heli = createVehicle [_heli_type, _pos, [], 0, "NONE"];
 _heli setVariable ["btc_dont_delete", true];
 _heli setVariable ["ace_cookoff_enableAmmoCookoff", false, true];

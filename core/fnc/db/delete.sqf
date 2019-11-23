@@ -31,7 +31,6 @@ profileNamespace setVariable [format ["btc_hm_%1_ho", _name], nil];
 profileNamespace setVariable [format ["btc_hm_%1_ho_sel", _name], nil];
 profileNamespace setVariable [format ["btc_hm_%1_cache", _name], nil];
 profileNamespace setVariable [format ["btc_hm_%1_rep", _name], nil];
-profileNamespace setVariable [format ["btc_hm_%1_fobs", _name], nil];
 profileNamespace setVariable [format ["btc_hm_%1_vehs", _name], nil];
 profileNamespace setVariable [format ["btc_hm_%1_objs", _name], nil];
 profileNamespace setVariable [format ["btc_hm_%1_markers", _name], nil];

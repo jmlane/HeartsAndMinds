@@ -10,23 +10,8 @@ player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_WOUNDS_TITLE
 //Deafness
 player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_DEAFNESS_TITLE", localize "STR_BTC_HAM_DOC_DEAFNESS_TEXT"]];
 
-//Vehicles
-player createDiaryRecord [_MainCategory, [localize "str_a3_cfghints_command_vehicles1", localize "STR_BTC_HAM_DOC_VEHICLES_TEXT"]];
-
 //Side Mission
 player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_SIDEMISSION_TITLE", localize "STR_BTC_HAM_DOC_SIDEMISSION_TEXT"]];
-
-//FOB
-player createDiaryRecord [_MainCategory, ["FOB", localize "STR_BTC_HAM_DOC_FOB_TEXT"]];
-
-//Sling loading
-player createDiaryRecord [_MainCategory, [localize "STR_A3_SlingLoad1", localize "STR_BTC_HAM_DOC_SLING_TEXT"]];
-
-//Logistic point
-player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_MSQM_MRK_LOGPOINT", localize "STR_BTC_HAM_DOC_LOGISTICP_TEXT"]];
-
-//Logistic
-player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_ACTION_LOC_MAIN", localize "STR_BTC_HAM_DOC_LOGISTIC_TEXT"]];
 
 //Hideout
 player createDiaryRecord [_MainCategory, [localize "str_a3_campaign_b_m03_marker02", localize "STR_BTC_HAM_DOC_HIDEOUT_TEXT"]];
