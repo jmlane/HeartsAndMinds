@@ -96,15 +96,6 @@ call btc_fnc_cache_create;
     btc_cache_markers pushBack _marker;
 } forEach (_array_cache select 3);
 
-//FOB
-private _fobs = profileNamespace getVariable [format ["btc_hm_%1_fobs", _name], []];
-
-{
-    _x params ["_fob_name", "_pos"];
-
-    [_pos, _fob_name] call btc_fnc_fob_create_s;
-} forEach (_fobs select 0);
-
 //REP
 private _global_reputation = profileNamespace getVariable [format ["btc_hm_%1_rep", _name], 0];
 

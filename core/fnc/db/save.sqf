@@ -119,15 +119,6 @@ profileNamespace setVariable [format ["btc_hm_%1_cache", _name], _array_cache];
 //REPUTATION
 profileNamespace setVariable [format ["btc_hm_%1_rep", _name], btc_global_reputation];
 
-//FOBS
-private _fobs = [[], []];
-{
-    private _pos = getMarkerPos _x;
-    (_fobs select 0) pushBack [_x, _pos];
-} forEach (btc_fobs select 0);
-(_fobs select 1) append (btc_fobs select 1);
-profileNamespace setVariable [format ["btc_hm_%1_fobs", _name], _fobs];
-
 //Objects status
 private _array_obj = [];
 {

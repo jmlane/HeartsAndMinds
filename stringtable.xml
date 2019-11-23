@@ -34,13 +34,6 @@
                 <Portuguese>Intérprete</Portuguese>
                 <Chinesesimp>翻译员</Chinesesimp>
             </Key>
-            <Key ID="STR_BTC_HAM_MSQM_MRK_LOGPOINT">
-                <Original>Logistic Point</Original>
-                <Spanish>Punto de Logística</Spanish>
-                <German>Logistikpunkt</German>
-                <Portuguese>Ponto Logístico</Portuguese>
-                <Chinesesimp>补给点</Chinesesimp>
-            </Key>
         </Container>
     </Package>
     <Package name="Documentation">
@@ -106,24 +99,6 @@
                 <German>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\whiteboard_ca.paa' width='20' height='20'/&gt; Nebenaufgaben sind sehr nütlich um das Ansehen in der Bevölkerung zu erhöhen.&lt;br/&gt;Diese Aufgaben können vom Offizier über das Eigen-Interaktionsmenü angefordert werden.&lt;br/&gt;Kann man eine Mission aus verschiedenen Gründen nicht abgeschlossen werden, so kann der Offizier sie jederzeit über das Eigen-Interaktionsmenü abbrechen.</German>
                 <Portuguese>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\whiteboard_ca.paa' width='20' height='20'/&gt; Missões secundárias são úteis para elevar o nível de reputação.&lt;br/&gt; Uma missão secundária pode ser solicitada pelo Oficial usando menu de interação pessoal.&lt;br/&gt; Se você não quiser concluir uma tarefa, poderá sempre abortá-la usando o menu de interação.</Portuguese>
                 <Chinesesimp>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\whiteboard_ca.paa' width='20' height='20'/&gt; 支线任务有利于提升声誉值。&lt;br/&gt; 军官(Officer)可以使用自我互动菜单申请支线任务。&lt;br/&gt; 军官(Officer)可以使用自我互动菜单随时取消支线任务。</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Documentation: FOB">
-            <Key ID="STR_BTC_HAM_DOC_FOB_TEXT">
-                <Original>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\move1_ca.paa' width='20' height='20' /&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\run_ca.paa' width='20' height='20' /&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\move2_ca.paa' width='20' height='20' /&gt; &lt;marker name='blufor_base'&gt;FOB:&lt;/marker&gt;&lt;br/&gt; In this mission a FOB is a forward spawn point, to create a FOB approach the red box at the logistic point and require a blue container.&lt;br/&gt;&lt;br/&gt; - &lt;img image='\A3\Ui_f\data\Map\Markers\NATO\b_hq.paa' width='20' height='20'/&gt;  &lt;marker name='blufor_base'&gt;Deploy:&lt;/marker&gt; &lt;br/&gt; Move it where you want to deploy a new FOB and interact with it to set it up. Keep in mind that you can not deploy a FOB close to the main base (2.500m) and the terrain needs to be flat.&lt;br/&gt;&lt;br/&gt; - &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Dismantle:&lt;/marker&gt; &lt;br/&gt; You can dismantle a FOB by interacting with the flag on the HQ roof.</Original>
-                <Spanish>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\move1_ca.paa' width='20' height='20' /&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\run_ca.paa' width='20' height='20' /&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\move2_ca.paa' width='20' height='20' /&gt; &lt;marker name='blufor_base'&gt;FOB:&lt;/marker&gt;&lt;br/&gt; En esta misión un FOB es un punto de respawn avanzado, para crear un FOB se aproxima a la caja roja en el punto logístico y requiere un contenedor azul.&lt;br/&gt;&lt;br/&gt; - &lt;img image='\A3\Ui_f\data\Map\Markers\NATO\b_hq.paa' width='20' height='20'/&gt;  &lt;marker name='blufor_base'&gt;Deploy:&lt;/marker&gt; &lt;br/&gt; Muévelo donde quieras desplegar un nuevo FOB e interactúa con él para configurarlo. Tenga en cuenta que no puede desplegar un FOB cerca de la base principal (2.500m) y el terreno debe ser plano.&lt;br/&gt;&lt;br/&gt; - &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Dismantle:&lt;/marker&gt; &lt;br/&gt; Puede desmontar un FOB interactuando con la bandera en el techo del HQ.</Spanish>
-                <German>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\move1_ca.paa' width='20' height='20' /&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\run_ca.paa' width='20' height='20' /&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\move2_ca.paa' width='20' height='20' /&gt; &lt;marker name='blufor_base'&gt;FOB:&lt;/marker&gt;&lt;br/&gt; Eine FOB (Forward Operating Base / vorgeschobene Operationsbasis) dient in dieser Mission als Spawn-Punkt. Um eine FOB zu erstellen muss am Logistikpunkt ein ensprechnender Frachtcontainer(Blau) angefordert werden&lt;br/&gt;&lt;br/&gt; - &lt;img image='\A3\Ui_f\data\Map\Markers\NATO\b_hq.paa' width='20' height='20'/&gt;  &lt;marker name='blufor_base'&gt;Aufbau:&lt;/marker&gt; &lt;br/&gt; Der Aufbau kann nur statfinden, wenn man sich mindestens 2,5km von der Basis entfernt hat und das Gelände relativ flach ist. Um den Aufbau zu beginnen: einfach mit dem Frachtcontainer interagieren und 'FOB aufbauen' auswählen.&lt;br/&gt;&lt;br/&gt; - &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Abbau:&lt;/marker&gt; &lt;br/&gt; Auf dem Dach der FOB kann man mit der Flagge interagieren um den Abbau zu beginnen.</German>
-                <Portuguese>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\move1_ca.paa' width='20' height='20' /&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\run_ca.paa' width='20' height='20' /&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\move2_ca.paa' width='20' height='20' /&gt; &lt;marker name='blufor_base'&gt;FOB:&lt;/marker&gt;&lt;br/&gt; Nesta missão, uma FOB é um ponto de surgimento. Para criar uma FOB, aproxime-se da caixa vermelha no ponto logístico, solicite um container azul.&lt;br/&gt;&lt;br/&gt; - &lt;img image='\A3\Ui_f\data\Map\Markers\NATO\b_hq.paa' width='20' height='20'/&gt;  &lt;marker name='blufor_base'&gt;Deploy:&lt;/marker&gt; &lt;br/&gt; A construção só pode acontecer se você se deslocar 2.500m da FOB principal e o terreno deve ser plano. Para começar a criar a nova FOB, basta interagir com o cônteiner e selecionar: "Build FOB" (Criar FOB).&lt;br/&gt;&lt;br/&gt; - &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Dismantle:&lt;/marker&gt; &lt;br/&gt; No telhado da FOB, você pode interagir com a bandeira para iniciar a desmontagem da FOB.</Portuguese>
-                <Chinesesimp>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\move1_ca.paa' width='20' height='20' /&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\run_ca.paa' width='20' height='20' /&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\move2_ca.paa' width='20' height='20' /&gt; &lt;marker name='blufor_base'&gt;FOB:&lt;/marker&gt;&lt;br/&gt; FOB 可作为前线复活点使用。要创建FOB, 请在补给点申请蓝色货运集装箱。&lt;br/&gt;&lt;br/&gt; - &lt;img image='\A3\Ui_f\data\Map\Markers\NATO\b_hq.paa' width='20' height='20'/&gt;  &lt;marker name='blufor_base'&gt;部署:&lt;/marker&gt; &lt;br/&gt; 将FOB集装箱移动至部署位置并与其互动即可建造FOB。请谨记: 只有在主基地2500米范围外的地形平坦区域才能建立FOB。&lt;br/&gt;&lt;br/&gt; - &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;拆除:&lt;/marker&gt; &lt;br/&gt; 你可以与指挥部(HQ)屋顶的旗杆互动, 以拆除FOB。</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Documentation: Logistic point">
-            <Key ID="STR_BTC_HAM_DOC_LOGISTICP_TEXT">
-                <Original>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\repair_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20'/&gt; At the logistic point you can require new objects (like ammo, fortifications, supplies for the side missions...) and repair destroyed vehicles.</Original>
-                <Spanish>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\repair_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20'/&gt; En el punto logístico puede requerir nuevos objetos (como municiones, fortificaciones, suministros para las misiones secundarias...) y reparar vehículos destruidos.</Spanish>
-                <German>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\repair_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20'/&gt; Am Logistikpunkt kann man neue Objekte (wie zB. Munition, Baumaterial, Nachschubgüter für Nebenaufgaben...) anfordern und zerstörte Fahrzeuge reparieren.</German>
-                <Portuguese>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\repair_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20'/&gt; No ponto logístico, você pode solicitar novos objetos (como munição, fortificações, suprimentos para as missões secundárias ...) e reparar veículos destruídos.</Portuguese>
-                <Chinesesimp>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\repair_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\rearm_ca.paa' width='20' height='20'/&gt; 补给点可以生成新的物件(如弹药、防御工事、用于支线任务的救援物资等), 也可以维修受损载具。</Chinesesimp>
             </Key>
         </Container>
         <Container name="Documentation: Hideout">
@@ -1174,31 +1149,6 @@
                 <Chinesesimp>审问</Chinesesimp>
             </Key>
         </Container>
-        <Container name="Action(ACE): Log. Point">
-            <Key ID="STR_BTC_HAM_ACTION_LOC_MAIN">
-                <Original>Logistic</Original>
-                <Spanish>Logistica</Spanish>
-                <German>Logistik</German>
-                <Portuguese>Logística</Portuguese>
-                <Chinesesimp>后勤</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Action(ACE): FOB">
-            <Key ID="STR_BTC_HAM_ACTION_FOB_MOUNT">
-                <Original>Mount FOB</Original>
-                <Spanish>Armar FOB</Spanish>
-                <German>FOB aufbauen</German>
-                <Portuguese>Montar a FOB</Portuguese>
-                <Chinesesimp>建立FOB</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_ACTION_FOB_DISMANTLE">
-                <Original>Dismantle FOB</Original>
-                <Spanish>Desarmar FOB</Spanish>
-                <German>FOB abbauen</German>
-                <Portuguese>Desmontar a FOB</Portuguese>
-                <Chinesesimp>拆除FOB</Chinesesimp>
-            </Key>
-        </Container>
         <Container name="Action(ACE): Orders">
             <Key ID="STR_BTC_HAM_ACTION_ORDERS_MAIN">
                 <Original>Civil Orders</Original>
@@ -1271,15 +1221,6 @@
                 <German>Anfordern</German>
                 <Portuguese>Requisitar</Portuguese>
                 <Chinesesimp>申请</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Action(ACE): Re-deploy">
-            <Key ID="STR_BTC_HAM_ACTION_REDEPLOY_MAIN">
-                <Original>Re-deploy</Original>
-                <Spanish>Re-deploy</Spanish>
-                <German>Verlegen</German>
-                <Portuguese>Recolocar</Portuguese>
-                <Chinesesimp>重新部署</Chinesesimp>
             </Key>
         </Container>
         <Container name="Action : Arsenal (BIS)">
@@ -1516,90 +1457,6 @@
         </Container>
     </Package>
     <Package name="Other">
-        <Container name="Other: FOB Actions">
-            <Key ID="STR_BTC_HAM_O_FOB_CREATE_H_AREA">
-                <Original>Area is not flat enough!</Original>
-                <Spanish>El área no es lo suficientemente plana!</Spanish>
-                <German>Das Gebiet ist nicht Flach genug!</German>
-                <Portuguese>A área não é plana o suficiente!</Portuguese>
-                <Chinesesimp>区域不够平坦!</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_FOB_CREATE_H_DBASE">
-                <Original>Too close at the main base!</Original>
-                <Spanish>¡Demasiado cerca de la base principal!</Spanish>
-                <German>Zu Nahe an der Haupt-Basis!</German>
-                <Portuguese>Muito perto da base principal!</Portuguese>
-                <Chinesesimp>与主基地距离太近!</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_FOB_CREATE_H_CAREA">
-                <Original>Clear the area before mounting the FOB, %1</Original>
-                <Spanish>Despeje el área antes de montar el FOB, %1</Spanish>
-                <German>Das Gebiet ist nicht leer, es sind noch folgende Fahrzeuge im Weg: %1</German>
-                <Portuguese>Limpe a área antes de montar a FOB, %1</Portuguese>
-                <Chinesesimp>该区域未清空, 还有如下载具: %1</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_FOB_CREATE_H_ESC">
-                <Original>Do not close the dialog with esc</Original>
-                <Spanish>No cerrar el diálogo con "escape"</Spanish>
-                <German>Den Dialog nicht mir ESC schließen</German>
-                <Portuguese>Não feche a caixa de diálogo com ESC</Portuguese>
-                <Chinesesimp>请勿使用Esc键关闭对话框</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_FOB_CREATE_H_NAME">
-                <Original>Name your FOB!</Original>
-                <Spanish>Nombre su FOB!</Spanish>
-                <German>FOB benennen!</German>
-                <Portuguese>Não feche a caixa de diálogo com esc</Portuguese>
-                <Chinesesimp>命名FOB!</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_FOB_CREATE_H_NAMENOTA">
-                <Original>Name already in use!</Original>
-                <Spanish>Nombre ya en uso!</Spanish>
-                <German>Der Name wird bereits verwendet!</German>
-                <Portuguese>O nome já está em uso!</Portuguese>
-                <Chinesesimp>该名称已被使用!</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_FOB_CREATE_H_WIP">
-                <Original>Get back! Mounting FOB</Original>
-                <Spanish>¡Atrás! Montando FOB</Spanish>
-                <German>Geh ein wenig zurück! Die FOB wird aufgebaut</German>
-                <Portuguese>Afaste-se! Montando a FOB</Portuguese>
-                <Chinesesimp>FOB装配中, 请远离!</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_FOB_DISMANTLE_H_PROC">
-                <Original>Dismantle, move out ...</Original>
-                <Spanish>Desmantelado, muévanse...</Spanish>
-                <German>Abbau im gange, geh ein wenig zurück...</German>
-                <Portuguese>Saia... Desmontando</Portuguese>
-                <!-- This translation might have confusion. 此处翻译存疑。 -->
-                <Chinesesimp>拆除, 搬走 ...</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_FOB_REDEPLOY_H_NOFOB">
-                <Original>No FOBs deployed</Original>
-                <Spanish>No hay FOBs desplegados</Spanish>
-                <German>Es sind keine FOBs aufgebaut</German>
-                <Portuguese>Nenhuma FOB montada</Portuguese>
-                <Chinesesimp>未部署FOB</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_FOB_REDEPLOY_H_MOVING">
-                <Original>Moving to %1</Original>
-                <Spanish>Moviéndose a %1</Spanish>
-                <German>Verlege zu %1</German>
-                <Portuguese>Movendo para %1</Portuguese>
-                <Chinesesimp>移动到 %1</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_FOB_REDEPLOY_LABEL">
-                <Original>Select a FOB</Original>
-                <Chinesesimp>选择一个FOB:</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_FOB_DLG_T_NAMEFOB">
-                <Original>Name the FOB:</Original>
-                <Spanish>Nombra el FOB:</Spanish>
-                <German>FOB Benennen:</German>
-                <Portuguese>Nome da FOB:</Portuguese>
-                <Chinesesimp>命名FOB:</Chinesesimp>
-            </Key>
-        </Container>
         <Container name="Other: Hints ">
             <Key ID="STR_BTC_HAM_O_COMMON_SHOWHINTS_0">
                 <Original>Cache destroyed!</Original>
@@ -1753,96 +1610,6 @@
                 <German>Waffenlager %1 wurde zerstört</German>
                 <Portuguese>Depósito %1 destruído</Portuguese>
                 <Chinesesimp>武器箱 %1 已摧毁</Chinesesimp>
-            </Key>
-        </Container>
-    </Package>
-    <Package name="Logistic">
-        <Container name="Logistic: Load ">
-            <Key ID="STR_BTC_HAM_LOG_LOAD_TOOFAR">
-                <Original>%1 is too far from %2!</Original>
-                <Spanish>%1 está demasiado lejos de %2!</Spanish>
-                <German>%1 ist zu weit von %2 entfernt!</German>
-                <Portuguese>%1 está muito londe de %2!</Portuguese>
-                <Chinesesimp>%1 与 %2 距离过远!</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_LOG_LOAD_TOOFAST">
-                <Original>%1 is moving!</Original>
-                <Spanish>%1 se está moviendo!</Spanish>
-                <German>%1 is in Bewegung!</German>
-                <Portuguese>%1 está se movendo</Portuguese>
-                <Chinesesimp>%1 正在移动!</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_LOG_LOAD_TOOBIG">
-                <Original>Can not load %1 in %2</Original>
-                <Spanish>No se puede cargar %1 en %2</Spanish>
-                <German>Der Laderaum von %2 ist zu klein für %1</German>
-                <Portuguese>Não é possível carregar %1 em %2</Portuguese>
-                <Chinesesimp>无法将 %1 装进 %2</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_LOG_LOAD_NOSPACE">
-                <Original>There is no enough space for %1 in %2</Original>
-                <Spanish>No hay suficiente espacio para %1 en %2</Spanish>
-                <German>Es ist nicht mehr genug Platz im Laderaum von %1 vorhanden</German>
-                <Portuguese>Não há espaço suficiente para %1 em %2</Portuguese>
-                <Chinesesimp>剩余空间不足以将 %1 装进 %2</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_LOG_LOAD_BAR">
-                <Original>Loading %1 in %2. . .</Original>
-                <Spanish>Cargando %1 en %2. . .</Spanish>
-                <German>%1 wird verladen in %2 . . .</German>
-                <Portuguese>Carregando %1 em %2. . .</Portuguese>
-                <Chinesesimp>正在将 %1 装进 %2. . .</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_LOG_LOAD_FIN">
-                <Original>%1 has been loaded in %2</Original>
-                <Spanish>%1 ha sido cargado en %2</Spanish>
-                <German>%1 wurde in %2 eingeladen</German>
-                <Portuguese>%1 foi carregado com sucesso em %2</Portuguese>
-                <Chinesesimp>%1 已被装进 %2</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_LOG_LOAD_ABORT">
-                <Original>Loading aborted</Original>
-                <Spanish>Cargar abortada</Spanish>
-                <German>Ladevorgang abgebrochen</German>
-                <Portuguese>Carregamento abortado</Portuguese>
-                <Chinesesimp>装载中止</Chinesesimp>
-            </Key>
-        </Container>
-        <Container name="Logistic: Place ">
-            <Key ID="STR_BTC_HAM_LOG_PLACE_HINT1">
-                <Original>Q/Z to raise/lower the object</Original>
-                <Spanish>Q/Z para subir/bajar el objeto</Spanish>
-                <German>Q/Y zum Heben/Senken des Objekts</German>
-                <Portuguese>Q/Z para subir/descer o objeto</Portuguese>
-                <Chinesesimp>按下Q/Z来调节物件高度</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_LOG_PLACE_HINT2">
-                <Original>X/C to rotate the object</Original>
-                <Spanish>X/C para rotar el objeto</Spanish>
-                <German>X/C um das Objekt zu drehen</German>
-                <Portuguese>X/C para rotacionar o objeto</Portuguese>
-                <Chinesesimp>按下X/C来旋转物体</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_LOG_PLACE_HINT3">
-                <Original>F/R to tilt the object</Original>
-                <Spanish>F/R para inclinar el objeto</Spanish>
-                <German>F/R um das Object zu neigen</German>
-                <Portuguese>F/R para inclinar o objeto</Portuguese>
-                <Chinesesimp>按下F/R来倾斜物件</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_LOG_PLACE_HINT4">
-                <Original>SHIFT to increase the movement</Original>
-                <Spanish>SHIFT para aumentar el movimiento</Spanish>
-                <German>SHIFT um die Bewegung des Objektes zu beschleunigen</German>
-                <Portuguese>SHIFT para acelerar o movimento</Portuguese>
-                <Chinesesimp>按住Shift键来增加移动速度</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_LOG_PLACE_RELEASE">
-                <Original>Release</Original>
-                <Spanish>Soltar</Spanish>
-                <German>Loslassen</German>
-                <Portuguese>Soltar</Portuguese>
-                <Chinesesimp>释放</Chinesesimp>
             </Key>
         </Container>
     </Package>

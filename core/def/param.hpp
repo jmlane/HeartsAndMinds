@@ -173,12 +173,6 @@ class Params {
         texts[]={""};
         default = 0;
     };
-    class btc_p_redeploy { // Allow re-deploy?
-        title = __EVAL(format ["      %1", localize "STR_BTC_HAM_MEDI_REDEPLOY"]);
-        values[]={0,1};
-        texts[]={$STR_DISABLED,$STR_ENABLED};
-        default = 1;
-    };
     class btc_p_skill_title { // << A3 Skill options >>
         title = $STR_BTC_HAM_PARAM_SKILL_TITLE;
         values[]={0};
