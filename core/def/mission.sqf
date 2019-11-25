@@ -315,6 +315,3 @@ btc_rep_malus_building_destroyed = - 5;
 
 //Side
 if (isNil "btc_side_assigned") then {btc_side_assigned = false;};
-
-//Headless
-btc_units_owners = [];
