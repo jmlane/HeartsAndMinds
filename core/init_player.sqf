@@ -10,10 +10,6 @@
     [] call btc_fnc_int_add_actions;
     [] call btc_fnc_int_shortcuts;
 
-    if (player getVariable ["interpreter", false]) then {
-        player createDiarySubject [localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG", localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG"];
-    };
-
     private _standard_tasks = (player call BIS_fnc_tasksUnit) select {
         [_x] call BIS_fnc_taskState isEqualTo "ASSIGNED" &&
         _x in ["0", "1", "2"]
