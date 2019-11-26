@@ -23,21 +23,6 @@ private _cache_info_def = "btc_p_cache_info_def" call BIS_fnc_getParamValue;
 private _cache_info_ratio = "btc_p_cache_info_ratio" call BIS_fnc_getParamValue;
 private _info_chance = "btc_p_info_chance" call BIS_fnc_getParamValue;
 
-//<< Skill options >>
-btc_p_set_skill  = ("btc_p_set_skill" call BIS_fnc_getParamValue) isEqualTo 1;
-private _p_skill = [
-    ("btc_p_set_skill_general" call BIS_fnc_getParamValue)/10,//general
-    ("btc_p_set_skill_aimingAccuracy" call BIS_fnc_getParamValue)/10,//aimingAccuracy
-    ("btc_p_set_skill_aimingShake" call BIS_fnc_getParamValue)/10,//aimingShake
-    ("btc_p_set_skill_aimingSpeed" call BIS_fnc_getParamValue)/10,//aimingSpeed
-    ("btc_p_set_skill_endurance" call BIS_fnc_getParamValue)/10,//endurance
-    ("btc_p_set_skill_spotDistance" call BIS_fnc_getParamValue)/10,//spotDistance
-    ("btc_p_set_skill_spotTime" call BIS_fnc_getParamValue)/10,//spotTime
-    ("btc_p_set_skill_courage" call BIS_fnc_getParamValue)/10,//courage
-    ("btc_p_set_skill_reloadSpeed" call BIS_fnc_getParamValue)/10,//reloadSpeed
-    ("btc_p_set_skill_commanding" call BIS_fnc_getParamValue)/10//commanding
-];
-
 //<< Spawn options >>
 btc_p_mil_group_ratio = ("btc_p_mil_group_ratio" call BIS_fnc_getParamValue)/100;
 btc_p_civ_group_ratio = ("btc_p_civ_group_ratio" call BIS_fnc_getParamValue)/100;
