@@ -5,7 +5,16 @@
     player addRating 9999;
     ["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
 
-    [player] call btc_fnc_eh_player;
+    player addEventHandler ["Respawn", {
+        player addRating 9999;
+        player setCaptive false;
+
+        btc_rep_malus_player_respawn remoteExec ["btc_fnc_rep_change", 2];
+    }];
+
+    player addEventHandler ["CuratorObjectPlaced", btc_fnc_eh_CuratorObjectPlaced];
+    ["ace_treatmentSucceded", btc_fnc_eh_treatment] call CBA_fnc_addEventHandler;
+    player addEventHandler ["WeaponAssembled", btc_fnc_civ_add_leaflets];
 
     [] call btc_fnc_int_add_actions;
     [] call btc_fnc_int_shortcuts;
