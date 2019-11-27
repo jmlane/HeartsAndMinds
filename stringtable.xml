@@ -133,22 +133,6 @@
                 <Chinesesimp>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\soft_f_gamma\van_01\Data\UI\map_van_01_box_CA.paa' width='20' height='20'/&gt; 平民会在城市间开车穿梭。如果你的声誉够高, 平民会乐意载你一程(用地图指出你要去的地方)。如果你在途中遭遇了Oplitas巡逻队, 不要担心, 平民会尽其所能地把你藏在车里。&lt;br/&gt;</Chinesesimp>
             </Key>
         </Container>
-        <Container name="Documentation: Gear">
-            <Key ID="STR_BTC_HAM_DOC_GEAR_TITLE">
-                <Original>Gear (Arsenal)</Original>
-                <Spanish>Equipamiento (Arsenal)</Spanish>
-                <German>Ausrüstung (Arsenal)</German>
-                <Portuguese>Equipamento (Arsenal)</Portuguese>
-                <Chinesesimp>装备(军火库)</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_DOC_GEAR_TEXT">
-                <Original>&lt;img image='\A3\Ui_f\data\Logos\a_64_ca.paa' width='20' height='20'/&gt;You can choose your gear at the red box inside the base. Located at the spawn point.&lt;br/&gt;</Original>
-                <Spanish>&lt;img image='\A3\Ui_f\data\Logos\a_64_ca.paa' width='20' height='20'/&gt;Puedes elegir tu equipo en las cajas dentro de la base. Ubicado en el punto de respawn.&lt;br/&gt;</Spanish>
-                <German>&lt;img image='\A3\Ui_f\data\Logos\a_64_ca.paa' width='20' height='20'/&gt;Sie können ihre Ausrüstung jederzeit an der roten Box in der Basis anpassen. Diese steht in der Nähe des Startpunktes&lt;br/&gt;</German>
-                <Portuguese>&lt;img image='\A3\Ui_f\data\Logos\a_64_ca.paa' width='20' height='20'/&gt;Você pode configurar seu equipamento na caixa vermelha dentro da BASE. Geralmente fica localizado próximo ao porto de nascimento (respawn).&lt;br/&gt;</Portuguese>
-                <Chinesesimp>&lt;img image='\A3\Ui_f\data\Logos\a_64_ca.paa' width='20' height='20'/&gt;你可以在基地内的红色箱子处选择装备, 它位于重生点附近。&lt;br/&gt;</Chinesesimp>
-            </Key>
-        </Container>
         <Container name="Documentation: Interaction">
             <Key ID="STR_BTC_HAM_DOC_INTERACTION_TITLE">
                 <Original>Interaction</Original>
