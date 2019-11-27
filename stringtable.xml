@@ -1,41 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="BTC Hearts and Minds: Mission">
-    <Package name="Description">
-        <Container name="Description: Main">
-            <Key ID="STR_BTC_HAM_DESCR_NAME">
-                <Original>Hearts and Minds</Original>
-                <Spanish>Hearts and Minds</Spanish>
-                <German>Hearts and Minds</German>
-                <Portuguese>Corações e Mentes</Portuguese>
-                <Chinesesimp>心灵与智慧</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_DESCR_AUTHOR">
-                <Original>Giallustio</Original>
-                <Spanish>Giallustio</Spanish>
-                <German>Giallustio</German>
-                <Portuguese>Giallustio</Portuguese>
-                <Chinesesimp>Giallustio</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_DESCR_MISSION">
-                <Original>www.blacktemplars.altervista.org</Original>
-                <Spanish>www.blacktemplars.altervista.org</Spanish>
-                <German>www.blacktemplars.altervista.org</German>
-                <Portuguese>www.blacktemplars.altervista.org</Portuguese>
-                <Chinesesimp>www.blacktemplars.altervista.org</Chinesesimp>
-            </Key>
-        </Container>
-    </Package>
-    <Package name="Mission.sqm">
-        <Container name="Mission: Roles">
-            <Key ID="STR_BTC_HAM_MSQM_INTERPRETER">
-                <Original>Interpreter</Original>
-                <Spanish>Interprete</Spanish>
-                <German>Dolmetscher</German>
-                <Portuguese>Intérprete</Portuguese>
-                <Chinesesimp>翻译员</Chinesesimp>
-            </Key>
-        </Container>
-    </Package>
+<Project name="Hearts and Minds: Mission">
     <Package name="Documentation">
         <Container name="Documentation: Headless and Database">
             <Key ID="STR_BTC_HAM_DOC_HEADLESS_TITLE">

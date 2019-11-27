@@ -221,11 +221,9 @@ if (!isDedicated) then {
     btc_fnc_ied_effect_shock_wave = compile preprocessFileLineNumbers "core\fnc\ied\effect_shock_wave.sqf";
 
     //EH
-    btc_fnc_eh_player_respawn = compile preprocessFileLineNumbers "core\fnc\eh\player_respawn.sqf";
     btc_fnc_eh_CuratorObjectPlaced = compile preprocessFileLineNumbers "core\fnc\eh\CuratorObjectPlaced.sqf";
     btc_fnc_eh_treatment = compile preprocessFileLineNumbers "core\fnc\eh\treatment.sqf";
     btc_fnc_eh_leaflets = compile preprocessFileLineNumbers "core\fnc\eh\leaflets.sqf";
-    btc_fnc_eh_player = compile preprocessFileLineNumbers "core\fnc\eh\player.sqf";
 
     //INT
     btc_fnc_int_add_actions = compile preprocessFileLineNumbers "core\fnc\int\add_actions.sqf";
