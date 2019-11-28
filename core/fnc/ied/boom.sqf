@@ -34,5 +34,3 @@ private _pos = getPos _ied;
 deleteVehicle _ied;
 "Bo_GBU12_LGB_MI10" createVehicle _pos;
 deleteVehicle _wreck;
-
-[_pos] remoteExec ["btc_fnc_ied_effects", [0, -2] select isDedicated];
