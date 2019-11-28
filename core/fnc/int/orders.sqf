@@ -66,10 +66,6 @@ if (isNull _unit) then {
                 };
             }, [_unit]] call BIS_fnc_addStackedEventHandler;
         } else {
-            if !(player getVariable ["interpreter", false]) exitWith {
-                [name _unit, localize "STR_BTC_HAM_CON_INFO_ASKREP_NOINTER"] call btc_fnc_showSubtitle; //I can't understand what is saying
-            };
-
             private _text = selectRandom [
                 localize "STR_BTC_HAM_CON_INT_ORDERS_NEG1", //I hate you ! Get out !
                 localize "STR_BTC_HAM_CON_INT_ORDERS_NEG2", // Get Out of my car ! You are not welcome.

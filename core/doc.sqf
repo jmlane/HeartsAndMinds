@@ -1,5 +1,6 @@
 private _MainCategory = localize "str_3den_display3den_menubar_helpdoc_text";
 player createDiarySubject [_MainCategory, _MainCategory];
+player createDiarySubject [localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG", localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG"];
 
 //Headless and Data base
 player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_HEADLESS_TITLE", localize "STR_BTC_HAM_DOC_HEADLESS_TEXT"]];
@@ -10,23 +11,8 @@ player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_WOUNDS_TITLE
 //Deafness
 player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_DEAFNESS_TITLE", localize "STR_BTC_HAM_DOC_DEAFNESS_TEXT"]];
 
-//Vehicles
-player createDiaryRecord [_MainCategory, [localize "str_a3_cfghints_command_vehicles1", localize "STR_BTC_HAM_DOC_VEHICLES_TEXT"]];
-
 //Side Mission
 player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_SIDEMISSION_TITLE", localize "STR_BTC_HAM_DOC_SIDEMISSION_TEXT"]];
-
-//FOB
-player createDiaryRecord [_MainCategory, ["FOB", localize "STR_BTC_HAM_DOC_FOB_TEXT"]];
-
-//Sling loading
-player createDiaryRecord [_MainCategory, [localize "STR_A3_SlingLoad1", localize "STR_BTC_HAM_DOC_SLING_TEXT"]];
-
-//Logistic point
-player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_MSQM_MRK_LOGPOINT", localize "STR_BTC_HAM_DOC_LOGISTICP_TEXT"]];
-
-//Logistic
-player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_ACTION_LOC_MAIN", localize "STR_BTC_HAM_DOC_LOGISTIC_TEXT"]];
 
 //Hideout
 player createDiaryRecord [_MainCategory, [localize "str_a3_campaign_b_m03_marker02", localize "STR_BTC_HAM_DOC_HIDEOUT_TEXT"]];
@@ -45,9 +31,6 @@ player createDiaryRecord [_MainCategory, [localize "str_3den_waypoint_attribute_
 
 //Traffic
 player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_TRAFFIC_TITLE", localize "STR_BTC_HAM_DOC_TRAFFIC_TEXT"]];
-
-//Gear
-player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_GEAR_TITLE", localize "STR_BTC_HAM_DOC_GEAR_TEXT"]];
 
 //Interaction
 player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_INTERACTION_TITLE", localize "STR_BTC_HAM_DOC_INTERACTION_TEXT"]];

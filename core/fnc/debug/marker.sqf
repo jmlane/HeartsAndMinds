@@ -24,6 +24,7 @@ params [
     ["_display", controlNull, [controlNull]]
 ];
 
+[10, objNull, "btc_units_owners"] remoteExecCall ["btc_fnc_int_ask_var", 2];
 private _units = btc_units_owners apply {_x select 0};
 private _owners = btc_units_owners apply {_x select 1};
 

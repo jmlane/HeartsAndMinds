@@ -51,7 +51,7 @@ for "_i" from 0 to (count _locations - 1) do {
                 };
             };
         };
-        private _name = getText(_current >> "name");
+        private _name = configName(_current);
         private _radius_x = getNumber(_current >> "RadiusA");
         private _radius_y = getNumber(_current >> "RadiusB");
 

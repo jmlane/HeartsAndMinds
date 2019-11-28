@@ -119,50 +119,6 @@ profileNamespace setVariable [format ["btc_hm_%1_cache", _name], _array_cache];
 //REPUTATION
 profileNamespace setVariable [format ["btc_hm_%1_rep", _name], btc_global_reputation];
 
-//FOBS
-private _fobs = [[], []];
-{
-    private _pos = getMarkerPos _x;
-    (_fobs select 0) pushBack [_x, _pos];
-} forEach (btc_fobs select 0);
-(_fobs select 1) append (btc_fobs select 1);
-profileNamespace setVariable [format ["btc_hm_%1_fobs", _name], _fobs];
-
-//Vehicles status
-private _array_veh = [];
-{
-    private _data = [];
-    _data pushBack (typeOf _x);
-    _data pushBack (getPosASL _x);
-    _data pushBack (getDir _x);
-    _data pushBack (fuel _x);
-    _data pushBack (getAllHitPointsDamage _x);
-    private _cargo = [];
-    {
-        _cargo pushBack (if (_x isEqualType "") then {
-            [_x, "", [[], [], []]]
-        } else {
-            [typeOf _x, _x getVariable ["ace_rearm_magazineClass", ""], [getWeaponCargo _x, getMagazineCargo _x, getItemCargo _x]]
-        });
-    } forEach (_x getVariable ["ace_cargo_loaded", []]);
-    _data pushBack _cargo;
-    private _cont = [getWeaponCargo _x, getMagazineCargo _x, getItemCargo _x];
-    _data pushBack _cont;
-    _data pushBack ([_x] call BIS_fnc_getVehicleCustomization);
-    _data pushBack ([_x] call ace_medical_fnc_isMedicalVehicle);
-    _data pushBack ([_x] call ace_repair_fnc_isRepairVehicle);
-    _data pushBack ([
-        [_x] call ace_refuel_fnc_getFuel,
-        _x getVariable ["ace_refuel_hooks", []]
-    ]);
-    _data pushBack (getPylonMagazines _x);
-    _array_veh pushBack _data;
-    if (btc_debug_log) then {
-        [format ["VEH %1 DATA %2", _x, _data], __FILE__, [false]] call btc_fnc_debug_message;
-    };
-} forEach (btc_vehicles - [objNull]);
-profileNamespace setVariable [format ["btc_hm_%1_vehs", _name], _array_veh];
-
 //Objects status
 private _array_obj = [];
 {
