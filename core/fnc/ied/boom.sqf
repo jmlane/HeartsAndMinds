@@ -35,5 +35,4 @@ deleteVehicle _ied;
 "Bo_GBU12_LGB_MI10" createVehicle _pos;
 deleteVehicle _wreck;
 
-[_pos] call btc_fnc_deaf_earringing;
 [_pos] remoteExec ["btc_fnc_ied_effects", [0, -2] select isDedicated];
