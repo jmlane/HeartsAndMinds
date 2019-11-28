@@ -48,7 +48,7 @@ if (isNil {_cache getVariable "btc_hd_cache"} && {_explosive} && {_damage > 0.6}
         sleep 2;
         "M_Titan_AT" createVehicle _pos;
     };
-    [_pos] call btc_fnc_deaf_earringing;
+
     [attachedObjects _cache, btc_cache_obj, btc_cache_markers] call CBA_fnc_deleteEntity;
 
     private _marker = createMarker [format ["btc_cache_%1", btc_cache_n], btc_cache_pos];
