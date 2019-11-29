@@ -10,8 +10,8 @@
                 <Chinesesimp>无头客户端与数据库</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_DOC_HEADLESS_TEXT">
-                <Original>&lt;img image='\a3\ui_f\data\map\vehicleicons\iconvirtual_ca.paa' width='20' height='20'/&gt; This mission automatically uses one Headless client when available.&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa' width='20' height='20'/&gt; This mission has a database system. Enemy units, towns, hideouts, cache, objects created by players or Zeus, vehicles, players markers (not lines) on global/camp channel are saved. All admin can save mission progress at any time with his self interaction key.</Original>
-                <Spanish>&lt;img image='\a3\ui_f\data\map\vehicleicons\iconvirtual_ca.paa' width='20' height='20'/&gt; Esta mision usa automaticamente un Headless client si está disponible .&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa' width='20' height='20'/&gt; Esta misión tiene un sistema de base de datos. Se guardan unidades enemigas, ciudades, escondites, caché, objetos creados por jugadores o Zeus, vehículos, marcadores de jugadores (no líneas) en el canal global / campamento. Todos los administradores pueden guardar el progreso de la misión en cualquier momento con su clave de auto interacción.</Spanish>
+                <Original>&lt;img image='\a3\ui_f\data\map\vehicleicons\iconvirtual_ca.paa' width='20' height='20'/&gt; This mission automatically uses one Headless client when available.&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa' width='20' height='20'/&gt; This mission has a database system. Enemy units, towns, hideouts, cache, objects created by players or Zeus, vehicles, players markers (not lines) on global channel are saved. All admin can save mission progress at any time with his self interaction key.</Original>
+                <Spanish>&lt;img image='\a3\ui_f\data\map\vehicleicons\iconvirtual_ca.paa' width='20' height='20'/&gt; Esta mision usa automaticamente un Headless client si está disponible .&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa' width='20' height='20'/&gt; Esta misión tiene un sistema de base de datos. Se guardan unidades enemigas, ciudades, escondites, caché, objetos creados por jugadores o Zeus, vehículos, marcadores de jugadores (no líneas) en el canal global. Todos los administradores pueden guardar el progreso de la misión en cualquier momento con su clave de auto interacción.</Spanish>
                 <German>&lt;img image='\a3\ui_f\data\map\vehicleicons\iconvirtual_ca.paa' width='20' height='20'/&gt; Sollte ein Headless Client vorhanden sein, so wird dieser durch die Mission automatisch genutzt.&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa' width='20' height='20'/&gt; Diese Mission verfügt über ein eingenes Datenbanksystem, in welcher folgende Dinge gespeichert werden: feindliche Einheiten, Städte, Verstecke, feindliche Waffenlager, Fahrzeuge, vom Spieler oder vom Zeus erstelle Objecte und Marker (keine Linien) vom Spieler im Globalen-Channel. Jeder Admin kann zu jeder Zeit den Missionsfortschritt über das Eigen-Interaktionsmenü speichern.</German>
                 <Portuguese>&lt;img image='\a3\ui_f\data\map\vehicleicons\iconvirtual_ca.paa' width='20' height='20'/&gt; Esta missão usa automaticamente um cliente Headless quando disponível.&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa' width='20' height='20'/&gt; Esta missão tem um sistema de banco de dados. Unidades inimigas, cidades, esconderijos, cache, objetos criados por jogadores ou Zeus, veículos, marcação de jogadores (sem linhas) no canal global são salvos. O administrador pode salvar o progresso da missão a qualquer momento usando botão de interação.</Portuguese>
                 <Chinesesimp>&lt;img image='\a3\ui_f\data\map\vehicleicons\iconvirtual_ca.paa' width='20' height='20'/&gt; 最多一台无头客户端将被任务自动使用。&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa' width='20' height='20'/&gt; 本任务内置独立的数据库系统, 用于存储以下项目：敌方单位、城市、藏匿点、武器箱、车辆、玩家或宙斯创建的对象以及公共频道中的地图标记(不含划线标记)。每个管理员都可以通过自我互动菜单随时保存任务进度。</Chinesesimp>
@@ -123,7 +123,7 @@
                 <Spanish>Trafico</Spanish>
                 <German>Straßenverkehr</German>
                 <Portuguese>Trânsito</Portuguese>
-                <Chinesesimp>道路运输</Chinesesimp>
+                <Chinesesimp>交通</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_DOC_TRAFFIC_TEXT">
                 <Original>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; &lt;img image='\A3\soft_f_gamma\van_01\Data\UI\map_van_01_box_CA.paa' width='20' height='20'/&gt; Civilians are travelling by vehicle across cities. If your reputation is higher than normal, you can ask for a lift to a location chosen on the map. If you bump into a Oplitas patrol, don't worry, the civilian driver will do their best to hide you in the car.&lt;br/&gt;</Original>
@@ -173,58 +173,30 @@
                 <Chinesesimp>自动保存 (存档时会暂停游戏进程, 可能破坏玩家的沉浸感)</Chinesesimp>
             </Key>
         </Container>
-        <Container name="Parameters: Factions">
-            <Key ID="STR_BTC_HAM_PARAM_FAC_TITLE">
-                <Original>&lt;&lt; Faction options &gt;&gt;</Original>
-                <German>&lt;&lt; Fraktion Einstellungen &gt;&gt;</German>
-                <Portuguese>&lt;&lt; Configurações de Facção &gt;&gt;</Portuguese>
-                <Chinesesimp>&lt;&lt; 阵营设置 &gt;&gt;</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_FAC_ETYPE">
-                <Original>Enemy type:</Original>
-                <German>Feindliche Einheiten:</German>
-                <Portuguese>Tipos de Inimigos:</Portuguese>
-                <Chinesesimp>敌方类型:</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_FAC_ETANK">
-                <Original>Enemy uses Tank:</Original>
-                <German>feindl. Panzer:</German>
-                <Portuguese>Tanques inimigos:</Portuguese>
-                <Chinesesimp>敌方装甲部队:</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_FAC_CTYPE">
-                <Original>Civil type:</Original>
-                <German>Zivile Einheiten:</German>
-                <Portuguese>Tipos de Civis:</Portuguese>
-                <Chinesesimp>平民类型:</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_FAC_CTYPEVEH">
-                <Original>Civil vehicle type:</Original>
-                <German>Fahrzeuge der Zivilen Einheite:</German>
-                <Portuguese>Tipos de Veículos Civis:</Portuguese>
-                <Chinesesimp>平民载具类型:</Chinesesimp>
-            </Key>
-        </Container>
         <Container name="Parameters: Spawn">
             <Key ID="STR_BTC_HAM_PARAM_SPAWN_TITLE">
                 <Original>&lt;&lt; Spawn options &gt;&gt;</Original>
                 <German>Spawn Einstellungen:</German>
                 <Chinesesimp>&lt;&lt; 重生设置 &gt;&gt;</Chinesesimp>
+                <Portuguese>&lt;&lt; Opções de Spawn &gt;&gt;</Portuguese>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_SPWAN_ENEMY_DENSITY">
                 <Original>Enemy density:</Original>
                 <German>Feinddichte:</German>
                 <Chinesesimp>敌军密度:</Chinesesimp>
+                <Portuguese>Densidade inimiga:</Portuguese>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_SPWAN_CIVILIAN_DENSITY">
                 <Original>Civilian density:</Original>
                 <German>Zivilistendichte:</German>
                 <Chinesesimp>平民密度:</Chinesesimp>
+                <Portuguese>Densidade civil:</Portuguese>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_SPWAN_MIL_INHOUSE_DENSITY">
                 <Original>Density of military in house:</Original>
                 <German>Feinddichte in Gebäuden:</German>
                 <Chinesesimp>建筑物中的敌军密度:</Chinesesimp>
+                <Portuguese>Densidade de militares em construções:</Portuguese>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_SPAWN_ARMEDHIDEOUT">
                 <Original>Add armed vehicles in Hideout:</Original>
@@ -242,11 +214,13 @@
                 <Original>Maximum number of military patrol:</Original>
                 <German>Maximale Anzahl feindl. Patrouillen:</German>
                 <Chinesesimp>敌方巡逻队数量上限:</Chinesesimp>
+                <Portuguese>Número máximo de patrulhas militares:</Portuguese>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_SPWAN_CIV_MAX_VEH">
                 <Original>Maximum number of civilian patrol:</Original>
                 <German>Maximale Anzahl an ziviler Fahrzeuge:</German>
                 <Chinesesimp>民用车辆数量上限:</Chinesesimp>
+                <Portuguese>Número máximo de patrulhas civis:</Portuguese>
             </Key>
         </Container>
         <Container name="Parameters: IEDS">
@@ -304,7 +278,7 @@
                 <Original>Info cache distance:</Original>
                 <German>Distanzangabe für ein Waffenlager(Startwert):</German>
                 <Portuguese>Distância para um depósito de armas (valor inicial):</Portuguese>
-                <Chinesesimp>武器箱/藏匿点的地图标记初始范围:</Chinesesimp>
+                <Chinesesimp>首个武器箱情报的初始距离:</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_CACHE_RATIO">
                 <Original>Cache info ratio:</Original>
@@ -330,13 +304,13 @@
                 <Original>Extend battlefield to sea:</Original>
                 <German>Kämpfe aufs Wasser ausweiten:</German>
                 <Portuguese>Ampliar campo de batalha para o mar:</Portuguese>
-                <Chinesesimp>将战场扩展至海域:</Chinesesimp>
+                <Chinesesimp>将战区扩展至海上:</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_GAMEPLAY_SIDEM">
                 <Original>Side mission cycle:</Original>
                 <German>Autom. nächste Nebenmission starten:</German>
                 <Portuguese>Ciclo de missão secundária:</Portuguese>
-                <Chinesesimp>自动开始下一个支线任务:</Chinesesimp>
+                <Chinesesimp>自动生成支线任务:</Chinesesimp>
             </Key>
         </Container>
         <Container name="Parameters: Other">
@@ -481,7 +455,7 @@
                 <Chinesesimp>抓捕敌方军官</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_SIDE_CAPOFF_DESC">
-                <Original>Capture an officer travelling in a concealed convoy, then bring him to the base for interrogation. He is his responsible for terrorizing local population!</Original>
+                <Original>Capture an officer travelling in a concealed convoy, then bring him to the base for interrogation. He is responsible for terrorizing local population!</Original>
                 <Spanish>Capturar a un oficial que viaja en un convoy oculto y luego llevarlo a la base para interrogarlo. ¡Él es el responsable de aterrorizar a la población local!</Spanish>
                 <German>Ein feindlicher Offizier ist in einem getarnten Konvoi unterwegs. Finden und bringen Sie ihn in die Basis für weitere Befragungen. Er ist einer der Hauptverantwortlichen für die Terrorisierung der lokalen Bevölkerung!</German>
                 <Portuguese>Um Oficial está viajando em um comboio camuflado. Encontre e traga-o para base para interrogatório. Ele é um dos principais responsáveis por aterrorizar a população local!</Portuguese>
@@ -568,7 +542,7 @@
                 <Spanish>Civil necesita ayuda</Spanish>
                 <German>Zivilist braucht Hilfe</German>
                 <Portuguese>Um civil precisa de ajuda</Portuguese>
-                <Chinesesimp>平民需要帮助</Chinesesimp>
+                <Chinesesimp>平民求助</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_SIDE_CIVTREAT_TITLE">
                 <Original>Medical emergency call in %1</Original>
@@ -730,7 +704,7 @@
                 <Spanish>Campo minado cerca de %1</Spanish>
                 <German>Minenfeld in der Nähe von %1</German>
                 <Portuguese>Campo minado perto de %1</Portuguese>
-                <Chinesesimp>%1 附近的雷区</Chinesesimp>
+                <Chinesesimp>清除 %1 附近的雷区</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_SIDE_MINES_DESC">
                 <Original>There is a minefield near %1, clear it!</Original>
@@ -790,28 +764,28 @@
                 <Spanish>Suministrar %1</Spanish>
                 <German>Versorgung nach %1 bringen</German>
                 <Portuguese>Envie Suprimentos para %1</Portuguese>
-                <Chinesesimp>在 %1 发放物资</Chinesesimp>
+                <Chinesesimp>在 %1 发放救援补给</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_SIDE_SUPPLIES_DESC">
                 <Original>The citizens of %1 are on the brink starving to death, bring them some supplies present at the logistic point!</Original>
                 <Spanish>Los ciudadanos de %1 están al borde de la muerte de hambre, ¡tráiganles algunos suministros presentes en el punto logístico!</Spanish>
                 <German>Die Bürger von %1 sind am verhungern. Bingen Sie ihnen Vorräte. Die Vorräte(Supplies) können beim Logistikpunkt angefordert werden.</German>
                 <Portuguese>O população de %1 estão passando fome! Forneça suprimentos! Os suprimentos podem ser solicitados no ponto logístico.</Portuguese>
-                <Chinesesimp>%1 的居民正在挨饿, 在补给点生成一些救援物资并带给他们!</Chinesesimp>
+                <Chinesesimp>%1 的居民正在挨饿, 在后勤点生成一些救援补给并带给他们!</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_SIDE_SUPPLIES_FAILED_TEXT">
                 <Original>Supplies were not delivered</Original>
                 <Spanish>Los suministros no fueron entregados</Spanish>
                 <German>Die Lieferungen haben ihr Ziel nicht erreicht</German>
                 <Portuguese>Os suprimentos não foram entregues</Portuguese>
-                <Chinesesimp>救援物资未送达</Chinesesimp>
+                <Chinesesimp>救援补给未送达</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_SIDE_SUPPLIES_WIN_TEXT">
                 <Original>Supplies have been delivered</Original>
                 <Spanish>Los suministros han sido entregados</Spanish>
                 <German>Lieferungen wurden geliefert</German>
                 <Portuguese>Os suprimentos foram entregues!</Portuguese>
-                <Chinesesimp>救援物资已分发</Chinesesimp>
+                <Chinesesimp>救援补给已分发</Chinesesimp>
             </Key>
         </Container>
         <Container name="Tower">
@@ -996,7 +970,7 @@
                 <Original>Taxi</Original>
                 <Spanish>Taxi</Spanish>
                 <German>Taxi</German>
-                <Portuguese>Taxi</Portuguese>
+                <Portuguese>Táxi</Portuguese>
                 <Chinesesimp>搭车</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_ACTION_ORDERS_ASKINFO">
@@ -1033,7 +1007,7 @@
                 <Original>Request</Original>
                 <Spanish>Solicitar</Spanish>
                 <German>Anfordern</German>
-                <Portuguese>Requisitar</Portuguese>
+                <Portuguese>Solicitar</Portuguese>
                 <Chinesesimp>申请</Chinesesimp>
             </Key>
         </Container>
@@ -1302,7 +1276,7 @@
                 <Original>In the last hideout we found important intel about all the cities occupied by the Oplitas! Size the last positions held by the enemies and defeat them once and for all</Original>
                 <Spanish>En el último escondite encontramos información importante sobre todas las ciudades ocupadas por los Oplitas! Evalúa las últimas posiciones de los enemigos y derrótalos de una vez por todas.</Spanish>
                 <German>In the last hideout we found important intel about all the cities occupied by the Oplitas! Size the last positions held by the enemies and defeat them once and for all</German>
-                <Portuguese>No último esconderijo encontramos informações importantes sobre as cidades ocupadas pelos inimigos! Dimensione as últimas posições dos inimigos e derrote-os de uma vez por todas</Portuguese>
+                <Portuguese>No último esconderijo encontramos informações importantes sobre as cidades ocupadas pelos inimigos! Conquites as últimas posições dos inimigos e derrote-os de uma vez por todas</Portuguese>
                 <Chinesesimp>在上个敌军藏匿点中, 我们发现了写有Oplitas占领的全部城市的重要情报! 夺取最后一个敌军据点, 一举消灭他们! </Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_O_COMMON_SHOWHINTS_7">
@@ -1390,7 +1364,7 @@
                 <Original>All the hideouts are destroyed, finally the Oplitas has been defeated! Mission accomplished</Original>
                 <Spanish>Todos los escondites fueron destruidos, finalmente el Oplitas han sido derrotados! Misión cumplida</Spanish>
                 <German>Alle Verstecke sind zerstört, nun sind die Oplitas besiegt! Mission erfüllt</German>
-                <Portuguese>Todos os econderijos foram destruídos, finalmente os inimigos foram derrotados! Missão cumprida</Portuguese>
+                <Portuguese>Todos os esconderijos foram destruídos, finalmente os inimigos foram derrotados! Missão cumprida</Portuguese>
                 <Chinesesimp>所有敌军藏匿点已被摧毁, 敌军终于被打败了! 任务完成</Chinesesimp>
             </Key>
         </Container>

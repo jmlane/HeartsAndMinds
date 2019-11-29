@@ -1,16 +1,10 @@
+
 btc_version = 1.19;
-diag_log format ["=BTC= HEARTS AND MINDS VERSION %1.3", btc_version];
 
 //Param
 //<< Time options >>
 private _p_db = ("btc_p_load" call BIS_fnc_getParamValue) isEqualTo 1;
 btc_p_auto_db = "btc_p_auto_db" call BIS_fnc_getParamValue;
-
-//<< Faction options >>
-private _p_en = "btc_p_en" call BIS_fnc_getParamValue;
-private _p_en_tank = ("btc_p_tank" call BIS_fnc_getParamValue) isEqualTo 1;
-private _p_civ = "btc_p_civ" call BIS_fnc_getParamValue;
-private _p_civ_veh = "btc_p_civ_veh" call BIS_fnc_getParamValue;
 
 //<< IED options >>
 btc_p_ied = ("btc_p_ied" call BIS_fnc_getParamValue)/2;
@@ -192,18 +186,10 @@ if (isServer) then {
 };
 
 //Civ
-// Get all faction from mod there are currently running
-//copyToClipboard str (["CIV"] call btc_fnc_get_class);
-private _allfaction = ["AFGCIV","CIV_F","BTC_AC","CAF_AG_AFR_CIV","CAF_AG_ME_CIV","CFP_C_AFG","CFP_C_AFRCHRISTIAN","CFP_C_AFRISLAMIC","CFP_C_ASIA","CFP_C_ME","CUP_C_RU","CUP_C_CHERNARUS","CUP_C_SAHRANI","CUP_C_TK","OPTRE_UEG_CIV","LIB_CIV","LOP_AFR_CIV","LOP_CHR_CIV","LOP_TAK_CIV","CIV_IDAP_F","RDS_RUS_CIV","UNSUNG_C"]; //All factions
-_p_civ = _allfaction select _p_civ; //Select faction selected from mission parameter
-_p_civ_veh = _allfaction select _p_civ_veh; //Select faction selected from mission parameter
-private _allclasse = [[_p_civ]] call btc_fnc_civ_class; //Create classes from factions, you can combine factions from the SAME side : [[_p_civ , "btc_ac","LOP_TAK_CIV"]] call btc_fnc_civ_class.
-
-//Save class name to global variable
-btc_civ_type_units = _allclasse select 0;
-_allclasse = [[_p_civ_veh]] call btc_fnc_civ_class;
-btc_civ_type_veh = _allclasse select 2;
-btc_civ_type_boats = _allclasse select 1;
+private _civClasses = [["CIV_F"]] call btc_fnc_civ_class;
+btc_civ_type_units = _civClasses select 0;
+btc_civ_type_veh = _civClasses select 2;
+btc_civ_type_boats = _civClasses select 1;
 
 btc_w_civs = ["V_Rangemaster_belt", "arifle_Mk20_F", "30Rnd_556x45_Stanag", "hgun_ACPC2_F", "9Rnd_45ACP_Mag"];
 btc_g_civs = ["HandGrenade", "MiniGrenade", "ACE_M84", "ACE_M84"];
@@ -259,26 +245,24 @@ btc_log_obj_created = [];
 
 //Mil
 btc_hq = objNull;
-// Get all faction from mod there are currently running
-//copyToClipboard str (["EN"] call btc_fnc_get_class);
-private _allfaction = ["BLU_F","BLU_G_F","IND_F","IND_G_F","OPF_F","OPF_G_F","TBAN","UNSUNG","AFR_ARMY","ARA_ARMY","ARL_ARMY","BTC_AM","CAF_AG_AFR_P","CAF_AG_EEUR_R","CAF_AG_ME_T","CEC_ARMY","CFP_B_AFARMY","CFP_B_AFGPOLICE","CFP_B_CZARMY_WDL","CFP_B_DEARMY_WDL","CFP_B_ILIDF","CFP_B_IQARMY","CFP_B_IQPOLICE","CFP_B_KEARMY","CFP_B_NAARMY","CFP_B_PESH","CFP_B_SDARMY","CFP_B_SDMILITIA","CFP_B_UGARMY","CFP_B_USMC_DES","CFP_B_USRANGERS_WDL","CFP_B_USSEALS_DES","CFP_B_USSEALS_WDL","CFP_B_YPG","CFP_I_ALNUSRA","CFP_I_IS","CFP_I_SDREBELS","CFP_I_SSARMY","CFP_I_TUAREG","CFP_I_WESTULTRA","CFP_O_ALQAEDA","CFP_O_ALSHABAAB","CFP_O_ANSARALLAH","CFP_O_BOKOHARAM","CFP_O_CFREBELS","CFP_O_HAMAS","CFP_O_HEZBOLLAH","CFP_O_IRARMY","CFP_O_IS","CFP_O_RUMVD","CFP_O_SDREBELS","CFP_O_SOREBEL","CFP_O_SSREBELS","CFP_O_SYARMY","CFP_O_TBAN","CUP_B_CZ","CUP_B_GER","CUP_B_US_ARMY","CUP_I_NAPA","CUP_I_RACS","CUP_O_TK","CFP_B_GBARMY_WDL","CFP_B_USCIA","CUP_B_GB","CUP_I_TK_GUE","CUP_I_UN","CUP_O_CHDKZ","CUP_O_TK_MILITIA","CFP_B_USARMY_WDL","CFP_O_RUARMY_DES","CUP_B_CDF","CUP_B_RNZN","CUP_B_USMC","CUP_O_RU","CUP_O_SLA","BLU_CTRG_F","BLU_GEN_F","BLU_T_F","CUP_I_PMC_ION","OPF_T_F","FOW_AUS","FOW_HEER","FOW_HI","FOW_IJA_NAS","FOW_IT","FOW_LUFTWAFFE","FOW_UK","FOW_UK_FAA","FOW_USA_NAVY","FOW_WAFFENSS","FOW_IJA","FOW_USA","FOW_USA_P","FOW_USMC","GAL_ARMY","GANGBLUE_ARMY","GANGRED_ARMY","IBR_ZETABORN_FACTION","ISC_IP_B","ISC_YPG_B","OPCAN_INS","OPCAN_UNSCDF","LIB_ACI","LIB_ARR","LIB_DAK","LIB_FFI","LIB_FSJ","LIB_GUER","LIB_LUFTWAFFE","LIB_LUFTWAFFE_W","LIB_MKHL","LIB_NAC","LIB_NKVD","LIB_PANZERWAFFE","LIB_PANZERWAFFE_W","LIB_RAAF","LIB_RAF","LIB_RBAF","LIB_RKKA","LIB_RKKA_W","LIB_US_101AB","LIB_US_82AB","LIB_US_AIRFORCE","LIB_US_AIRFORCE_W","LIB_US_ARMY","LIB_US_ARMY_W","LIB_US_RANGERS","LIB_US_TANK_TROOPS","LIB_US_TANK_TROOPS_W","LIB_USSR_AIRFORCE","LIB_USSR_AIRFORCE_W","LIB_USSR_TANK_TROOPS","LIB_USSR_TANK_TROOPS_W","LIB_WEHRMACHT","LIB_WEHRMACHT_W","LOP_BH","LOP_IRA","LOP_UVF","LOP_AA","LOP_AFR","LOP_AFR_OPF","LOP_AM","LOP_AM_OPF","LOP_CDF","LOP_CHDKZ","LOP_IA","LOP_IRAN","LOP_ISTS","LOP_ISTS_OPF","LOP_NAPA","LOP_PESH","LOP_PESH_IND","LOP_PMC","LOP_RACS","LOP_SLA","LOP_TKA","LOP_UA","LOP_UKR","LOP_UN","LOP_US","MOL_ARMY","O_CAR","OPTRE_INS","OPTRE_PD","OPTRE_UNSC","ISC_ALNUSRA_I","ISC_IA_B","ISC_IS_I","ISC_IS_O","ISC_PESH_B","ISC_SAA_O","RHS_FACTION_INSURGENTS","RHS_FACTION_MSV","RHS_FACTION_RVA","RHS_FACTION_TV","RHS_FACTION_VDV","RHS_FACTION_VMF","RHS_FACTION_VPVO","RHS_FACTION_VV","RHS_FACTION_VVS","RHS_FACTION_VVS_C","RHSGREF_FACTION_CDF_AIR","RHSGREF_FACTION_CDF_AIR_B","RHSGREF_FACTION_CDF_GROUND","RHSGREF_FACTION_CDF_GROUND_B","RHSGREF_FACTION_CDF_NG","RHSGREF_FACTION_CDF_NG_B","RHSGREF_FACTION_CHDKZ","RHSGREF_FACTION_CHDKZ_G","RHSSAF_FACTION_AIRFORCE","RHSSAF_FACTION_ARMY","RHSSAF_FACTION_UN","RHS_FACTION_SOCOM","RHS_FACTION_USAF","RHS_FACTION_USARMY_D","RHS_FACTION_USARMY_WD","RHS_FACTION_USMC_D","RHS_FACTION_USMC_WD","RHS_FACTION_USN","RHSGREF_FACTION_HIDF","RHSGREF_FACTION_NATIONALIST","RHSGREF_FACTION_UN","SG_STURM","SG_STURM_W","SG_STURMPANZER","IND_C_F","UNSUNG_AUS","UNSUNG_E","UNSUNG_EV","UNSUNG_G","UNSUNG_NZ","UNSUNG_W","USML_AIF"]; //All factions
-_p_en = _allfaction select _p_en; //Select faction selected from mission parameter
-_allclasse = [[_p_en], _p_en_tank] call btc_fnc_mil_class; //Create classes from factions, you can combine factions like that: [[_p_en , "IND_F"], _p_en_tank] call btc_fnc_mil_class;
+
+private _enemyFaction = "IND_G_F";
+private _enemyClasses = [[_enemyFaction]] call btc_fnc_mil_class;
 
 //Save class name to global variable
-btc_enemy_side = _allclasse select 0;
-btc_type_units = _allclasse select 1;
-btc_type_divers = _allclasse select 2;
-btc_type_crewmen = _allclasse select 3;
-btc_type_boats = _allclasse select 4;
-btc_type_motorized = _allclasse select 5;
-btc_type_motorized_armed = _allclasse select 6;
-btc_type_mg = _allclasse select 7;
-btc_type_gl = _allclasse select 8;
+btc_enemy_side = _enemyClasses select 0;
+btc_type_units = _enemyClasses select 1;
+btc_type_divers = _enemyClasses select 2;
+btc_type_crewmen = _enemyClasses select 3;
+btc_type_boats = _enemyClasses select 4;
+btc_type_motorized = _enemyClasses select 5;
+btc_type_motorized_armed = _enemyClasses select 6;
+btc_type_mg = _enemyClasses select 7;
+btc_type_gl = _enemyClasses select 8;
 
 //Sometimes you need to remove units: - ["Blabla","moreBlabla"];
 //Sometimes you need to add units: + ["Blabla","moreBlabla"];
-switch (_p_en) do {
+switch (_enemyFaction) do {
     /*case "Myfactionexemple" : {
         btc_type_units = btc_type_units - ["Blabla","moreBlabla"];
         btc_type_divers = btc_type_divers + ["Blabla","moreBlabla"];
@@ -288,7 +272,7 @@ switch (_p_en) do {
         btc_type_mg = btc_type_mg;
         btc_type_gl = btc_type_gl;
     };*/
-    case "IND_G_F" : {
+    case "OPF_G_F" : {
         btc_type_motorized = btc_type_motorized + ["I_Truck_02_transport_F", "I_Truck_02_covered_F"];
         btc_type_motorized_armed = btc_type_motorized_armed + ["I_Heli_light_03_F"];
     };
