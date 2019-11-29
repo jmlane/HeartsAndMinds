@@ -41,13 +41,15 @@
 if (btc_debug) then {
     player allowDamage false;
 
-    waitUntil {!isNull (findDisplay 12)};
-    private _eh = ((findDisplay 12) displayCtrl 51) ctrlAddEventHandler ["Draw", btc_fnc_debug_marker];
+    [{!isNull (findDisplay 12)}, {
+        private _eh = ((findDisplay 12) displayCtrl 51) ctrlAddEventHandler ["Draw", btc_fnc_debug_marker];
+    }] call CBA_fnc_waitUntilAndExecute;
 
-    if (isNull (getAssignedCuratorLogic player)) exitWith {};
-    (getAssignedCuratorLogic player) addEventHandler ["CuratorObjectRegistered", {
-        [{!isNull (findDisplay 312)}, {
-                ((findDisplay 312) displayCtrl 50) ctrlAddEventHandler ["Draw", btc_fnc_debug_marker];
-        }] call CBA_fnc_waitUntilAndExecute;
-    }];
+    [{!isNull (getAssignedCuratorLogic player)}, {
+        (getAssignedCuratorLogic player) addEventHandler ["CuratorObjectRegistered", {
+            [{!isNull (findDisplay 312)}, {
+                    ((findDisplay 312) displayCtrl 50) ctrlAddEventHandler ["Draw", btc_fnc_debug_marker];
+            }] call CBA_fnc_waitUntilAndExecute;
+        }];
+    }, [], 10] call CBA_fnc_waitUntilAndExecute;
 };
