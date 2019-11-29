@@ -5,6 +5,13 @@ onLoadName = "Hearts and Minds";
 onLoadMission = "Counter-Insurgency Sandbox on Altis.";
 enabledebugconsole = 1;
 
+class Header
+{
+    gameType = "Coop";
+    minPlayers = 1;
+    maxPlayers = 6;
+};
+
 respawn = 3;
 respawnDelay = 30;
 respawnVehicleDelay = 120;
