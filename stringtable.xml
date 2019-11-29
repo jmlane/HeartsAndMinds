@@ -173,38 +173,6 @@
                 <Chinesesimp>自动保存 (存档时会暂停游戏进程, 可能破坏玩家的沉浸感)</Chinesesimp>
             </Key>
         </Container>
-        <Container name="Parameters: Factions">
-            <Key ID="STR_BTC_HAM_PARAM_FAC_TITLE">
-                <Original>&lt;&lt; Faction options &gt;&gt;</Original>
-                <German>&lt;&lt; Fraktion Einstellungen &gt;&gt;</German>
-                <Portuguese>&lt;&lt; Configurações de Facção &gt;&gt;</Portuguese>
-                <Chinesesimp>&lt;&lt; 阵营设置 &gt;&gt;</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_FAC_ETYPE">
-                <Original>Enemy type:</Original>
-                <German>Feindliche Einheiten:</German>
-                <Portuguese>Tipos de Inimigos:</Portuguese>
-                <Chinesesimp>敌方类型:</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_FAC_ETANK">
-                <Original>Enemy uses Tank:</Original>
-                <German>feindl. Panzer:</German>
-                <Portuguese>Tanques inimigos:</Portuguese>
-                <Chinesesimp>敌方装甲部队:</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_FAC_CTYPE">
-                <Original>Civil type:</Original>
-                <German>Zivile Einheiten:</German>
-                <Portuguese>Tipos de Civis:</Portuguese>
-                <Chinesesimp>平民类型:</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_FAC_CTYPEVEH">
-                <Original>Civil vehicle type:</Original>
-                <German>Fahrzeuge der Zivilen Einheite:</German>
-                <Portuguese>Tipos de Veículos Civis:</Portuguese>
-                <Chinesesimp>平民载具类型:</Chinesesimp>
-            </Key>
-        </Container>
         <Container name="Parameters: Spawn">
             <Key ID="STR_BTC_HAM_PARAM_SPAWN_TITLE">
                 <Original>&lt;&lt; Spawn options &gt;&gt;</Original>
