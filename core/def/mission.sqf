@@ -247,7 +247,7 @@ btc_log_obj_created = [];
 btc_hq = objNull;
 
 private _enemyFaction = "IND_G_F";
-private _enemyClasses = [[_enemyFaction]] call btc_fnc_mil_class;
+private _enemyClasses = [[_enemyFaction], true] call btc_fnc_mil_class;
 
 //Save class name to global variable
 btc_enemy_side = _enemyClasses select 0;
