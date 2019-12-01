@@ -515,6 +515,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (local this) then {" \n "  this respawnVehicle [-1, 0];" \n "};}";
 				textures="rhs_olive";
 			};
 			id=253;
@@ -869,6 +870,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (local this) then {" \n "  this respawnVehicle [-1, 0];" \n "};}";
 				textures="rhs_olive";
 			};
 			id=276;
@@ -1138,6 +1140,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (local this) then {" \n "  this respawnVehicle [-1, 0];" \n "};}";
 				textures="rhs_olive";
 			};
 			id=277;
@@ -1491,6 +1494,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (local this) then {" \n "  this respawnVehicle [-1, 0];" \n "};}";
 				textures="rhs_olive";
 			};
 			id=278;
@@ -1895,6 +1899,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (local this) then {" \n "  this respawnVehicle [-1, 0];" \n "};}";
 				textures="rhs_woodland";
 			};
 			id=323;
@@ -2109,6 +2114,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (local this) then {" \n "  this respawnVehicle [-1, 0];" \n "};}";
 				textures="rhs_woodland";
 			};
 			id=324;
@@ -2239,6 +2245,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (local this) then {" \n "  this respawnVehicle [-1, 0];" \n "};}";
 				textures="rhs_woodland";
 			};
 			id=325;
@@ -2453,6 +2460,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (local this) then {" \n "  this respawnVehicle [-1, 0];" \n "};}";
 			};
 			id=331;
 			type="RHS_MELB_MH6M";

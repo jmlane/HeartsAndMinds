@@ -1,15 +1,15 @@
 author = "jmlane";
-overviewText = "JTFO Hearts and Minds DEV SNAPSHOT 2019-11-27";
-briefingName = "JTFO Hearts and Minds DEV SNAPSHOT 2019-11-27";
+overviewText = "JTFO Hearts and Minds DEV SNAPSHOT 2019-12-01";
+briefingName = "JTFO Hearts and Minds DEV SNAPSHOT 2019-12-01";
 onLoadName = "Hearts and Minds";
-onLoadMission = "Counter-Insurgency Sandbox on Altis.";
+onLoadMission = "Counter-Insurgency Sandbox.";
 enabledebugconsole = 1;
 
 class Header
 {
     gameType = "Coop";
     minPlayers = 1;
-    maxPlayers = 6;
+    maxPlayers = 16;
 };
 
 respawn = 3;
