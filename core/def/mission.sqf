@@ -72,7 +72,13 @@ if (isServer) then {
 
     //City
     btc_city_radius = _p_city_radius;
-    btc_city_blacklist = ["military02"];//NAME FROM CFG
+    btc_city_blacklist = [
+        "military02", // Altis Airport Military Base
+        "airbase01", // Altis Airport Airbase
+        "terminal01", // Altis Airport Terminal
+        "military03", // Telos Military Base
+        "PowerPlant01" // Altis Airport Powerplant
+    ];
 
     //Civ
     btc_civ_veh_active = [];
