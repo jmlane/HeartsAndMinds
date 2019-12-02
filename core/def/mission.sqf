@@ -196,7 +196,7 @@ btc_g_civs = ["HandGrenade", "MiniGrenade", "ACE_M84", "ACE_M84"];
 
 
 //Cache
-btc_cache_type = ["Box_East_Ammo_F"];
+btc_cache_type = ["Box_FIA_Ammo_F", "Box_FIA_Support_F", "Box_FIA_Wps_F"];
 private _weapons_usefull = "true" configClasses (configFile >> "CfgWeapons") select {(getNumber (_x >> 'type') isEqualTo 1) AND !(getArray(_x >> 'magazines') isEqualTo []) AND (getNumber (_x >> 'scope') isEqualTo 2)};
 btc_cache_weapons_type = _weapons_usefull apply {configName _x};
 
