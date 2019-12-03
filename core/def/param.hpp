@@ -35,18 +35,6 @@ class Params {
         texts[]={"0%","10%","20%","30%","40%","50%","60%","70%","80%","90%","100%"};
         default = 30;
     };
-    class btc_p_veh_armed_ho { // Add armed vehicles in Hideout:
-        title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_SPAWN_ARMEDHIDEOUT"]);
-        values[] = {0,1};
-        texts[] = {$STR_DISABLED,$STR_ENABLED};
-        default = 0;
-    };
-    class btc_p_veh_armed_spawn_more { // Add armed vehicles in Side mission/Cache:
-        title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_SPAWN_ARMEDOTHER"]);
-        values[] = {0,1};
-        texts[] = {$STR_DISABLED,$STR_ENABLED};
-        default = 0;
-    };
     class btc_p_patrol_max { // Maximum number of military patrol:
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_SPWAN_PATROL_MAX"]);
         values[]={0,1,2,3,4,5,6,7,8,9,10};

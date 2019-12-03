@@ -192,18 +192,6 @@
                 <Chinesesimp>建筑物中的敌军密度:</Chinesesimp>
                 <Portuguese>Densidade de militares em construções:</Portuguese>
             </Key>
-            <Key ID="STR_BTC_HAM_PARAM_SPAWN_ARMEDHIDEOUT">
-                <Original>Add armed vehicles in Hideout:</Original>
-                <German>Gepanzerte Fahrzeuge bei den Verstecken:</German>
-                <Portuguese>Veículos blindados no esconderijo:</Portuguese>
-                <Chinesesimp>藏匿点包含装甲载具:</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_SPAWN_ARMEDOTHER">
-                <Original>Add armed vehicles in Side mission/Cache:</Original>
-                <German>Gepanzerte Fahrzeuge bei den Nebenmissionen/ Waffenlagern:</German>
-                <Portuguese>Adicione veículos blindados/arsenal em missões secundárias:</Portuguese>
-                <Chinesesimp>支线任务/武器箱包含装甲载具:</Chinesesimp>
-            </Key>
             <Key ID="STR_BTC_HAM_PARAM_SPWAN_PATROL_MAX">
                 <Original>Maximum number of military patrol:</Original>
                 <German>Maximale Anzahl feindl. Patrouillen:</German>
