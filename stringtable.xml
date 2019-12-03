@@ -288,12 +288,6 @@
                 <Portuguese>Ampliar campo de batalha para o mar:</Portuguese>
                 <Chinesesimp>将战区扩展至海上:</Chinesesimp>
             </Key>
-            <Key ID="STR_BTC_HAM_PARAM_GAMEPLAY_SIDEM">
-                <Original>Side mission cycle:</Original>
-                <German>Autom. nächste Nebenmission starten:</German>
-                <Portuguese>Ciclo de missão secundária:</Portuguese>
-                <Chinesesimp>自动生成支线任务:</Chinesesimp>
-            </Key>
         </Container>
         <Container name="Parameters: Other">
             <Key ID="STR_BTC_HAM_PARAM_OTHER_TITLE">

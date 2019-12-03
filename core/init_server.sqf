@@ -13,13 +13,11 @@ if (btc_db_load && {profileNamespace getVariable [format ["btc_hm_%1_db", worldN
 
 [{
     [] spawn btc_fnc_db_save;
-}, 60 * 60 - 300] call CBA_fnc_perFrameHandler;
+}, 60 * 60 - 300] call CBA_fnc_addPerFrameHandler;
 
 [] call btc_fnc_eh_server;
 [btc_ied_list] call btc_fnc_ied_fired_near;
 
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
-if (btc_p_side_mission_cycle) then {
-    [true] spawn btc_fnc_side_create;
-};
+[true] spawn btc_fnc_side_create;
