@@ -21,16 +21,17 @@ Author:
 ---------------------------------------------------------------------------- */
 
 params [
-    ["_asker", objNull, [objNull]]
+    ["_asker", player, [objNull]],
+    ["_radius", 4000, [0]]
 ];
 
-private _id = 1;
-private _n = random 100;
-
-if (btc_hideouts isEqualTo []) then {_n = (btc_info_intel_type select 0) - 10;};
+private _hint = 1;
+private _n = random 1;
+private _hideoutsRemain = !(btc_hideouts isEqualTo []);
 
 private _hideoutInfo = {
     params [
+        ["_asker", player, [objNull]],
         ["_ho", btc_hq, [objNull]]
     ];
 
@@ -38,42 +39,36 @@ private _hideoutInfo = {
 
     if (isNull _ho) then {
         _ho = selectRandom btc_hideouts;
-        btc_hq = _ho;
+        btc_hq = _ho; // Global?
     };
 
-    private _pos = [getPos _ho, btc_info_hideout_radius] call CBA_fnc_randPos;
+    private _pos = [getPos _ho, _radius] call CBA_fnc_randPos;
+    private _directId = owner _asker;
 
-    private _marker = createMarker [format ["%1", _pos], _pos];
-    _marker setMarkerType "hd_warning";
-    _marker setMarkerText format ["%1m", btc_info_hideout_radius];
-    _marker setMarkerSize [0.5, 0.5];
+    private _marker = createMarker [format ["_USER_DEFINED #%1/%2/1", _directId, _pos], _pos];
+    _marker setMarkerType "hd_dot";
     _marker setMarkerColor "ColorRed";
 
-    private _array = _ho getVariable ["markers", []];
+    private _markers = _ho getVariable ["markers", []];
 
-    _array pushBack _marker;
+    _markers pushBack _marker;
 
-    _ho setVariable ["markers", _array];
+    _ho setVariable ["markers", _markers];
 };
 
 switch (true) do {
-    case (_n < (btc_info_intel_type select 0)) : { //cache
+    case (_n > 0.95 && {_hideoutsRemain}) : {
+        _hint = 4;
         [true, 0] spawn btc_fnc_info_cache;
+        [_asker] call _hideoutInfo;
     };
-    case (_n > (btc_info_intel_type select 1) && _n < 101) : { //both
-        _id = 4;
-        [true, 0] spawn btc_fnc_info_cache;
-        [] spawn _hideoutInfo;
-    };
-    case (_n > (btc_info_intel_type select 0) && _n < (btc_info_intel_type select 1)) : { //hd
-        _id = 5;
-        [] spawn _hideoutInfo;
+    case (_n >= 0.8 && {_n <= 0.95} && {_hideoutsRemain}) : {
+        _hint = 5;
+        [_asker] call _hideoutInfo;
     };
     default {
-        _id = 0;
-        [3] remoteExec ["btc_fnc_show_hint", _asker];
+        [true, 0] spawn btc_fnc_info_cache;
     };
 };
 
-if (_id isEqualTo 0) exitWith {};
-[_id] remoteExec ["btc_fnc_show_hint", 0];
+[_hint] call btc_fnc_show_hint;

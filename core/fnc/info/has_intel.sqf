@@ -32,11 +32,8 @@ if (btc_debug_log) then {
 
 if (_body getVariable ["intel", false] && !(_body getVariable ["btc_already_interrogated", false])) then {
     _body setVariable ["intel", false];
-    if (isServer) then    {
-        [_asker] spawn btc_fnc_info_give_intel;
-    } else {
-        [_asker] remoteExec ["btc_fnc_info_give_intel", 2];
-    };
+
+    [_asker] call btc_fnc_info_give_intel;
 } else {
     [3] remoteExec ["btc_fnc_show_hint", _asker];
 };
