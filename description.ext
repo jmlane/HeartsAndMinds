@@ -1,6 +1,6 @@
 author = "jmlane";
-overviewText = "JTFO Hearts and Minds DEV SNAPSHOT 2019-12-01";
-briefingName = "JTFO Hearts and Minds DEV SNAPSHOT 2019-12-01";
+overviewText = "JTFO Hearts and Minds DEV SNAPSHOT 2019-12-03";
+briefingName = "JTFO Hearts and Minds DEV SNAPSHOT 2019-12-03";
 onLoadName = "Hearts and Minds";
 onLoadMission = "Counter-Insurgency Sandbox.";
 enabledebugconsole = 1;
