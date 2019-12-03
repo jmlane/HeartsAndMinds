@@ -11,18 +11,6 @@ class Params {
         texts[]={$STR_DISABLED,$STR_ENABLED};
         default = 1;
     };
-    class btc_p_auto_db { // Auto savegame (can break player immersion)
-        title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_DB_ASAVE"]);
-        values[]={0,1,2,3,4,5,6,7,8,9,10,11,12,24,48,72};
-        texts[]={$STR_DISABLED,"1h","2h","3h","4h","5h","6h","7h","8h","9h","10h","11h","12h","24h","48h","72h"}; // texts[]={"Off","1h","2h","3h","4h","5h","6h","7h","8h","9h","10h","11h","12h","24h","48h","72h"};
-        default = 0;
-    };
-    class btc_p_type_title { // << Faction options >>
-        title = $STR_BTC_HAM_PARAM_FAC_TITLE;
-        values[]={0};
-        texts[]={""};
-        default = 0;
-    };
     class btc_p_spawn_title { // << Spawn options >>
         title = $STR_BTC_HAM_PARAM_SPAWN_TITLE;
         values[]={0};

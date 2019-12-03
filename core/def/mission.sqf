@@ -4,7 +4,6 @@ btc_version = 1.19;
 //Param
 //<< Time options >>
 private _p_db = ("btc_p_load" call BIS_fnc_getParamValue) isEqualTo 1;
-btc_p_auto_db = "btc_p_auto_db" call BIS_fnc_getParamValue;
 
 //<< IED options >>
 btc_p_ied = ("btc_p_ied" call BIS_fnc_getParamValue)/2;

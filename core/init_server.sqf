@@ -11,7 +11,10 @@ if (btc_db_load && {profileNamespace getVariable [format ["btc_hm_%1_db", worldN
     [] call compile preprocessFileLineNumbers "core\fnc\cache\init.sqf";
 };
 
-[] call btc_fnc_db_autosave;
+[{
+    [] spawn btc_fnc_db_save;
+}, 60 * 60 - 300] call CBA_fnc_perFrameHandler;
+
 [] call btc_fnc_eh_server;
 [btc_ied_list] call btc_fnc_ied_fired_near;
 
