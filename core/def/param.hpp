@@ -11,12 +11,6 @@ class Params {
         texts[]={$STR_DISABLED,$STR_ENABLED};
         default = 1;
     };
-    class btc_p_auto_db { // Auto savegame (can break player immersion)
-        title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_DB_ASAVE"]);
-        values[]={0,1,2,3,4,5,6,7,8,9,10,11,12,24,48,72};
-        texts[]={$STR_DISABLED,"1h","2h","3h","4h","5h","6h","7h","8h","9h","10h","11h","12h","24h","48h","72h"}; // texts[]={"Off","1h","2h","3h","4h","5h","6h","7h","8h","9h","10h","11h","12h","24h","48h","72h"};
-        default = 0;
-    };
     class btc_p_spawn_title { // << Spawn options >>
         title = $STR_BTC_HAM_PARAM_SPAWN_TITLE;
         values[]={0};
@@ -40,18 +34,6 @@ class Params {
         values[]={0,10,20,30,40,50,60,70,80,90,100};
         texts[]={"0%","10%","20%","30%","40%","50%","60%","70%","80%","90%","100%"};
         default = 30;
-    };
-    class btc_p_veh_armed_ho { // Add armed vehicles in Hideout:
-        title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_SPAWN_ARMEDHIDEOUT"]);
-        values[] = {0,1};
-        texts[] = {$STR_DISABLED,$STR_ENABLED};
-        default = 0;
-    };
-    class btc_p_veh_armed_spawn_more { // Add armed vehicles in Side mission/Cache:
-        title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_SPAWN_ARMEDOTHER"]);
-        values[] = {0,1};
-        texts[] = {$STR_DISABLED,$STR_ENABLED};
-        default = 0;
     };
     class btc_p_patrol_max { // Maximum number of military patrol:
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_SPWAN_PATROL_MAX"]);
@@ -130,12 +112,6 @@ class Params {
         values[] = {0,1};
         texts[] = {$STR_DISABLED,$STR_ENABLED};
         default = 1;
-    };
-    class btc_p_side_mission_cycle {  // Side mission cycle:
-        title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_GAMEPLAY_SIDEM"]);
-        values[] = {0,1};
-        texts[] = {$STR_DISABLED,$STR_ENABLED};
-        default = 0;
     };
     class btc_p_main_title { // << Other options >>
         title = $STR_BTC_HAM_PARAM_OTHER_TITLE;

@@ -166,12 +166,6 @@
                 <Portuguese>Carregar o savegame (se disponível)</Portuguese>
                 <Chinesesimp>载入存档 (如果可用)</Chinesesimp>
             </Key>
-            <Key ID="STR_BTC_HAM_PARAM_DB_ASAVE">
-                <Original>Auto savegame (can break player immersion)</Original>
-                <German>Spielstand autom. sichern (kann die Immersion stören)</German>
-                <Portuguese>Salvamento do jogo automático (pode quebrar a imersão do jogador)</Portuguese>
-                <Chinesesimp>自动保存 (存档时会暂停游戏进程, 可能破坏玩家的沉浸感)</Chinesesimp>
-            </Key>
         </Container>
         <Container name="Parameters: Spawn">
             <Key ID="STR_BTC_HAM_PARAM_SPAWN_TITLE">
@@ -197,18 +191,6 @@
                 <German>Feinddichte in Gebäuden:</German>
                 <Chinesesimp>建筑物中的敌军密度:</Chinesesimp>
                 <Portuguese>Densidade de militares em construções:</Portuguese>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_SPAWN_ARMEDHIDEOUT">
-                <Original>Add armed vehicles in Hideout:</Original>
-                <German>Gepanzerte Fahrzeuge bei den Verstecken:</German>
-                <Portuguese>Veículos blindados no esconderijo:</Portuguese>
-                <Chinesesimp>藏匿点包含装甲载具:</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_SPAWN_ARMEDOTHER">
-                <Original>Add armed vehicles in Side mission/Cache:</Original>
-                <German>Gepanzerte Fahrzeuge bei den Nebenmissionen/ Waffenlagern:</German>
-                <Portuguese>Adicione veículos blindados/arsenal em missões secundárias:</Portuguese>
-                <Chinesesimp>支线任务/武器箱包含装甲载具:</Chinesesimp>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_SPWAN_PATROL_MAX">
                 <Original>Maximum number of military patrol:</Original>
@@ -305,12 +287,6 @@
                 <German>Kämpfe aufs Wasser ausweiten:</German>
                 <Portuguese>Ampliar campo de batalha para o mar:</Portuguese>
                 <Chinesesimp>将战区扩展至海上:</Chinesesimp>
-            </Key>
-            <Key ID="STR_BTC_HAM_PARAM_GAMEPLAY_SIDEM">
-                <Original>Side mission cycle:</Original>
-                <German>Autom. nächste Nebenmission starten:</German>
-                <Portuguese>Ciclo de missão secundária:</Portuguese>
-                <Chinesesimp>自动生成支线任务:</Chinesesimp>
             </Key>
         </Container>
         <Container name="Parameters: Other">
