@@ -11,12 +11,14 @@ if (btc_db_load && {profileNamespace getVariable [format ["btc_hm_%1_db", worldN
     [] call compile preprocessFileLineNumbers "core\fnc\cache\init.sqf";
 };
 
-[{
-    params ["_args", "_handle"]
+addMissionEventHandler ["HandleDisconnect", {
+    params ["_unit", "_id", "_uid", "_name"];
 
-    if (_args select 0) exitWith {_args set [0, false]};
-    [] spawn btc_fnc_db_save;
-}, 60 * 60, [true]] call CBA_fnc_addPerFrameHandler;
+    if (count (allPlayers - entities "HeadlessClient_F") < 1) then {
+        [] spawn btc_fnc_db_save;
+    };
+    false;
+}];
 
 [] call btc_fnc_eh_server;
 [btc_ied_list] call btc_fnc_ied_fired_near;

@@ -104,12 +104,10 @@ switch (_task_id) do {
 };
 
 if (!isServer) exitWith {
-    [[_task_id], btc_player_side, _description, _destination, true, 2, false, false] spawn {
-
-        waitUntil {(_this select 0) call BIS_fnc_taskState isEqualTo "ASSIGNED";};
+    [{[_task_id] call BIS_fnc_taskState isEqualTo "ASSIGNED"}, {
         _this call BIS_fnc_setTask;
         (_this select 0) call BIS_fnc_taskHint;
-    };
+    }, [[_task_id], btc_player_side, _description, _destination, true, 2, false, false]] call CBA_fnc_waitUntilAndExecute;
 };
 
 [btc_player_side, [_task_id], _description, _destination, true, 2, false, _type, false] call BIS_fnc_taskCreate;
