@@ -12,8 +12,11 @@ if (btc_db_load && {profileNamespace getVariable [format ["btc_hm_%1_db", worldN
 };
 
 [{
+    params ["_args", "_handle"]
+
+    if (_args select 0) exitWith {_args set [0, false]};
     [] spawn btc_fnc_db_save;
-}, 60 * 60 - 300] call CBA_fnc_addPerFrameHandler;
+}, 60 * 60, [true]] call CBA_fnc_addPerFrameHandler;
 
 [] call btc_fnc_eh_server;
 [btc_ied_list] call btc_fnc_ied_fired_near;
