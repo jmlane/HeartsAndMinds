@@ -77,7 +77,6 @@ if (isServer) then {
 
     //INFO
     btc_fnc_info_cache = compile preprocessFileLineNumbers "core\fnc\info\cache.sqf";
-    btc_fnc_info_has_intel = compile preprocessFileLineNumbers "core\fnc\info\has_intel.sqf";
 
     //MIL
     btc_fnc_mil_addWP = compile preprocessFileLineNumbers "core\fnc\mil\addWP.sqf";
