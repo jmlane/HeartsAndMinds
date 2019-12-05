@@ -23,22 +23,22 @@ Author:
 
 params [
     ["_isReal", true, [true]],
-    ["_showHint", 0, [0]]
+    ["_showHint", 0, [0]],
+    ["_cache", btc_cache_obj, [objNull]]
 ];
 
-if (isNull btc_cache_obj) exitWith {};
+if (isNull _cache) exitWith {};
 
 private _pos = [btc_cache_pos, btc_cache_info] call CBA_fnc_randPos;
+private _directId = 0;//owner _asker;
 
 if !(_isReal) then {
     private _axis = getNumber (configfile >> "CfgWorlds" >> worldName >> "mapSize") / 2;
     _pos = [[_axis, _axis, 0], btc_cache_info + _axis] call CBA_fnc_randPos;
 };
 
-private _marker = createMarker [format ["%1", _pos], _pos];
-_marker setMarkerType "hd_unknown";
-_marker setMarkerText format ["%1m", btc_cache_info];
-_marker setMarkerSize [0.5, 0.5];
+private _marker = createMarker [format ["_USER_DEFINED #%1/%2C/1", _directId, _pos], _pos];
+_marker setMarkerType "hd_dot";
 _marker setMarkerColor "ColorRed";
 
 if (_showHint > 0) then {[1] remoteExec ["btc_fnc_show_hint", 0];};
