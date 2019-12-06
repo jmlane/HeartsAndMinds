@@ -16,7 +16,7 @@ Examples:
     (end)
 
 Author:
-    Giallustio
+    Giallustio, jmlane
 
 ---------------------------------------------------------------------------- */
 
@@ -84,14 +84,6 @@ private _array_ho = [];
     _data pushBack (_x getVariable ["cap_time", 0]);
     _data pushBack ((_x getVariable ["assigned_to", objNull]) getVariable "id");
 
-    private _ho_markers = [];
-    {
-        private _marker = [];
-        _marker pushBack (getMarkerPos _x);
-        _marker pushBack (markerText _x);
-        _ho_markers pushBack _marker;
-    } forEach (_x getVariable ["markers", []]);
-    _data pushBack _ho_markers;
     if (btc_debug_log) then {
         [format ["HO %1 DATA %2", _x, _data], __FILE__, [false]] call btc_fnc_debug_message;
     };
