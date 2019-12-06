@@ -53,12 +53,6 @@ if (_explosive && {_damage > 0.6}) then {
 
     btc_rep_bonus_hideout spawn btc_fnc_rep_change;
 
-    private _marker = createMarker [format ["btc_hideout_%1_destroyed", _id], getPos _hideout];
-    _marker setMarkerType "hd_destroy";
-    [_marker, "STR_BTC_HAM_O_EH_HDHIDEOUT_MRK", _id] remoteExec ["btc_fnc_set_markerTextLocal", [0, -2] select isDedicated, _marker];
-    _marker setMarkerSize [1, 1];
-    _marker setMarkerColor "ColorRed";
-
     private _city = _hideout getVariable ["assigned_to", _hideout];
     _city setVariable ["has_ho", false];
 
