@@ -140,7 +140,7 @@ profileNamespace setVariable [format ["btc_hm_%1_markers", _name], _markers_prop
 profileNamespace setVariable [format ["btc_hm_%1_db", _name], true];
 saveProfileNamespace;
 if (btc_debug) then {
-    ["...3", __FILE__, [btc_debug, false, true]] call btc_fnc_debug_message;
+    ["Save complete", __FILE__, [btc_debug, btc_debug_log, true]] call btc_fnc_debug_message;
 };
 [9] remoteExec ["btc_fnc_show_hint", 0];
 
