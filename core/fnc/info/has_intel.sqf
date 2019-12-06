@@ -21,10 +21,9 @@ Author:
     Giallustio, jmlane
 
 ---------------------------------------------------------------------------- */
-
 params [
     ["_target", objNull, [objNull]],
-    ["_player", player, [objNull]],
+    ["_player", remoteExecutedOwner, [objNull]],
     ["_radius", 4000, [0]]
 ];
 
