@@ -55,12 +55,6 @@ if (_target getVariable ["intel", false] && !(_target getVariable ["btc_already_
         private _marker = createMarker [format ["_USER_DEFINED #%1/%2H/1", _directId, _pos], _pos];
         _marker setMarkerType "hd_dot";
         _marker setMarkerColor "ColorRed";
-
-        private _markers = _ho getVariable ["markers", []];
-
-        _markers pushBack _marker;
-
-        _ho setVariable ["markers", _markers];
     };
 
     switch (true) do {
