@@ -106,14 +106,6 @@ private _array_cache = [];
 _array_cache pushBack (getPosATL btc_cache_obj);
 _array_cache pushBack btc_cache_n;
 _array_cache pushBack btc_cache_info;
-private _cache_markers = [];
-{
-    private _data = [];
-    _data pushBack (getMarkerPos _x);
-    _data pushBack (markerText _x);
-    _cache_markers pushBack _data;
-} forEach btc_cache_markers;
-_array_cache pushBack _cache_markers;
 profileNamespace setVariable [format ["btc_hm_%1_cache", _name], _array_cache];
 
 //REPUTATION

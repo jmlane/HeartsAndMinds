@@ -35,7 +35,7 @@ btc_cache_obj addEventHandler ["Killed", {
         ["_useEffects", false, [false]]
     ];
 
-    [btc_cache_obj, btc_cache_markers] call CBA_fnc_deleteEntity;
+    [btc_cache_obj] call CBA_fnc_deleteEntity;
 
     private _marker = createMarker [format ["btc_cache_%1", btc_cache_n], btc_cache_pos];
     _marker setMarkerType "hd_destroy";
@@ -54,7 +54,6 @@ btc_cache_obj addEventHandler ["Killed", {
     btc_cache_n = btc_cache_n + 1;
     btc_cache_obj = objNull;
     btc_cache_info = btc_info_cache_def;
-    btc_cache_markers = [];
 
     //Notification
     [0] remoteExec ["btc_fnc_show_hint", 0];
