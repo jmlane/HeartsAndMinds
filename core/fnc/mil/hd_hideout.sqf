@@ -59,10 +59,6 @@ if (_explosive && {_damage > 0.6}) then {
     deleteVehicle (nearestObject [getPos _hideout, "Flag_Red_F"]);
     _hideout setDamage 1;
 
-    private _array = _hideout getVariable ["markers", []];
-
-    {deleteMarker _x} forEach _array;
-
     if (btc_hq isEqualTo _hideout) then {btc_hq = objNull};
     if (btc_hideouts isEqualTo []) then {[] spawn btc_fnc_final_phase;};
 
