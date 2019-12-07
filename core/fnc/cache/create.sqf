@@ -35,14 +35,7 @@ btc_cache_obj addEventHandler ["Killed", {
         ["_useEffects", false, [false]]
     ];
 
-    [btc_cache_obj, btc_cache_markers] call CBA_fnc_deleteEntity;
-
-    private _marker = createMarker [format ["btc_cache_%1", btc_cache_n], btc_cache_pos];
-    _marker setMarkerType "hd_destroy";
-    [_marker, "STR_BTC_HAM_O_EH_HDCACHE_MRK", btc_cache_n] remoteExec ["btc_fnc_set_markerTextLocal", [0, -2] select isDedicated, _marker]; //Cached %1 destroyed
-
-    _marker setMarkerSize [1, 1];
-    _marker setMarkerColor "ColorRed";
+    [btc_cache_obj] call CBA_fnc_deleteEntity;
 
     if (btc_debug_log) then    {
         [format ["DESTROYED: ID %1 POS %2", btc_cache_n, btc_cache_pos], __FILE__, [false]] call btc_fnc_debug_message;
@@ -54,7 +47,6 @@ btc_cache_obj addEventHandler ["Killed", {
     btc_cache_n = btc_cache_n + 1;
     btc_cache_obj = objNull;
     btc_cache_info = btc_info_cache_def;
-    btc_cache_markers = [];
 
     //Notification
     [0] remoteExec ["btc_fnc_show_hint", 0];

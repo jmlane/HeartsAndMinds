@@ -8,6 +8,7 @@ Description:
 Parameters:
     _body - [Object]
     _asker - [Object]
+    _radius - Max radius from hideout for information [Number]
 
 Returns:
 
@@ -17,26 +18,59 @@ Examples:
     (end)
 
 Author:
-    Giallustio
+    Giallustio, jmlane
 
 ---------------------------------------------------------------------------- */
-
 params [
-    ["_body", objNull, [objNull]],
-    ["_asker", objNull, [objNull]]
+    ["_target", objNull, [objNull]],
+    ["_player", remoteExecutedOwner, [objNull]],
+    ["_radius", 4000, [0]]
 ];
 
 if (btc_debug_log) then {
-    [format ["%1", _body getVariable "intel"], __FILE__, [false]] call btc_fnc_debug_message;
+    [format ["%1", _target getVariable "intel"], __FILE__, [false]] call btc_fnc_debug_message;
 };
 
-if (_body getVariable ["intel", false] && !(_body getVariable ["btc_already_interrogated", false])) then {
-    _body setVariable ["intel", false];
-    if (isServer) then    {
-        [_asker] spawn btc_fnc_info_give_intel;
-    } else {
-        [_asker] remoteExec ["btc_fnc_info_give_intel", 2];
+private _hint = 3;
+if (_target getVariable ["intel", false] && !(_target getVariable ["btc_already_interrogated", false])) then {
+    _target setVariable ["intel", false];
+
+    private _n = random 1;
+    private _hideoutsRemain = !(btc_hideouts isEqualTo []);
+
+    private _hideoutInfo = {
+        params [
+            ["_player", player, [objNull]],
+            ["_ho", btc_hq, [objNull]]
+        ];
+
+        if (isNull _ho) then {
+            _ho = selectRandom btc_hideouts;
+            btc_hq = _ho; // Global?
+        };
+
+        private _pos = [getPos _ho, _radius] call CBA_fnc_randPos;
+        private _directId = owner _player;
+
+        private _marker = createMarker [format ["_USER_DEFINED #%1/%2H/1", _directId, _pos], _pos];
+        _marker setMarkerType "hd_dot";
+        _marker setMarkerColor "ColorRed";
     };
-} else {
-    [3] remoteExec ["btc_fnc_show_hint", _asker];
+
+    switch (true) do {
+        case (_n > 0.95 && {_hideoutsRemain}) : {
+            _hint = 4;
+            [true, 0] spawn btc_fnc_info_cache;
+            [_player] call _hideoutInfo;
+        };
+        case (_n >= 0.8 && {_n <= 0.95} && {_hideoutsRemain}) : {
+            _hint = 5;
+            [_player] call _hideoutInfo;
+        };
+        default {
+            _hint = 1;
+            [true, 0] spawn btc_fnc_info_cache;
+        };
+    };
 };
+[_hint] remoteExec ["btc_fnc_show_hint", _player];

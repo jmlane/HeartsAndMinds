@@ -214,10 +214,8 @@ btc_int_search_intel_time = 4;
 
 //Info
 btc_info_intel_chance = _info_chance;
-btc_info_intel_type = [80, 95];//cache - hd - both
 btc_info_cache_def = _cache_info_def;
 btc_info_cache_ratio = _cache_info_ratio;
-btc_info_hideout_radius = 4000;
 
 //Supplies
 btc_supplies_mat = "Land_Cargo20_IDAP_F";

@@ -21,14 +21,19 @@ Author:
 ---------------------------------------------------------------------------- */
 
 params [
-    ["_target", objNull, [objNull]]
+    ["_target", objNull, [objNull]],
+    ["_player", player, [objNull]]
 ];
 
-private _onFinish = {
-    params ["_args"];
-    _args params ["_target", "_player"];
+private _radius = 7;
+if (_target isKindOf "Man") then {_radius = 4;};
+if (_target isKindOf "Helicopter") then {_radius = 20;};
 
-    [_target, _player] remoteExec ["btc_fnc_info_has_intel", 2];
+private _condition = {
+    params ["_args"];
+    _args params ["_target", "_player", "_radius"];
+
+    _target distance _player < _radius
 };
 
-[btc_int_search_intel_time, [_target, player], _onFinish, {}, localize "STR_BTC_HAM_CON_INFO_SEARCH_BAR"] call btc_fnc_int_action_result;
+[btc_int_search_intel_time, [_target, player, _radius], {_this select 0 remoteExecCall ["btc_fnc_info_has_intel", 2]}, {}, _localizedTitle, _condition, ["isnotinside"]] call ace_common_fnc_progressBar;
