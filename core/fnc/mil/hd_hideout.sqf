@@ -53,21 +53,11 @@ if (_explosive && {_damage > 0.6}) then {
 
     btc_rep_bonus_hideout spawn btc_fnc_rep_change;
 
-    private _marker = createMarker [format ["btc_hideout_%1_destroyed", _id], getPos _hideout];
-    _marker setMarkerType "hd_destroy";
-    [_marker, "STR_BTC_HAM_O_EH_HDHIDEOUT_MRK", _id] remoteExec ["btc_fnc_set_markerTextLocal", [0, -2] select isDedicated, _marker];
-    _marker setMarkerSize [1, 1];
-    _marker setMarkerColor "ColorRed";
-
     private _city = _hideout getVariable ["assigned_to", _hideout];
     _city setVariable ["has_ho", false];
 
     deleteVehicle (nearestObject [getPos _hideout, "Flag_Red_F"]);
     _hideout setDamage 1;
-
-    private _array = _hideout getVariable ["markers", []];
-
-    {deleteMarker _x} forEach _array;
 
     if (btc_hq isEqualTo _hideout) then {btc_hq = objNull};
     if (btc_hideouts isEqualTo []) then {[] spawn btc_fnc_final_phase;};

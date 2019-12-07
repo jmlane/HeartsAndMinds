@@ -11,7 +11,6 @@ Parameters:
     _rinf_time - [Number]
     _cap_time - [Number]
     _id - [Number]
-    _markers_saved - [Array]
 
 Returns:
 
@@ -21,7 +20,7 @@ Examples:
     (end)
 
 Author:
-    Giallustio
+    Giallustio, jmlane
 
 ---------------------------------------------------------------------------- */
 
@@ -30,8 +29,7 @@ params [
     ["_id_hideout", btc_hideouts_id, [0]],
     ["_rinf_time", time, [0]],
     ["_cap_time", time - btc_hideout_cap_time, [0]],
-    ["_id", 0, [0]],
-    ["_markers_saved", [], [[]]]
+    ["_id", 0, [0]]
 ];
 
 private _city = objNull;
@@ -74,20 +72,6 @@ _hideout setVariable ["cap_time", _cap_time];
 _hideout setVariable ["assigned_to", _city];
 
 _hideout addEventHandler ["HandleDamage", btc_fnc_mil_hd_hideout];
-
-private _markers = [];
-{
-    _x params ["_pos", "_marker_name"];
-
-    private _marker = createMarker [format ["%1", _pos], _pos];
-    _marker setMarkerType "hd_warning";
-    _marker setMarkerText _marker_name;
-    _marker setMarkerSize [0.5, 0.5];
-    _marker setMarkerColor "ColorRed";
-    _markers pushBack _marker;
-} forEach _markers_saved;
-
-_hideout setVariable ["markers", _markers];
 
 if (btc_debug) then {
     private _marker = createMarker [format ["btc_hideout_%1", _pos], _pos];
