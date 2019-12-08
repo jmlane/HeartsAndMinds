@@ -115,7 +115,7 @@ btc_int_ask_data = nil;
             };
             case "CACHE" : {
                 [name _target, localize "STR_BTC_HAM_CON_INFO_ASK_CACHEMAP"] call btc_fnc_showSubtitle; //I'll show you some hint on the map
-                [_info_type isEqualTo "REAL", 1] remoteExec ["btc_fnc_info_cache", 2];
+                [_player, _info_type isEqualTo "REAL"] remoteExecCall ["btc_fnc_info_cache", 2];
             };
         };
     }, [_info_type, _target, _player]] call CBA_fnc_waitUntilAndExecute;

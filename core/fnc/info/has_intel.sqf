@@ -73,7 +73,7 @@ if (_target getVariable ["intel", false] && !(_target getVariable ["btc_already_
     switch (true) do {
         case (_n > 0.95 && {_hideoutsRemain}) : {
             _hint = 4;
-            [true, 0] spawn btc_fnc_info_cache;
+            [_player, true] call btc_fnc_info_cache;
             [_player] call _hideoutInfo;
         };
         case (_n >= 0.8 && {_n <= 0.95} && {_hideoutsRemain}) : {
@@ -82,7 +82,7 @@ if (_target getVariable ["intel", false] && !(_target getVariable ["btc_already_
         };
         default {
             _hint = 1;
-            [true, 0] spawn btc_fnc_info_cache;
+            [_player, true] call btc_fnc_info_cache;
         };
     };
 };
