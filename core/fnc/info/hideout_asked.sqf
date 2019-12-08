@@ -57,4 +57,7 @@ if (_is_real) then {
 if (btc_debug) then {_text = _text + " - " + str _is_real};
 
 [_name, _text] call btc_fnc_showSubtitle;
-player createDiaryRecord [localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG", [str(mapGridPosition player) + " - " + _name, _text]]; //Diary log
+player createDiaryRecord [
+    localize "STR_HM_DIARY_INFO",
+    [format ["%1T @ GRID %2 (%3)", [dayTime] call BIS_fnc_timeToString, mapGridPosition player, _name], _text]
+];
