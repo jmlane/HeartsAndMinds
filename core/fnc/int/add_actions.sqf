@@ -15,7 +15,7 @@ Examples:
     (end)
 
 Author:
-    Giallustio
+    Giallustio, jmlane
 
 ---------------------------------------------------------------------------- */
 
@@ -30,9 +30,23 @@ _action = ["request_delete", localize "str_a3_cfgvehicles_modulerespawnvehicle_f
 [player, 1, ["ACE_SelfActions", "Database"], _action] call ace_interact_menu_fnc_addActionToObject;
 
 //Intel
-_action = ["Search_intel", localize "STR_A3_Showcase_Marksman_BIS_tskIntel_title", "\A3\ui_f\data\igui\cfg\simpleTasks\types\search_ca.paa", {_this call btc_fnc_info_search_for_intel}, {!Alive (_this select 0)}] call ace_interact_menu_fnc_createAction;
+_action = [
+    "Search_intel",
+    localize "STR_A3_Showcase_Marksman_BIS_tskIntel_title",
+    "\A3\ui_f\data\igui\cfg\simpleTasks\types\search_ca.paa",
+    btc_fnc_info_search_for_intel,
+    {!Alive (_this select 0)}
+] call ace_interact_menu_fnc_createAction;
 {[_x, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;} forEach (btc_type_units + btc_type_divers);
-_action = ["Interrogate_intel", localize "STR_BTC_HAM_ACTION_INTEL_INTERROGATE", "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\instructor_ca.paa", {[(_this select 0),true] spawn btc_fnc_info_ask;}, {Alive (_this select 0) && {[_this select 0] call ace_common_fnc_isAwake} && captive (_this select 0)}] call ace_interact_menu_fnc_createAction;
+
+_action = [
+    "Interrogate_intel",
+    localize "STR_BTC_HAM_ACTION_INTEL_INTERROGATE","\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\instructor_ca.paa",
+    btc_fnc_info_ask,
+    {Alive (_this select 0) && {captive (_this select 0)} && {[_this select 0] call ace_common_fnc_isAwake}},
+    nil,
+    [true]
+] call ace_interact_menu_fnc_createAction;
 {[_x, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;} forEach (btc_type_units + btc_type_divers);
 
 //Orders
@@ -57,7 +71,15 @@ _action = ["Civil_Go_away", localize "STR_BTC_HAM_ACTION_ORDERS_GOAWAY", "\A3\ui
     [_x, 0, ["ACE_MainActions", "Civil_Orders"], _action] call ace_interact_menu_fnc_addActionToClass;
     _action = ["Civil_Go_away", localize "STR_BTC_HAM_ACTION_ORDERS_GOAWAY", "\A3\ui_f\data\igui\cfg\simpleTasks\types\talk1_ca.paa", {[3, (_this select 0)] call btc_fnc_int_orders;}, {Alive (_this select 0)}] call ace_interact_menu_fnc_createAction;
     [_x, 0, ["ACE_MainActions", "Civil_Orders"], _action] call ace_interact_menu_fnc_addActionToClass;
-    _action = ["Ask_Info", localize "STR_BTC_HAM_ACTION_ORDERS_ASKINFO", "\A3\ui_f\data\igui\cfg\simpleTasks\types\talk_ca.paa", {[(_this select 0),false] spawn btc_fnc_info_ask;}, {Alive (_this select 0) && {[_this select 0] call ace_common_fnc_isAwake} && {side (_this select 0) isEqualTo civilian}}] call ace_interact_menu_fnc_createAction;
+    _action = [
+        "Ask_Info",
+        localize "STR_BTC_HAM_ACTION_ORDERS_ASKINFO",
+        "\A3\ui_f\data\igui\cfg\simpleTasks\types\talk_ca.paa",
+        btc_fnc_info_ask,
+        {Alive (_this select 0) && {side (_this select 0) isEqualTo civilian} && {[_this select 0] call ace_common_fnc_isAwake}},
+        nil,
+        [false]
+    ] call ace_interact_menu_fnc_createAction;
     [_x, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;
     _action = ["Ask_Reputation", localize "STR_BTC_HAM_ACTION_ORDERS_ASKREP", "\A3\ui_f\data\igui\cfg\simpleTasks\types\talk_ca.paa", {[_this select 0] spawn btc_fnc_info_ask_reputation;}, {Alive (_this select 0) && {[_this select 0] call ace_common_fnc_isAwake} && {side (_this select 0) isEqualTo civilian}}] call ace_interact_menu_fnc_createAction;
     [_x, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;

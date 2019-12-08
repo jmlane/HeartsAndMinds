@@ -1109,12 +1109,21 @@
                 <Portuguese>Não há esconderijo por aqui!</Portuguese>
                 <Chinesesimp>附近没有藏匿点!</Chinesesimp>
             </Key>
-            <Key ID="STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG">
-                <Original>Diary log</Original>
-                <Spanish>Registro diario</Spanish>
-                <German>Gesprächsaufzeichnung</German>
-                <Portuguese>Relatório</Portuguese>
-                <Chinesesimp>日志</Chinesesimp>
+            <Key ID="STR_HM_DIARY_INFO">
+                <Original>Gathered Information</Original>
+                <English>Gathered Information</English>
+            </Key>
+            <Key ID="STR_HM_DIARY_INFO_README">
+                <Original>READ ME</Original>
+                <English>READ ME</English>
+            </Key>
+            <Key ID="STR_HM_DIARY_INFO_README_TEXT">
+                <Original>This is your personal log of gathered information. It &lt;t underline='1'&gt;does&#160;not&lt;/t&gt; save across sessions, nor does it sync to other players.&lt;br/&gt;&lt;br/&gt;In order to gain actionable intelligence from this gathered information, you must share it with your team to develop a comprehensive picture of the insurgency together.</Original>
+                <English>This is your personal log of gathered information. It &lt;t underline='1'&gt;does&#160;not&lt;/t&gt; save across sessions, nor does it sync to other players.&lt;br/&gt;&lt;br/&gt;In order to gain actionable intelligence from this gathered information, you must share it with your team to develop a comprehensive picture of the insurgency together.</English>
+            </Key>
+            <Key ID="STR_HM_DIARY_INFO_BODY">
+                <Original>Information gathered indicates an area of interest near grid %1.</Original>
+                <English>Information gathered indicates an area of interest near grid %1.</English>
             </Key>
             <Key ID="STR_BTC_HAM_CON_INFO_SEARCH_BAR">
                 <Original>Searching for intel . . .</Original>

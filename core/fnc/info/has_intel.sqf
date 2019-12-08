@@ -3,18 +3,27 @@
 Function: btc_fnc_info_has_intel
 
 Description:
-    Fill me when you edit me !
+    Remote (server-side) handler for btc_fnc_info_search_for_intel.
 
 Parameters:
-    _body - [Object]
-    _asker - [Object]
+    _target - Target of the interaction. [Object]
+    _player - The player who performed the interaction. [Object]
     _radius - Max radius from hideout for information [Number]
 
 Returns:
+    [Nothing].
 
 Examples:
     (begin example)
-        _result = [] call btc_fnc_info_has_intel;
+        [
+            btc_int_search_intel_time,
+            [_target, player, _radius],
+            {_this select 0 remoteExecCall ["btc_fnc_info_has_intel", 2]},
+            {},
+            _localizedTitle,
+            _condition,
+            ["isnotinside"]
+        ] call ace_common_fnc_progressBar;
     (end)
 
 Author:
@@ -52,15 +61,19 @@ if (_target getVariable ["intel", false] && !(_target getVariable ["btc_already_
         private _pos = [getPos _ho, _radius] call CBA_fnc_randPos;
         private _directId = owner _player;
 
-        private _marker = createMarker [format ["_USER_DEFINED #%1/%2H/1", _directId, _pos], _pos];
-        _marker setMarkerType "hd_dot";
-        _marker setMarkerColor "ColorRed";
+        [_player, [
+            localize "STR_HM_DIARY_INFO",
+            [
+                format ["%1T @ GRID %2", [dayTime] call BIS_fnc_timeToString, mapGridPosition _player],
+                format [localize "STR_HM_DIARY_INFO_BODY", mapGridPosition _pos]
+            ]
+        ]] remoteExecCall ["createDiaryRecord", _player];
     };
 
     switch (true) do {
         case (_n > 0.95 && {_hideoutsRemain}) : {
             _hint = 4;
-            [true, 0] spawn btc_fnc_info_cache;
+            [_player, true] call btc_fnc_info_cache;
             [_player] call _hideoutInfo;
         };
         case (_n >= 0.8 && {_n <= 0.95} && {_hideoutsRemain}) : {
@@ -69,7 +82,7 @@ if (_target getVariable ["intel", false] && !(_target getVariable ["btc_already_
         };
         default {
             _hint = 1;
-            [true, 0] spawn btc_fnc_info_cache;
+            [_player, true] call btc_fnc_info_cache;
         };
     };
 };

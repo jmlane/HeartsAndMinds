@@ -1,6 +1,8 @@
 private _MainCategory = localize "str_3den_display3den_menubar_helpdoc_text";
 player createDiarySubject [_MainCategory, _MainCategory];
-player createDiarySubject [localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG", localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG"];
+private _infoLog = localize "STR_HM_DIARY_INFO";
+player createDiarySubject [_infoLog, localize "STR_HM_DIARY_INFO"];
+player createDiaryRecord [_infoLog, [localize "STR_HM_DIARY_INFO_README", localize "STR_HM_DIARY_INFO_README_TEXT"]];
 
 //Headless and Data base
 player createDiaryRecord [_MainCategory, [localize "STR_BTC_HAM_DOC_HEADLESS_TITLE", localize "STR_BTC_HAM_DOC_HEADLESS_TEXT"]];
