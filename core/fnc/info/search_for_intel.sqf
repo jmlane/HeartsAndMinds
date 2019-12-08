@@ -45,4 +45,4 @@ private _condition = {
     _target distance _player < _radius
 };
 
-[btc_int_search_intel_time, [_target, player, _radius], {_this select 0 remoteExecCall ["btc_fnc_info_has_intel", 2]}, {}, _localizedTitle, _condition, ["isnotinside"]] call ace_common_fnc_progressBar;
+[btc_int_search_intel_time, [_target, player, _radius], {_this select 0 remoteExecCall ["btc_fnc_info_has_intel", 2]}, {}, localize "STR_BTC_HAM_CON_INFO_SEARCH_BAR", _condition, ["isnotinside"]] call ace_common_fnc_progressBar;
