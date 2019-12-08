@@ -33,7 +33,10 @@ if (_units isEqualTo []) then {
     _units = _units select {side _x isEqualTo civilian};
 };
 
+for "_n" from 0 to floor random count _units do
 {
+    private _x = _units # _n;
+
     if (btc_debug_log) then {
         [format ["%1 - %2", _x, side _x], __FILE__, [false]] call btc_fnc_debug_message;
     };
@@ -48,4 +51,4 @@ if (_units isEqualTo []) then {
 
     (group _x) setBehaviour "AWARE";
     [group _x, getPos _x, 10, "GUARD", "UNCHANGED", "RED"] call CBA_fnc_addWaypoint;
-} forEach _units;
+};
