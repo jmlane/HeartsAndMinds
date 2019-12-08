@@ -3,20 +3,29 @@
 Function: btc_fnc_info_search_for_intel
 
 Description:
-    Fill me when you edit me !
+    ACE Interaction action handler for searching for information.
 
 Parameters:
-    _target - [Object]
+    _target - Target of the interaction. [Object]
+    _player - The player who performed the interaction. [Object]
+    _args - Custom arguments. [Array]
 
 Returns:
+    [Nothing].
 
 Examples:
     (begin example)
-        _result = [] call btc_fnc_info_search_for_intel;
+        _action = [
+            "Search_intel",
+            localize "STR_A3_Showcase_Marksman_BIS_tskIntel_title",
+            "\A3\ui_f\data\igui\cfg\simpleTasks\types\search_ca.paa",
+            btc_fnc_info_search_for_intel,
+            {!Alive (_this select 0)}
+        ] call ace_interact_menu_fnc_createAction;
     (end)
 
 Author:
-    Giallustio
+    Giallustio, jmlane
 
 ---------------------------------------------------------------------------- */
 
