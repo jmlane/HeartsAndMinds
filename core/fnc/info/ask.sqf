@@ -66,65 +66,57 @@ if ((round random 3) >= 2 || !_isInterrogation) then {
 btc_int_ask_data = nil;
 ["btc_global_reputation"] remoteExecCall ["btc_fnc_int_ask_var", 2];
 
-waitUntil {!(isNil "btc_int_ask_data")};
+[{!(isNil "btc_int_ask_data")},
+{
+    params [
+        ["_target", objNull, [objNull]],
+        ["_player", player, [objNull]],
+        ["_isInterrogation", false, [false]]
+    ];
 
-private _rep = btc_int_ask_data;
+    private _rep = btc_int_ask_data;
 
-private _chance = (random 300) + (random _rep) + _rep/2;
-private _info = "";
-private _info_type = "";
-switch !(_isInterrogation) do {
-    case (_chance < 200) : {_info_type = "NO";};
-    case (_chance >= 200 && _chance < 600) : {_info_type = "FAKE";};
-    case (_chance >= 600) : {_info_type = "REAL";};
-};
-if (_isInterrogation) then {_info_type = "REAL";};
-if (_info_type isEqualTo "NO") exitWith {
-    [name _target, localize "STR_BTC_HAM_CON_INFO_ASK_NOINFO"] call btc_fnc_showSubtitle; //I've no information for you
-};
+    private _chance = (random 300) + (random _rep) + _rep/2;
+    private _info_type = switch !(_isInterrogation) do {
+        case (_chance < 200) : {"NO"};
+        case (_chance >= 200 && _chance < 600) : {"FAKE"};
+        default {"REAL"};
+    };
 
-btc_int_ask_data = nil;
-[8] remoteExecCall ["btc_fnc_int_ask_var", 2];
+    if (_info_type isEqualTo "NO") exitWith {
+        [name _target, localize "STR_BTC_HAM_CON_INFO_ASK_NOINFO"] call btc_fnc_showSubtitle; //I've no information for you
+    };
 
-waitUntil {!(isNil "btc_int_ask_data")};
+    btc_int_ask_data = nil;
+    [8] remoteExecCall ["btc_fnc_int_ask_var", 2];
 
-private _final_phase = btc_int_ask_data isEqualTo 0;
+    [{!(isNil "btc_int_ask_data")},
+    {
+        params [
+            ["_info_type", "REAL", [""]],
+            ["_target", objNull, [objNull]],
+            ["_player", player, [objNull]]
+        ];
 
-private _info = selectRandomWeighted [
-    "TROOPS", 0.4,
-    ["HIDEOUT", "TROOPS"] select _final_phase, 0.4,
-    "CACHE", 0.2
-];
+        private _final_phase = btc_int_ask_data isEqualTo 0;
 
-switch (_info_type) do {
-    case "REAL" : {
+        private _info = selectRandomWeighted [
+            "TROOPS", 0.4,
+            ["HIDEOUT", "TROOPS"] select _final_phase, 0.4,
+            "CACHE", 0.2
+        ];
+
         switch (_info) do {
             case "TROOPS" : {
-                [name _target, true] spawn btc_fnc_info_troops;
+                [name _target, _info_type isEqualTo "REAL"] spawn btc_fnc_info_troops;
             };
             case "HIDEOUT" : {
-                [name _target, true] spawn btc_fnc_info_hideout_asked;
+                [name _target, _info_type isEqualTo "REAL"] spawn btc_fnc_info_hideout_asked;
             };
             case "CACHE" : {
                 [name _target, localize "STR_BTC_HAM_CON_INFO_ASK_CACHEMAP"] call btc_fnc_showSubtitle; //I'll show you some hint on the map
-                sleep 2;
-                [true, 1] remoteExec ["btc_fnc_info_cache", 2];
+                [_info_type isEqualTo "REAL", 1] remoteExec ["btc_fnc_info_cache", 2];
             };
         };
-    };
-    case "FAKE" : {
-        switch (_info) do {
-            case "TROOPS" : {
-                [name _target, false] spawn btc_fnc_info_troops;
-            };
-            case "HIDEOUT" : {
-                [name _target, false] spawn btc_fnc_info_hideout_asked;
-            };
-            case "CACHE" : {
-                [name _target, localize "STR_BTC_HAM_CON_INFO_ASK_CACHEMAP"] call btc_fnc_showSubtitle; //I'll show you some hint on the map
-                sleep 2;
-                [false, 1] remoteExec ["btc_fnc_info_cache", 2];
-            };
-        };
-    };
-};
+    }, [_info_type, _target, _player]] call CBA_fnc_waitUntilAndExecute;
+}, [_target, _player, _isInterrogation]] call CBA_fnc_waitUntilAndExecute;
