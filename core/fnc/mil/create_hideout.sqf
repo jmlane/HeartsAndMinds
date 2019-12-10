@@ -37,33 +37,42 @@ private _createHideoutComposition = {
         ["_pos", [0, 0, 0], [[]]]
     ];
 
-    private _type_bigbox = selectRandom ["Box_FIA_Ammo_F", "C_supplyCrate_F", "Box_East_AmmoVeh_F"];
+    private _campfire = ["MetalBarrel_burning_F", "Campfire_burning_F", "Land_Campfire_F", "FirePlace_burning_F"];
+    private _bigbox = ["Box_FIA_Ammo_F", "Box_East_AmmoVeh_F", "CargoNet_01_box_F", "O_CargoNet_01_ammo_F", "Land_Pallet_MilBoxes_F", "Land_PaperBox_open_full_F"];
+    private _box = ["Box_East_Wps_F", "Box_East_WpsSpecial_F", "Box_East_Ammo_F"];
+    private _power = ["WaterPump_01_sand_F", "WaterPump_01_forest_F", "Land_PressureWasher_01_F", "Land_DieselGroundPowerUnit_01_F", "Land_JetEngineStarter_01_F", "Land_PowerGenerator_F", "Land_PortableGenerator_01_F"];
+    private _seat = ["Land_WoodenLog_F", "Land_CampingChair_V2_F", "Land_CampingChair_V1_folded_F", "Land_CampingChair_V1_F"];
+    private _sleepingbag = ["Land_Sleeping_bag_F", "Land_Sleeping_bag_blue_F", "Land_Sleeping_bag_brown_F"];
+    private _tent = ["Land_TentA_F", "Land_TentDome_F"];
+    private _camonet = ["CamoNet_ghex_big_F", "CamoNet_OPFOR_big_F", "CamoNet_INDP_big_F", "CamoNet_BLUFOR_big_F", "CamoNet_OPFOR_open_F", "CamoNet_ghex_open_F", "CamoNet_BLUFOR_open_F", "Land_IRMaskingCover_02_F", "CamoNet_BLUFOR_F", "CamoNet_ghex_F", "CamoNet_OPFOR_F", "CamoNet_INDP_F"];
+
+    private _hideoutObject = selectRandom ["Box_FIA_Ammo_F", "C_supplyCrate_F", "Box_East_AmmoVeh_F"];
 
     private _composition_hideout = [
-        [selectRandom btc_type_campfire,0,[-2.30957,-1.02979,0]],
-        [_type_bigbox,121.331,[0.675781,-1.52539,0]],
-        [selectRandom btc_type_bigbox,227.166,[2.66504,1.4126,0]],
-        [selectRandom btc_type_sleepingbag,135.477,[0.758789,-3.91309,0]],
-        [selectRandom btc_type_power,77.6499,[0.418945,3.51855,0]],
-        [selectRandom btc_type_seat,171.123,[-2.08203,-3.39795,0]],
+        [selectRandom _campfire,0,[-2.30957,-1.02979,0]],
+        [_hideoutObject,121.331,[0.675781,-1.52539,0]],
+        [selectRandom _bigbox,227.166,[2.66504,1.4126,0]],
+        [selectRandom _sleepingbag,135.477,[0.758789,-3.91309,0]],
+        [selectRandom _power,77.6499,[0.418945,3.51855,0]],
+        [selectRandom _seat,171.123,[-2.08203,-3.39795,0]],
         ["Flag_Red_F",0,[0,0,0]],
-        [selectRandom btc_type_sleepingbag,161.515,[-0.726563,-4.76953,0]],
+        [selectRandom _sleepingbag,161.515,[-0.726563,-4.76953,0]],
         ["Land_SatelliteAntenna_01_F",304.749,[-3.71973,2.46143,0]],
-        [selectRandom btc_type_seat,279.689,[-4.52783,-0.76416,0]],
-        [selectRandom btc_type_seat,238.639,[-3.89014,-2.94873,0]],
-        [selectRandom btc_type_bigbox,346.664,[3.66455,-1.72998,0]],
-        [selectRandom btc_type_box,36.4913,[-2.65088,-4.5625,0]],
-        [selectRandom btc_type_tent,86.984,[3.19922,-4.36133,0]],
-        [selectRandom btc_type_tent,10,[-4.35303,-5.66309,0]],
-        [selectRandom btc_type_tent,300,[-8.47949,-1.64063,0]]
+        [selectRandom _seat,279.689,[-4.52783,-0.76416,0]],
+        [selectRandom _seat,238.639,[-3.89014,-2.94873,0]],
+        [selectRandom _bigbox,346.664,[3.66455,-1.72998,0]],
+        [selectRandom _box,36.4913,[-2.65088,-4.5625,0]],
+        [selectRandom _tent,86.984,[3.19922,-4.36133,0]],
+        [selectRandom _tent,10,[-4.35303,-5.66309,0]],
+        [selectRandom _tent,300,[-8.47949,-1.64063,0]]
     ];
     if (random 1 > 0.5) then {
-        _composition_hideout pushBack [selectRandom btc_type_camonet,0,[-0.84668,-2.16113,0]];
+        _composition_hideout pushBack [selectRandom _camonet,0,[-0.84668,-2.16113,0]];
     };
 
     private _composition = [_pos, random 360, _composition_hideout] call btc_fnc_create_composition;
 
-    _composition select ((_composition apply {typeOf _x}) find _type_bigbox);
+    _composition select ((_composition apply {typeOf _x}) find _hideoutObject);
 };
 
 private _city = objNull;
