@@ -105,58 +105,43 @@ deleteVehicle (_city getVariable ["trigger_player_side", objNull]);
 [_pos, btc_hideouts_radius, btc_hideouts_radius, _city, _city getVariable "occupied", _city getVariable "name", _city getVariable "type", _city getVariable "id"] call btc_fnc_city_trigger_player_side;
 
 private _hideout = [_pos] call _createHideoutComposition;
-clearWeaponCargoGlobal _hideout;
-clearItemCargoGlobal _hideout;
-clearMagazineCargoGlobal _hideout;
 
 _hideout setVariable ["id", _id_hideout];
 _hideout setVariable ["rinf_time", _rinf_time];
 _hideout setVariable ["cap_time", _cap_time];
 _hideout setVariable ["assigned_to", _city];
 
-_hideout addEventHandler ["HandleDamage", {
+_hideout addEventHandler ["Killed", {
     params [
-        ["_hideout", objNull, [objNull]],
-        ["_selection", "", [""]],
-        ["_damage", 0, [0]],
-        ["_source", objNull, [objNull]],
-        ["_ammo", "", [""]],
-        ["_hitIndex", 0, [0]],
+        ["_unit", objNull, [objNull]],
+        ["_killer", objNull, [objNull]],
         ["_instigator", objNull, [objNull]],
-        ["_hitPoint", "", [""]]
+        ["_useEffects", false, [false]]
     ];
-    params ["_hideout", "_selection", "_damage", "_source", "_ammo", "_hitIndex", "_instigator", "_hitPoint"];
 
-    private _explosive = getNumber(configFile >> "cfgAmmo" >> _ammo >> "explosive") > 0;
+    private _id = _unit getVariable "id";
 
-    if (_explosive && {_damage > 0.6}) then {
-        private _id = _hideout getVariable "id";
-
-        for "_i" from 0 to (count btc_hideouts - 1) do {
-            if ((btc_hideouts select _i) getVariable "id" isEqualTo _id) then {
-                btc_hideouts set [_i, 0];
-            };
+    for "_i" from 0 to (count btc_hideouts - 1) do {
+        if ((btc_hideouts select _i) getVariable "id" isEqualTo _id) then {
+            btc_hideouts set [_i, 0];
         };
-        btc_hideouts = btc_hideouts - [0];
+    };
+    btc_hideouts = btc_hideouts - [0];
 
-        btc_rep_bonus_hideout spawn btc_fnc_rep_change;
+    btc_rep_bonus_hideout call btc_fnc_rep_change;
 
-        private _city = _hideout getVariable ["assigned_to", _hideout];
-        _city setVariable ["has_ho", false];
+    private _city = _unit getVariable ["assigned_to", _unit];
+    _city setVariable ["has_ho", false];
 
-        deleteVehicle (nearestObject [getPos _hideout, "Flag_Red_F"]);
-        _hideout setDamage 1;
+    deleteVehicle (nearestObject [getPos _unit, "Flag_Red_F"]);
 
-        if (btc_hq isEqualTo _hideout) then {btc_hq = objNull};
-        if (btc_hideouts isEqualTo []) then {[] spawn btc_fnc_final_phase;};
+    if (btc_hq isEqualTo _unit) then {btc_hq = objNull};
+    if (btc_hideouts isEqualTo []) then {[] spawn btc_fnc_final_phase;};
 
-        //Notification
-        [2, count btc_hideouts] remoteExec ["btc_fnc_show_hint", 0];
-        if (btc_debug_log) then {
-            [format ["_this = %1 ; POS %2 ID %3", _this, getPos _hideout, _id], __FILE__, [false]] call btc_fnc_debug_message;
-        };
-    } else {
-        0
+    //Notification
+    [2, count btc_hideouts] remoteExec ["btc_fnc_show_hint", 0];
+    if (btc_debug_log) then {
+        [format ["_this = %1 ; POS %2 ID %3", _this, getPos _unit, _id], __FILE__, [false]] call btc_fnc_debug_message;
     };
 }];
 
