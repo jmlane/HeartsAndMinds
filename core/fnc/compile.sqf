@@ -80,7 +80,6 @@ if (isServer) then {
     btc_fnc_mil_check_cap = compile preprocessFileLineNumbers "core\fnc\mil\check_cap.sqf";
     btc_fnc_mil_create_group = compile preprocessFileLineNumbers "core\fnc\mil\create_group.sqf";
     btc_fnc_mil_create_hideout = compile preprocessFileLineNumbers "core\fnc\mil\create_hideout.sqf";
-    btc_fnc_mil_create_hideout_composition = compile preprocessFileLineNumbers "core\fnc\mil\create_hideout_composition.sqf";
     btc_fnc_mil_create_static = compile preprocessFileLineNumbers "core\fnc\mil\create_static.sqf";
     btc_fnc_mil_create_patrol = compile preprocessFileLineNumbers "core\fnc\mil\create_patrol.sqf";
     btc_fnc_mil_send = compile preprocessFileLineNumbers "core\fnc\mil\send.sqf";
