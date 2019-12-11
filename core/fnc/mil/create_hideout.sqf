@@ -126,7 +126,7 @@ _hideout addEventHandler ["Killed", {
 
     private _id = _unit getVariable "id";
 
-    btc_hideouts deleteRange (btc_hideouts select { _x getVariable "id" isEqualTo _id});
+    btc_hideouts deleteAt (btc_hideouts findIf { _x getVariable "id" isEqualTo _id});
 
     btc_rep_bonus_hideout call btc_fnc_rep_change;
 
