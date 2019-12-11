@@ -3,7 +3,11 @@
 Function: btc_fnc_mil_create_hideout
 
 Description:
-    Fill me when you edit me !
+    Creates a hideout by selecting a location near existing "cities", if none
+    is provided.
+
+    Will replace existing "city" triggers close to the hideout with new hideout
+    specific triggers.
 
 Parameters:
     _pos - [Array]
@@ -13,6 +17,7 @@ Parameters:
     _id - [Number]
 
 Returns:
+    True. - [Boolean]
 
 Examples:
     (begin example)
